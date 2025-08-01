@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <title>FPT Telecom - Công ty Cổ phần Viễn thông FPT</title>
+
+
+    <style>
+        .main-toc-contain {
+            position: relative;
+        }
+
+        .article-toc {
+            width: 60%;
+        }
+
+        .toc-wrap {
+            position: absolute;
+            right: 0;
+        }
+
+        .toc-wrap {
+
+            /* // Hiện thanh scroll dọc nếu TOC quá dài */
+            ::-webkit-scrollbar {
+                -webkit-appearance: none;
+                width: 7px;
+            }
+
+            ::-webkit-scrollbar-thumb {
+                border-radius: 5px;
+                background-color: #cccccc;
+                -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+            }
+
+            border-radius: 0.375rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            background-color: #f9fafb;
+            border-width: 1px;
+            border-color: #d2d6dc;
+
+            .toc-title {
+                text-align: center;
+                font-size: 2rem;
+                margin-top: 1rem;
+            }
+
+            #toc {
+                max-height: calc(100vh - 250px);
+                padding: 1rem;
+                overflow-y: scroll;
+
+                a {
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+
+                .toc-active {
+                    font-weight: bold;
+                    color: #2563eb;
+                }
+
+                .toc-item {
+                    padding: 0.1em 0;
+
+                    a {
+                        padding: 0.25em 0.5em;
+                    }
+                }
+
+                .toc-h2 {
+                    margin-left: 0
+                }
+
+                .toc-h3 {
+                    margin-left: 0
+                }
+
+                .toc-h4 {
+                    margin-left: 0
+                }
+
+                .toc-h5 {
+                    margin-left: 0
+                }
+
+                .toc-h6 {
+                    margin-left: 0
+                }
+            }
+        }
+        .toc-wrap {
+        /* position: relative; */
+        transition: all 0.3s ease;
+        }
+
+        .toc-wrap.sticky {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 300px;
+        background: white;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="temp" style="height: 500px;">nội dung tạm</div>
+
+    <div class="main-toc-contain">
+        <div class="toc-wrap chapter-list">
+            <div class="toc-title">Table of Contents</div>
+            <div id="toc"></div>
+        </div>
+
+        <article class="article-toc">
+            <div style="height: 500px;">500px</div>
+            <!-- Đây là bên trong nội dung bài viết cần tạo TOC -->
+            <h2>xxx</h2>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <img src="https://s3-api.fpt.vn/fptvn-storage/2025-02-05/1738725428_291256.jpg" alt="">
+            <p>Đây là phần giới thiệu về nội dung...</p>
+
+            <h5>h55555555555555555</h5>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+            <p>Đây là phần giới thiệu về nội dung...</p>
+
+
+
+            <h2>Giới thiệu</h1>
+                <p>Đây là phần giới thiệu về nội dung...</p>
+                <p>Đây là phần giới thiệu về nội dung...</p>
+                <p>Đây là phần giới thiệu về nội dung...</p>
+                <p>Đây là phần giới thiệu về nội dung...</p>
+                <p>Đây là phần giới thiệu về nội dung...</p>
+
+                <h3>con Giới thiệu</h3>
+                <p>xxxxxx</p>
+                <p>xxxxxx</p>
+                <p>xxxxxx</p>
+                <p>xxxxxx</p>
+
+
+                <h2>Chương 1: Bắt Đầu</h2>
+                <p>Giới thiệu chương 1...</p>
+                <h3>Con chương 1</h3>
+                <p>Nội dung chi tiết về Mục 1.1...</p>
+
+                <h2>Chương 2: Nội Dung Chính</h2>
+                <p>Chi tiết về chương 2...</p>
+                <h3>Con chương 2</h3>
+                <p>Nội dung chi tiết Con chương 2</p>
+
+
+                <h2>Chương 3: Bắt Đầu</h2>
+                <p>Giới thiệu chương 1...</p>
+                <h3>Con chương 3</h3>
+                <p>Nội dung chi tiết Con chương 3</p>
+
+                <h2>Chương 4: Bắt Đầu</h2>
+                <p>Giới thiệu chương 4...</p>
+                <h3>Con chương 4</h3>
+                <p>Nội dung chi tiết Con chương 4</p>
+
+                <h2>Chương 5: Bắt Đầu</h2>
+                <p>Giới thiệu chương 5...</p>
+                <h3>Con chương 5</h3>
+                <p>Nội dung chi tiết Con chương 5</p>
+
+
+                <h2>Chương 6: Bắt Đầu</h2>
+                <p>Giới thiệu chương 6...</p>
+                <h3>Con chương 6</h3>
+                <p>Nội dung chi tiết Con chương 6</p>
+
+                <h2>Chương 7: Bắt Đầu</h2>
+                <p>Giới thiệu chương 7...</p>
+                <h3>Con chương 7</h3>
+                <p>Nội dung chi tiết Con chương 7</p>
+
+
+                <div style="height: 500px;">500px</div>
+        </article>
+    </div>
+
+
+
+</body>
+
+<!-- Include jQuery -->
+<script src="../assets/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+<script>
+    $(document).ready(function () {
+        // Lấy tất cả các heading trong bài viết
+        const headings = document.querySelectorAll('article h1, article h2, article h3, article h4, article h5, article h6')
+        // const headings = document.querySelectorAll('article h2, article h3')
+        if (headings.length === 0) return
+
+        // Khai bào nơi mà TOC sẽ được chèn vào
+        const tocContainer = document.querySelector('#toc')
+
+        // Xác định cấp độ bắt đầu của TOC (bởi vì không phải bài viết nào cũng có thẻ H1, hoặc H2)
+        const startingLevel = headings[0].tagName[1]
+
+        // Tạo TOC rỗng
+        const toc = document.createElement('ul')
+        toc.classList.add('my-class', 'another-class');
+        // Theo dõi các cấp độ heading trước đó
+        const prevLevels = [0, 0, 0, 0, 0, 0]
+
+        // Lặp qua từng heading và thêm chúng vào TOC
+        for (let i = 0; i < headings.length; i++) {
+            const heading = headings[i]
+            const level = parseInt(heading.tagName[1])
+
+            // Tăng các cấp độ trước đó lên đến cấp độ hiện tại
+            prevLevels[level - 1]++
+            for (let j = level; j < prevLevels.length; j++) {
+                prevLevels[j] = 0
+            }
+
+            // Tạo số mục cho mục đó dựa trên các cấp độ trước đó
+            // và loại bỏ số 0 nếu trường hợp h1 -> h3 (không có h2)
+            // Sẽ tạo ra các đề mục ví dụ như:
+            // 1. Heading h1a
+            //     1.1 Heading h2
+            // 2. Heading h1b
+            //          2.1 Heading h3 (đẹp hơn 2.0.1 Heading h3)
+            let sectionNumber = prevLevels.slice(startingLevel - 1, level).join('.').replace(/\.0/g, "");
+
+            sectionNumber = ''; // gán rỗng cho number
+            // Tạo ID mới và gán vào heading
+            // Phải làm phần này để click vào mục lục có thể di chuyển đến được.
+            const newHeadingId = `${heading.textContent.toLowerCase().replace(/ /g, '-')}`
+            heading.id = newHeadingId
+
+            // Tạo liên kết mục cho heading
+            const anchor = document.createElement('a')
+            anchor.setAttribute('href', `#${newHeadingId}`)
+            anchor.textContent = heading.textContent
+
+            // Thêm event listener để cuộn đến liên kết khi nhấp chuột
+            anchor.addEventListener('click', (event) => {
+                event.preventDefault()
+                const targetId = event.target.getAttribute('href').slice(1)
+                const targetElement = document.getElementById(targetId)
+                targetElement.scrollIntoView({ behavior: 'smooth' })
+                // Thêm anchor vào URL khi click
+                history.pushState(null, null, `#${targetId}`)
+            })
+
+            // Tạo thẻ <li> để thêm vào TOC
+            const listItem = document.createElement('li')
+            listItem.textContent = sectionNumber
+            listItem.appendChild(anchor)
+
+            // Thêm CSS class cho từng mục lục
+            // Ví dụ "toc-item toc-h1", "toc-item toc-h2"
+            const className = `toc-${heading.tagName.toLowerCase()}`
+            listItem.classList.add('toc-item')
+            listItem.classList.add(className)
+
+            // Bỏ thẻ <li> vừa tạo vào TOC
+            toc.appendChild(listItem)
+        }
+
+        // Thêm các TOC item vào toc contaner
+        tocContainer.innerHTML = ''
+        tocContainer.appendChild(toc);
+
+
+
+        // Thêm event listener cho window object để lắng nghe sự kiện scroll
+        window.addEventListener('scroll', function () {
+            let scroll = window.scrollY // Lấy giá trị scrollY của màn hình
+            let height = window.innerHeight //Lấy chiều cao của màn hình
+            let offset = 200
+
+            headings.forEach(function (heading, index) {
+                let i = index + 1
+                let target = document.querySelector('#toc li:nth-of-type(' + i + ') > a') // Lấy phần tử target dựa trên số thứ tự
+                let pos = heading.getBoundingClientRect().top + scroll // Lấy vị trí của heading
+                if (!target) return
+
+                // Nếu scroll lớn hơn vị trí của phần tử hiện tại trừ đi chiều cao màn hình cộng với offset
+                if (scroll > pos - height + offset) { // Nếu cuộn quá vị trí của heading
+                    // Nếu phần tử tiếp theo tồn tại (không phải là phần tử cuối cùng)
+                    if (headings[index + 1] !== undefined) {
+                        // Lấy vị trí của phần tử tiếp theo
+                        let next_pos = headings[index + 1].getBoundingClientRect().top + scroll
+                        // Nếu scroll vượt qua vị trí của phần tử tiếp theo
+                        if (scroll > next_pos - height + offset) {
+                            target.classList.remove('toc-active')
+                        } else if (i === 1 && tocContainer.classList.contains('active') === false) { // Phần tử đầu tiên
+                            target.classList.add('toc-active')
+                            tocContainer.classList.add('active')
+                        } else { // Nếu không có phần tử tiếp theo trong danh sách heading
+                            target.classList.add('toc-active')
+                        }
+                    } else { //Nếu là heading cuối cùng
+                        target.classList.add('toc-active')
+                    }
+                } else { // Nếu scroll không vượt qua heading
+                    target.classList.remove('toc-active')
+                    if (i === 1 && tocContainer.classList.contains('active')) { // Nếu chưa cuộn đến heading đầu tiên
+                        tocContainer.classList.remove('active')
+                    }
+                }
+            })
+        })
+
+        // sticky
+        window.addEventListener("scroll", function () {
+            const tocWrap = document.querySelector(".toc-wrap");
+            if (window.scrollY > 150) {
+                tocWrap.classList.add("sticky");
+            } else {
+                tocWrap.classList.remove("sticky");
+            }
+        });
+
+
+
+
+    });
+</script>
+
+</html>

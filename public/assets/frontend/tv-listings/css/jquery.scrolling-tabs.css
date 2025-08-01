@@ -1,0 +1,347 @@
+/**
+ * jquery-bootstrap-scrolling-tabs
+ * @version v0.0.1
+ * @link https://github.com/mikejacobson/jquery-bootstrap-scrolling-tabs
+ * @author Mike Jacobson <michaeljjacobson1@gmail.com>
+ * @license MIT License, http://www.opensource.org/licenses/MIT
+ */
+ .scrtabs-tab-container * {
+  box-sizing: border-box;
+}
+.scrtabs-tab-container {
+  height: 80px;    
+  margin: 5px 15px 0 15px;
+}
+.scrtabs-tab-container .tab-content {
+  clear: left;
+}
+.scrtabs-tabs-fixed-container {
+  float: left;
+  height: 70px;
+  overflow: hidden;
+  width: 100%;
+}
+.scrtabs-tabs-movable-container {
+  position: relative;
+}
+.scrtabs-tabs-movable-container .tab-content {
+  display: none;
+}
+.scrtabs-tab-scroll-arrow {
+  border-top: none;
+  color: #428bca;
+  cursor: pointer;
+  float: left;
+  font-size: 12px;
+  height: 66px;
+  margin-bottom: -1px;
+  padding-left: 2px;
+  padding-top: 20px;
+  width: 20px;
+  font-size: 18px;
+  background: rgba(99,99,99,.1);
+}
+.scrtabs-tab-scroll-arrow:hover {
+  background: rgba(55,55,55,.2);
+}
+
+.scrtabs-tab-scroll-arrow.scrtabs-js-tab-scroll-arrow-left{
+  text-align: left;
+}
+.scrtabs-tab-scroll-arrow.scrtabs-js-tab-scroll-arrow-right{
+  text-align: right;
+}
+.scrtabs-tabs-fixed-container ul.nav-tabs {
+  height: 76px;
+  display: flex;
+  padding: 0px;
+  border-bottom: 0px solid;
+}
+.scrtabs-tabs-fixed-container ul.nav-tabs > li {
+  white-space: nowrap;
+  margin: 0px;
+}
+.scrtabs-tab-content-outside-movable-container .nav-tabs {
+  display: none;
+}
+
+/*doanvh new css working*/
+.nav-tabs.tab-channels>li>a, .nav-tabs.tab-channels>li.active>a{
+  padding: 0px 4px;
+  border: 0px;
+}
+.nav-tabs.tab-channels>li>a>img{
+  background: #fff;
+  border: 3px solid #fff;
+  width: 100%;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  margin: 0 4px;
+  width: 136px;
+  height: 66px;
+}
+
+.nav-tabs.tab-channels>li.active>a>img{
+  padding: 0px;
+  border: 3px solid #e38044;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+}
+.tab-channels.active{
+  background: #fff !important;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.tab-channels h3, .modal-body.schedule-detail-pop h3{
+  background: #234d9d;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 35px;
+  margin: 0px;
+}
+
+.tab-channels div {
+  padding: 0 15px;
+  display: flex;
+}
+.tab-channels div:nth-of-type(1),
+.modal-body.schedule-detail-pop div:nth-of-type(1){
+  margin-top: 20px;
+}
+.tab-channels div b, .modal-body.schedule-detail-pop div b {
+  width: 100px;
+  display: inline-block;
+  float: left;
+}
+.tab-channels div p, .modal-body.schedule-detail-pop div p {
+  float: left;
+  width: calc(100% - 100px);
+}
+.tab-channels div.now, .modal-body.schedule-detail-pop div.now {
+  color: #6897f0;
+  font-family: 'Roboto-Bold';
+}
+/*-----------------------------------order style not tab------------------------------*/
+/*link not ui tab*/
+.div-link-schedule{
+  position: relative;
+  top: 0px;
+  z-index: 9;
+  background: #fff;
+  width: 100%;
+  -moz-transition: ease 0.2s all;
+  -o-transition: ease 0.2s all;
+  -webkit-transition: ease 0.2s all;
+  transition: ease 0.2s all;
+}
+a.link-schedule{
+  padding: .7em 1.2em;
+  border: 1px solid rgba(50,50,50,0);
+  color: #9c9c9c;
+  font: 700 18px 'Roboto-Bold';
+  text-transform: uppercase;
+  -webkit-border-top-left-radius: 4px;
+    -webkit-border-top-right-radius: 4px;
+    -moz-border-radius-topleft: 4px;
+    -moz-border-radius-topright: 4px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: inline-block;
+}
+a.link-schedule.active, a.link-schedule:hover{
+  border: 1px solid #c4c4c4;
+  border-bottom: 1px solid #ebebeb;
+  -webkit-border-top-left-radius: 4px;
+  -webkit-border-top-right-radius: 4px;
+  -moz-border-radius-topleft: 4px;
+  -moz-border-radius-topright: 4px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  display: inline-block;
+  color: #fe5933;
+  background: #ebebeb;
+}
+.schedule-border{
+  padding: 1px;
+  border: 1px solid #c4c4c4;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  background: #ebebeb;
+  position: relative;
+}
+/*// link not ui tab*/
+/*doanvh add*/
+.modal-broadcast{
+  padding: 8px 15px 0 5px;
+}
+/*add search*/
+.div-search-schedule{
+  margin-top: 9px !important;
+  margin:0;
+}
+#custom-search-input {
+  padding: 0;
+  float: right;
+  width: 180px;
+  -moz-transition: ease 0.2s all;
+  -o-transition: ease 0.2s all;
+  -webkit-transition: ease 0.2s all;
+  transition: ease 0.2s all;
+}
+#custom-search-input .search-query.txt-search-schedule {
+  margin-bottom: 0;
+  height: 24px;
+}
+
+#custom-search-input button.btn.search-schedule {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 1px 3px;
+  position: absolute;
+  right: 5px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:#555;
+  font-size: 18px;
+}
+.search-query:focus + button {
+  z-index: 3;   
+}
+/* //add search*/
+/*---------------------------------- //order style not tab----------------------------*/
+/*modal*/
+/*modal-dialog*/
+@media(min-width:768px) {
+  .modal-broadcast .modal-dialog{
+    width: 70% !important
+  }
+}
+
+.modal-backdrop
+{
+  opacity:.9 !important;
+  /*background: #fff*/
+}
+.btn-primary.btn-grid, .btn-primary.btn-grid:focus{
+  background: none;
+  color: #121;
+  border: none;
+  outline: none;
+} 
+.btn-primary.btn-grid i:before{
+  font-size: 28px;
+}
+.btn-primary.btn-grid i span{
+  padding-left: 16px;
+  font: 700 16px 'Roboto-Bold';
+  margin-top: 3px;
+  position: absolute;
+}
+
+.modal-body.list-schedule-logo, .modal-body.schedule-detail-pop{
+  max-height: 80vh;
+  overflow-y: scroll; 
+}
+.list-schedule{
+  display: inline-block;
+  margin: 0px auto;
+  padding: 0;
+}
+.list-schedule li{
+  float: left;
+  width: 130px;
+  height: 70px;
+  margin: 10px;
+  text-align: center;
+  display: table;
+}
+.list-schedule li a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+}
+.list-schedule li a img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* //modal-dialog*/
+
+/*responsive scroll logo*/
+@media (max-width: 1024px) and (min-width: 768px){}
+@media(max-width:1024px) {
+
+}
+@media (max-width: 823px){
+}
+@media (max-width: 812px){
+}
+@media (max-width: 768px){
+  #scrool-style::-webkit-scrollbar
+  {
+    width: 0px;
+    background-color: #F5F5F5;
+  }
+  .modal-body.list-schedule-log{
+    height: 80vh;
+    overflow-y: scroll; 
+  }
+}
+
+@media (max-width: 500px){
+  .ui-tabs .ui-tabs-panel{
+    padding: 15px 10px;
+  }
+  .channels-detail h3, .modal-body.schedule-detail-pop h3{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    margin: 0px;
+  }
+  .schedule-border.iframe{
+    padding: 15px 0px
+  }
+  .list-schedule li{
+    width: calc(50% - 20px);
+  }
+  .list-schedule li a img{
+    width: 130px;
+  }
+  .div-search-schedule{
+    margin-top: 8px !important;
+  }
+  a.link-schedule{
+    padding: .7em .9em;
+  }
+  /*end 500*/
+}
+
+@media (max-width: 360px){
+  .list-schedule li a img{
+    width: 120px;
+  }
+}
+@media (max-width: 320px){
+  a.link-schedule{
+    padding: .5em .8em;
+  }
+  .list-schedule li a img{
+    width: 102px;
+  }
+}

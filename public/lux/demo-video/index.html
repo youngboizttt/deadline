@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Auto Play 100% YouTube Video on Scroll (in viewed area) </title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<script>
+	// 2. This code loads the IFrame Player API code asynchronously.
+	const tag = document.createElement('script');
+
+	tag.src = "https://www.youtube.com/iframe_api";
+	const firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+  // const _videoID = document.querySelector(".responsive-vid").getAttribute("data-video");
+
+	// 3. This function creates an iframe (and YouTube player)
+	//    after the API code downloads.
+	var player;
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('player', {
+          //videoId: "tu0qtEwb9gE", // YouTube Video ID
+          //videoId: "_videoID", // YouTube Video ID
+          width: 1920, // Player width (in px)
+          playerVars: {
+            autoplay: 0, // Auto-play the video on load
+            controls: 0, // Show pause/play buttons in player
+            showinfo: 0, // Hide the video title
+            modestbranding: 1, // Hide the Youtube Logo
+            // playlist: 'tu0qtEwb9gE',
+            playlist: 'tu0qtEwb9gE',
+            loop: 1, // Run the video in a loop
+            fs: 0, // Hide the full screen button
+            cc_load_policy: 0, // Hide closed captions
+            iv_load_policy: 3, // Hide the Video Annotations
+            autohide: 1, // Hide video controls when playing
+            start: 15,
+            end: 64,
+            mute: 0, // Sound Off On
+            rel: 0,
+			    },          
+		});
+    
+
+
+/*
+  */
+    $("#mute").click(function () {
+    if (player.isMuted()) {
+      player.unMute();
+      // console.log("unMute Player");
+      $("#mute i.vc_btn3-icon")
+        .removeClass("fa-volume-mute")
+        .addClass("fa-volume-up");
+    } else {
+      player.mute();
+      // console.log("Mute Player");
+      $("#mute i.vc_btn3-icon")
+        .removeClass("fa-volume-up")
+        .addClass("fa-volume-mute");
+    }
+  });
+
+	}
+
+
+</script>
+
+<div class="intro">
+  <h1>Scroll down<br>↓</h1>
+</div>
+<div class="space"></div>
+<div class="vid-section">
+  <div class="vid-wrap">
+    <div class="responsive-vid" data-video="tu0qtEwb9gE">
+      <div id="player"></div>
+    </div>
+  <div class="video__overlay"></div>
+  <button title="Mute / Unmute Video" id="mute">
+    <i class="vc_btn3-icon fas fa-volume-mute"></i>
+  </button>
+  <div class="video__title">Doan tést</div>
+  </div>
+</div>
+<div class="space"></div>
+<div class="outro">
+  <h2>THE END :)</h2>
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  <script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+.delay1s {
+    -webkit-animation: fade-head 1s ease-in-out 0s forwards;
+    animation: fade-head 1s ease-in-out 0s forwards;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+}
+
+.delay1_5s {
+    -webkit-animation: fade-head 1.5s ease-in-out 0s forwards;
+    animation: fade-head 1.5s ease-in-out 0s forwards;
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.delay2s {
+    -webkit-animation: fade-head 2s ease-in-out 0s forwards;
+    animation: fade-head 2s ease-in-out 0s forwards;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+.btn-hover {
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        background-position: 100% 0;
+        moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.btn-dangky--style {
+        padding: 14px 34px;
+        background-image: linear-gradient(to right, $black-color, $black-color, #4f00d9, $primary-color); // color-nomarl, color-nomarl, color-hover, color-hover
+        // box-shadow: 0 4px 20px 0 rgba(93, 2, 251, 0.3);
+    }
+}
+
+//head text
+.head-text-effect {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0) 10%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.15) 90%);
+
+    // loop the background along each line of text
+    background-size: 100% 1em; // 1em because line-height is 1
+    background-repeat: repeat-y;
+    -webkit-animation: colorFade 6s infinite;
+}
+
+.transition-link {
+    moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}

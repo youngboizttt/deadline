@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tab-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .tab-select {
+            display: none;
+            margin-bottom: 16px;
+            padding: 8px;
+            font-size: 16px;
+            /* width: 100%; */
+            padding: 10px 16px;
+            font-size: 16px;
+            border: 1px solid #2563eb;
+            border-radius: 6px;
+            background-color: #fff;
+            appearance: none;
+            background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23999'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 12px center;
+            background-size: 10px;
+
+        }
+
+        .tab-select:focus {
+            outline: none;
+        }
+
+        .tabs-container {
+            display: flex;
+            gap: 20px;
+        }
+
+        .tab-list {
+            list-style: none;
+            padding: 0;
+            width: 250px;
+            background: #111;
+            border-radius: 12px;
+        }
+
+        .tab-list li {
+            padding: 16px;
+            cursor: pointer;
+            color: white;
+            border-bottom: 1px solid #222;
+        }
+
+        .tab-list li.active {
+            background: #16a34a;
+            color: white;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .tab-content {
+            flex: 1;
+            background: white;
+            padding: 24px;
+            border-radius: 8px;
+        }
+
+        .tab-pane {
+            display: none;
+        }
+
+        .tab-pane.active {
+            display: block;
+        }
+
+        /* Mobile: show select, hide sidebar tab */
+        @media (max-width: 768px) {
+            .tabs-container {
+                flex-direction: column;
+            }
+
+            .tab-list {
+                display: none;
+            }
+
+            .tab-select {
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <h3>html demo</h3>
+    <div class="tab-wrapper">
+        <!-- Mobile Dropdown -->
+        <select class="tab-select">
+            <option value="tab1">Tổng quan về dịch vụ HyperFast</option>
+            <option value="tab2">Mua gói dịch vụ và thanh toán</option>
+            <option value="tab3">Huỷ, gia hạn, chuyển đổi gói dịch vụ</option>
+        </select>
+
+        <div class="tabs-container">
+            <!-- Sidebar Tabs -->
+            <ul class="tab-list">
+                <li data-tab="tab1" class="active">Tổng quan về dịch vụ HyperFast</li>
+                <li data-tab="tab2">Mua gói dịch vụ và thanh toán</li>
+                <li data-tab="tab3">Huỷ, gia hạn, chuyển đổi gói dịch vụ</li>
+            </ul>
+
+            <!-- Tab Content -->
+            <div class="tab-content">
+                <div id="tab1" class="tab-pane active">
+                    <h3>Các đặc điểm nổi bật được đề cập bao gồm x:</h3>
+                    <ul>
+                        <li>Đường truyền ưu tiên...</li>
+                        <li>Kết nối ổn định nhờ hạ tầng riêng...</li>
+                        <li>Bảo vệ kết nối xuyên suốt...</li>
+                        <li>Tùy chỉnh và theo dõi thông số...</li>
+                    </ul>
+                </div>
+                <div id="tab2" class="tab-pane">Nội dung tab 2: Mua gói dịch vụ...</div>
+                <div id="tab3" class="tab-pane">Nội dung tab 3: Huỷ, gia hạn...</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // Click tab (desktop)
+            $('.tab-list li').on('click', function () {
+                const tabId = $(this).data('tab');
+                $('.tab-list li').removeClass('active');
+                $(this).addClass('active');
+
+                $('.tab-pane').removeClass('active');
+                $('#' + tabId).addClass('active');
+
+                $('.tab-select').val(tabId); // Sync dropdown
+            });
+
+            // Change select (mobile)
+            $('.tab-select').on('change', function () {
+                const tabId = $(this).val();
+                $('.tab-list li').removeClass('active');
+                $('.tab-list li[data-tab="' + tabId + '"]').addClass('active');
+
+                $('.tab-pane').removeClass('active');
+                $('#' + tabId).addClass('active');
+            });
+        });
+    </script>
+
+</body>
+
+</html>

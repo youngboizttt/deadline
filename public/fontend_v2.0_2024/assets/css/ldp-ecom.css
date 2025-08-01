@@ -1,0 +1,115 @@
+.main-banner {
+    padding-top: 106px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.form-container {
+    max-width: 730px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.rowfull-margin.sec-cgtv .form-wrapper--cgtv.form-ecom {
+    max-width: 644px;
+}
+.rowfull-margin.sec-cgtv .head-title--cgtv.head-title--form-ecom {
+    max-width: 644px;
+    margin: 80px auto 0;
+}
+.form-container h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-align: center;
+    color: #3D3D3D;
+}
+
+.register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.register-form label {
+    font-weight: 600;
+    margin-bottom: 4px;
+    display: block;
+    color: #333;
+    font-size: 15px;
+}
+
+.register-form label::after {
+    content: attr(data-required);
+    color: #FF2156;
+    margin-left: 4px;
+}
+
+.register-form input {
+    padding: 12px 16px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.register-form .note {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.register-form button {
+    padding: 14px;
+    background-color: #4564ED;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.register-form button:hover {
+    background-color: #4564ED;
+}
+.rowfull-margin.sec-cgtv .cgtv-container.ecom-container {
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+@media screen and (max-width: 1024px) {
+    .rowfull-margin.sec-cgtv .head-title--cgtv.head-title--form-ecom {
+        margin: 40px auto 0;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rowfull-margin.sec-cgtv .head-title--cgtv.head-title--form-ecom {
+        margin: 40px auto 0;
+    }
+}
+@media screen and (max-width: 768px) {
+    .rowfull-margin.sec-cgtv .cgtv-container.ecom-container {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 540px) {
+    .rowfull-margin.sec-cgtv .cgtv-container.ecom-container {
+        padding-bottom: 0;
+    }
+}

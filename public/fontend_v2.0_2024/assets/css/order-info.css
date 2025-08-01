@@ -1,0 +1,56 @@
+.block-user-info .col-left.order-form .label-title {
+  padding-left: 0;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 28px;
+  color: #181D27;
+  margin-bottom: 4px;
+}
+.block-user-info .col-left.order-form .desc {
+  color: #535862;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.form-order {
+  width: 100%;
+  margin-top: 32px;
+}
+
+.input-text-48 {
+  background: #F5F5F5;
+  background: #F5F5F5;
+  line-height: 46px;
+  height: 46px;
+  width: 100%;
+  border: 1px solid #D1D1D1;
+  color: #888;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: text;
+  border-radius: 8px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+.input-text-48:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button-normal {
+  padding: 0px 24px;
+  line-height: 46px;
+  color: #3D3D3D;
+  border: 1.5px solid #D1D1D1;
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  border-radius: 8px;
+}
+.button-normal.button-blue {
+  background: #4564ED;
+  color: #fff;
+  border: 1px solid #4564ED;
+}/*# sourceMappingURL=order-info.css.map */

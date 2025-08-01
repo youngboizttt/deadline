@@ -1,0 +1,13 @@
+.small-banner {
+    display: none;
+}
+
+@media only screen and (max-width: 375.98px) {
+    .small-banner {
+        display: block;
+    }
+
+    .large-banner {
+        display: none;
+    }
+}

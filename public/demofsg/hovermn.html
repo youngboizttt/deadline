@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Some basic styling */
+    :root {
+        --bg-color: #111;
+        --txt-color: #eee;
+        --link-color: #374c5d;
+        --link2-color: #fff;
+        --darktxt-color: #a0a0a0;
+        --accent1-color: #232323;
+        --accent2-color: #252D34;
+        --nav-height: 35px;
+    }
+    
+    *, html {font-size: 16px; line-height: 150%;}
+    body {background: var(--bg-color); color: var(--txt-color);font-family: arial, sans-serif;font-size: 1rem;}
+    
+    h1, h2, h3, h4, h5, h6 {
+        display: block;
+        font-size: inherit;
+        font-weight: inherit;
+        padding: 0;
+        margin: 5px 0;
+    }
+    p {
+        font-size: 1rem;
+        margin: 5px 0;
+        padding: 0;
+        text-indent: 30px;
+    }
+    
+    .header {
+        background: var(--accent1-color);
+        border-bottom: 10px solid var(--accent2-color);
+        color: var(--darktxt-color);
+        font-family: georgia, serif;
+        font-size: 1.5rem;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-top:20px;
+        padding: 8px 2px;
+        text-align: center;
+    }
+    
+    main {
+        border:2px solid var(--link-color);
+        margin-top: var(--nav-height);
+        margin-bottom: 0px;
+        padding: 0 15px;
+    }
+    
+    /* The Dropdown Menu */
+    #menu {
+        width: 100%;
+        height: var(--nav-height);
+        text-align: center;
+        padding: 0;
+        background: #000;
+        display: block;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        z-index: 2;
+    }
+    
+    /*  List element styles */
+    #menu ul, #menu li {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: inline-block;
+    }
+    #menu li {
+        padding: 5px 0px;
+    }
+    
+    /* Main menu links */
+    #menu a:link, #menu a:visited, #menu a:active { 
+        text-decoration: none;
+        color: var(--link2-color); 
+        padding: 5px 7px;
+        font-weight: bold;
+        position: relative;
+        z-index: 2;
+    }
+    
+    #menu a:hover, #menu a:focus { 
+        background-color: var(--link-color);
+        color: var(--link2-color); 
+        text-decoration: underline; 
+    }
+    
+    /* The submenu links container*/
+    .subdrop { 
+        background: var(--bg-color);
+        height: 0;
+        border-top: 0;
+        min-width: 100%;
+        left: 0;
+        margin: 0;
+        position: absolute;
+        text-align: left;
+        top: 100%;
+        visibility: hidden;
+        height: 1px;
+        overflow: hidden;
+        z-index: 10;
+    }
+    
+    /* Dropdown Parent Link Style */
+    .droplink {
+        display: inline-block;
+        min-width: fit-content;
+        position: relative;
+    }
+    
+    /* List elements within the dropdown */
+    .subdrop li {
+        display: block!important;
+        padding: 0!important;
+    }
+    
+    /* Links within the dropdown list */
+    .subdrop a {
+        display: block;
+        padding: 12px 20px;
+        white-space: nowrap;
+    }
+    
+    /* Allows links to show on hover/focus and through keyboard navigation via focus-within */
+    .droplink:hover .subdrop { 
+        visibility: visible;
+        height: auto;
+        z-index: 11;
+    }
+    /* Separate these to avoid IE completely ignoring the css above */
+    .droplink:focus-within .subdrop { 
+        visibility: visible;
+        height: auto;
+        z-index: 11;
+    }
+    </style>
+</head>
+<body>
+    <nav role="navigation" id="menu" aria-label="Main menu">
+        <ul>
+            <li class="droplink"><a href="" aria-haspopup="true">Dropdown 1</a>
+              <ul class="subdrop" aria-label="Main Links Sub Navigation">
+                <li><a href="">Sub Link 1</a></li>
+                <li><a href="">Sub Link 2</a></li>
+                <li><a href="">Sub Link 3</a></li>
+                <li><a href="">Sub Link 4</a></li>
+              </ul>
+          </li>
+          <li><a href="">Test Link 1</a></li>
+          <li><a href="">Test Link 2</a></li>
+          <li><a href="">Test Link 3</a></li>
+      </ul>
+    </nav>
+    
+</body>
+</html>

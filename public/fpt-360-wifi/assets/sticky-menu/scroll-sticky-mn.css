@@ -1,0 +1,146 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.outer-container {
+    width: 100vw;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+}
+
+.outer-container.active {
+    width: 500px !important;
+    -webkit-transition: width 1s;
+    -o-transition: width 1s;
+    transition: width 1s;
+}
+
+.tour-details-section {
+    position: relative;
+    padding-top: 125px;
+}
+
+#itinerary,
+#dates,
+#map,
+#book {
+    background: #c4da9e;
+}
+
+#accommodation,
+#includes-excludes,
+#gallery {
+    background: #e4e4e4;
+}
+
+
+/* Sticky nav */
+
+#eight-day-sticky-section .tour-details-section-active {
+    color: #4564ED !important;
+    background: transparent !important;
+}
+
+.sticky-section {
+    z-index: 19 !important;
+    top: 72px !important;
+}
+
+.scrollmenu-fade {
+    position: relative;
+}
+
+.scrollmenu-fade:after {
+    /* content: ""; */
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    bottom: 15px;
+    pointer-events: none;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #333333 85%);
+    width: 10%;
+    height: 26px;
+}
+
+div.scrollmenu {
+    overflow: auto;
+    white-space: nowrap;
+    text-align: center;
+    background: #f9fbff;
+    border-bottom: 1px solid #edf0f7;
+}
+
+div.scrollmenu a {
+    display: inline-block;
+    color: #aaa;
+    text-align: center;
+    padding: 8px 14px;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+div.scrollmenu p {
+    display: none;
+    color: white;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+    position: absolute;
+    background: red;
+}
+
+div.scrollmenu p.arr-l {
+    left: -6px;
+}
+
+div.scrollmenu p.arr-r {
+    right: -6px;
+}
+
+.content-sticky-wrapper {
+    position: relative;
+}
+
+
+/* Media queries */
+@media only screen and (max-width: 1024px) {
+    .tour-details-section {
+        padding-top: 120px;
+    }
+}
+@media only screen and (min-width: 650px) {
+    div.scrollmenu p.scroll-display-arrow {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    .scrollmenu-fade:after {
+        height: 60px !important;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    div.scrollmenu {
+        background: #ebf4ff;
+    }
+    div.scrollmenu a {
+        font-size: 20px;
+    }
+    .tour-details-section {
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    div.scrollmenu a {
+        font-size: 19px;
+        letter-spacing: -1px;
+    }
+}

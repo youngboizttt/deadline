@@ -1,0 +1,45 @@
+https://codepen.io/loganliffick/pen/VNyWvx
+html,body {
+  scroll-snap-type: y mandatory;
+  margin: 0;
+/*   scroll-behavior: smooth; */
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "space mono";
+  font-size: 12vw;
+  scroll-snap-align: start;
+}
+
+.small {
+  height: 50vh;
+}
+
+.one {
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  color: #fff;
+}
+
+.two {
+  background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+  color: #fff;
+}
+
+.three {
+  background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+  color: #fff;
+}
+
+.four {
+  background-image: linear-gradient(to top, #9795f0 0%, #fbc8d4 100%);
+  color: #fff;
+}
+
+.five {
+  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
+  color: #fff;
+}

@@ -1,0 +1,206 @@
+.fsafego-sevices-text {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 56px 90px; /* 56px 80px */
+    justify-content: center;
+    color: #888888;
+    margin-bottom: 15px;
+}
+
+.fsafego-sevices-text>a,
+.fsafego-sevices-text>a:hover,
+.fsafego-sevices-text .fsafego--items h5 a,
+.fsafego-sevices-text .fsafego--items h5 a:hover {
+    color: #3D3D3D;
+    text-decoration: none;
+}
+
+.fsafego-sevices-text>a p,
+.fsafego-sevices-text .fsafego--items p a,
+.fsafego-sevices-text .fsafego--items p a:hover {
+    color: #888888;
+    text-decoration: none;
+}
+
+.fsafego-sevices-text .fsafego--items {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 33.333%;
+    max-width: 29%;
+    box-sizing: border-box;
+}
+
+.fsafego-sevices-text .fsafego--items .fsafego--icon img{
+    margin-bottom: 20px;
+    width: 48px;
+}
+
+
+.fsafego-sevices-text .fsafego--items h5 {
+    color: #3D3D3D;
+    line-height: 34px;
+    font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.fsafego-sevices-text p {
+    margin-bottom: 0;
+}
+.new-title-label p.color-black {
+    color: #000000;
+}
+.new-title-label p .link,
+.new-title-label p .link:hover{
+    color: #4564ED;
+    text-decoration: none;
+}
+.new-title-label span {
+    color: #3D3D3D;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    margin-top: 16px;
+    display: block;
+}
+.fsafe-block--fullwidth {
+    width: 100%;
+}
+.fsafe-block--fullwidth .img--full-width {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+.fsafe-block--fullwidth .text--center {
+    text-align: center;
+}
+.fsafe-block--fullwidth .link-download-app {
+    font-size: 24px;
+    line-height: 33.6px;
+    color: #3D3D3D;
+    font-weight: 400;
+    margin: 36px 0 0;
+}
+.fsafe-block--fullwidth .link-download-app a,
+.fsafe-block--fullwidth .link-download-app a:hover {
+    color: #4564ED;
+    text-decoration: none;
+}
+@media screen and (min-width: 1440px) {
+    .container.container-service {
+        width: 1420px;
+        max-width: 1420px;
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+@media screen and (min-width: 1500px) {
+    .container.container-service {
+        width: 1440px;
+        max-width: 100%;
+    }
+}
+/* 1440 */
+@media (max-width: 1440px) {
+    .fsafego-sevices-text {
+        gap: 56px 74px;
+    }
+}
+/* 1280 */
+@media (max-width: 1280px) {
+    .fsafego-sevices-text {
+        gap: 56px calc(2vw + 40px);
+        padding: 0 15px;
+    }
+}
+
+/* 1024 */
+@media (max-width: 1024px) {
+    .container.container-service {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    .fsafego-sevices-text {
+        gap: 40px calc(2vw + 40px);
+        padding: 0 15px;
+    }
+}
+@media (max-width: 992px) {
+    
+    .fsafego-sevices-text .fsafego--items {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 33.333%;
+        max-width: 45%;
+        box-sizing: border-box;
+    }
+    .fsafe-block--fullwidth .link-download-app {
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+@media (max-width: 768px) {
+
+    .fsafego-sevices-text .fsafego--items {
+        flex: 1 1 100%;
+        /* Mỗi item chiếm 100% chiều rộng */
+    }
+    .fsafego-sevices-text .fsafego--items h5 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .fsafe-block--fullwidth .link-download-app {
+        font-size: 18px;
+        line-height: 25px;
+    }
+}
+@media (max-width: 540px) {
+    .fsafego-sevices-text .fsafego--items {
+        max-width: 100%;
+    }
+    .fsafego-sevices-text .fsafego--items {
+        max-width: 100%;
+        display: inline-block;
+    }
+    .fsafego-sevices-text .fsafego--items .fsafego--icon {
+        width: 48px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    .fsafego-sevices-text .fsafego--items .fsafego--icon img{
+        width: 32px;
+    }
+    .fsafego-sevices-text .fsafego--items .div-text {
+        display: inline-block;
+        width: calc(100% - 52px);
+    }
+    .fsafego-sevices-text {
+        gap: 32px 0;
+    }
+    .fsafe-block--fullwidth {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .fsafe-block--fullwidth .link-download-app {
+        font-size: 16px;
+        line-height: 22px;
+        margin-top: 24px;
+    }
+    .new-title-label span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    .fsafego-sevices-text .fsafego--items h5 {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .new-title-label .border-top {
+        border-top: 0;
+        padding-top: 20px;
+    }
+}

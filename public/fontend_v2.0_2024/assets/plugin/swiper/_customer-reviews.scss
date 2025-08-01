@@ -1,0 +1,307 @@
+// button swiper
+.parents_customer_reviews {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+        -webkit-border-radius: 90px;
+        -moz-border-radius: 90px;
+        border-radius: 90px;
+        background: rgba(255, 255, 255, .7) url('../images/owl-arrow-right.svg') no-repeat center center / 26px;
+        right: -25px;
+        // thiết kế không có nút next - prev
+        display: none;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        transform: rotate(180deg);
+        right: unset;
+        left: -25px;
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        pointer-events: unset;
+        display: none;
+    }
+
+    .swiper-button-disabled.swiper-button-lock {
+        display: none !important;
+    }
+}
+
+// end button swiper
+
+
+
+
+.swiper {
+    &.sw-customer-reviews {
+        max-width: 1920px;
+        height: auto;
+        min-height: 100px;
+        margin: 0 auto;
+        .swiper-wrapper {
+            // bo sung
+            display: flex;
+            align-items: stretch; /* Căng đều các slide theo chiều cao */
+            transition: all 0.2s ease-out 0.05s;
+            // transform: translate3d(-10%, 0px, 0px) !important;
+            // left: -7%;
+            @media screen and (max-width: 1366px) {
+                // left: -18.5%;
+            }
+            @media screen and (max-width: 1280px) {
+                // left: -25%;
+            }
+            @media screen and (max-width: 1114px) {
+                // left: -37.5%;
+            }
+            @media screen and (max-width: 1024px) {
+                // left: -38.5%;
+            }
+            @media screen and (max-width: 992px) {
+                // left: -44%;
+            }
+            @media screen and (max-width: 820px) {
+                // left: -43.5%;
+            }
+            @media screen and (max-width: 768px) {
+                // left: -49.5%;
+            }
+            @media screen and (max-width: 540px) {
+                // left: 0;
+            }
+        }
+        .swiper-slide {
+            // bo sung 
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            // end bo sung 
+            .cards {
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                // width: 100%;
+                position: relative;
+                padding: 10px 10px 20px;
+
+                // bo sung 
+                flex-grow: 1; /* Kéo dài để lấp đầy chiều cao của slide */
+                display: flex;
+                flex-direction: column;
+                // end bo sung 
+
+                @media screen and (max-width: 540px) {
+                    padding: 10px 6px 20px;
+                }
+                .card_info {
+                    background: #F7F7F8;
+                    border: 1px solid #f3f3f3;
+                    border-top: 0;
+                    padding: 40px;
+                    -webkit-border-radius: 32px;
+                    -moz-border-radius: 32px;
+                    border-radius: 32px;
+                    // box-shadow: 0px 3px 3px -1.5px #0A0D120A;
+                    // box-shadow: 0px 8px 8px -4px #0A0D1208;
+                    // box-shadow: 0px 3px 12px 5px #0A0D1214;
+                    box-shadow: 0px 22px 18px -21px rgba(0, 0, 0, 0.15);
+
+                    // bo sung 
+                    flex-grow: 1; /* Đảm bảo nội dung bên trong giãn đều */
+                    display: flex;
+                    flex-direction: column;
+                    // end bo sung 
+                    @media screen and (max-width: 540px) {
+                        padding: 12px;
+                        -webkit-border-radius: 8px;
+                        -moz-border-radius: 8px;
+                        border-radius: 8px;
+                    }
+
+                    .cus-info {
+                        display: flex;
+                        margin-bottom: 24px;
+                        color: #3D3D3D;
+                        font-weight: 500;
+                        font-size: 24px;
+                        line-height: 40px;
+                        align-items: center;
+                        @media screen and (max-width: 1114px) {
+                            font-size: 23px;
+                            line-height: 38px;
+                        }
+                        @media screen and (max-width: 768px) {
+                            font-size: 15px;
+                            line-height: 24px;
+                            margin-bottom: 18px;
+                        }
+                        @media screen and (max-width: 540px) {
+                            font-size: 14px;
+                            line-height: 22px;
+                            margin-bottom: 12px;
+                        }
+
+                        .avatar {
+                            width: 80px;
+                            height: 80px;
+                            object-fit: cover;
+                            object-position: 50% 50%;
+                            margin-right: 15px;
+                            -webkit-border-radius: 50%;
+                            -moz-border-radius: 50%;
+                            border-radius: 50%;
+                            @media screen and (max-width: 1114px) {
+                                width: 72px;
+                                height: 72px;
+                            }
+                            @media screen and (max-width: 768px) {
+                                width: 68px;
+                                height: 68px;
+                            }
+                            @media screen and (max-width: 540px) {
+                                width: 36px;
+                                height: 36px;
+                            }
+                        }
+                        .cus-location {
+                            color: #888888;
+                            font-weight: 400;
+                            font-size: 16px;
+                            line-height: 22px;
+                            margin: 0;
+                            @media screen and (max-width: 768px) {
+                                font-size: 14px;
+                            }
+                            @media screen and (max-width: 540px) {
+                                font-size: 12px;
+                            }
+                        }
+
+                    }
+
+                    .desc {
+                        color: #3D3D3D;
+                        font-weight: 400;
+                        font-size: 20px;
+                        line-height: 28px;
+                        text-align: justify;
+                        margin: 0;
+                        @media screen and (max-width: 1114px) {
+                            font-size: 19px;
+                        }
+                        @media screen and (max-width: 768px) {
+                            font-size: 17px;
+                            line-height: 24px;
+                        }
+                        @media screen and (max-width: 540px) {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+                    }
+                }
+
+            }
+        }
+
+        // custom dành cho bài viết liên quan
+        &.sw-article {
+            .swiper-slide .cards {}
+
+        }
+    }
+}
+
+
+////////////////////////
+
+
+.js_customer_reviews_center {
+    justify-content: center;
+    padding-left: 12px;
+}
+@media screen and (min-width: 1440px) {
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 1439px) {
+    .swiper.sw-customer-reviews {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1366px) {
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 42vw;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 44vw;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 49.5vw;
+    }
+
+    .parents_customer_reviews .swiper-button-next,
+    .parents_customer_reviews .swiper-button-prev {
+        display: none;
+    }
+
+    .js_customer_reviews_center {
+        padding-left: 8px;
+    }
+
+    
+}
+@media screen and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 820px) {
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 59vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .parents_customer_reviews .swiper-button-next,
+    .parents_customer_reviews .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 62vw;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .parents_customer_reviews {
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .swiper.sw-customer-reviews .swiper-slide {
+        width: 75vw;
+    }
+
+    .swiper.sw-customer-reviews .swiper-slide .cards {}
+}

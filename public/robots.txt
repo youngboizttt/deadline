@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /vi/tim-kiem/*
+Disallow: /en/search/*
+Disallow: /index.php/
+Sitemap: https://fpt.vn/sitemap.xml

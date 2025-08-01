@@ -1,0 +1,137 @@
+.threat-section {
+    display: flex;
+    flex-direction: row;
+    gap: 142px;
+    padding: 80px 0 0;
+    align-items: center;
+}
+
+.threat-section>img {
+    max-width: 469px;
+    max-height: 417px;
+    width: 50%;
+    object-fit: contain;
+}
+
+.threat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+.threat-title {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: var(--primary, #3d3d3d);
+}
+
+.threat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.threat-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.threat-item {
+    display: flex;
+    flex-direction: row;
+    gap: 28.17px;
+    flex: 1 1 50%;
+}
+
+.threat-item .icon {
+    width: 48px;
+    height: 48px;
+}
+
+.threat-item .content {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.threat-item .content .title {
+    font-size: 20px;
+    font-weight: 590;
+    line-height: 28px;
+    color: var(--primary, #3d3d3d);
+}
+
+.threat-item .content .description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--primary, #3d3d3d);
+}
+
+@media only screen and (max-width: 1599.98px) {
+    .threat-section {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1439.98px) {
+    .threat-section {
+        width: 100%;
+        padding: 40px 16px;
+    }
+}
+
+@media only screen and (max-width: 1399.98px) {
+    .threat-item-container {
+        flex-direction: column;
+        gap: 32px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .threat-section {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .threat-content {
+        gap: 24px;
+    }
+
+    .threat-title {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .threat-list {
+        gap: 16px;
+    }
+
+    .threat-item-container {
+        gap: 16px;
+    }
+
+    .threat-item {
+        gap: 24px;
+    }
+
+    .threat-item .icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .threat-item .content .title {
+        font-size: 16px;
+        line-height: 22px;
+    }
+}
+
+@media only screen and (max-width: 575.98px) {
+    .threat-section>img {
+        width: 100%;
+        max-height: 285px;
+    }
+}

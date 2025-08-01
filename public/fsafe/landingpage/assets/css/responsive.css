@@ -1,0 +1,190 @@
+/* 
+
+
+File:           CSS Base
+Version:        1.1
+Last change:     
+Author:        HTMLmate
+
+*/
+
+
+/*-------- css code for responsive layout  --------*/
+
+
+/*  To make Responsive
+---------------------------------------------------------------------- /
+*   1 - media screen and (max-width: 1199px)
+*   2 - media screen and (max-width: 991px)
+*   3 - media screen and (max-width: 767px)
+*   4 - media screen and (max-width: 680px)
+*   5 - media screen and (max-width: 480px)
+*
+---------------------------------------------------------------------- 
+
+
+/*  1 - media screen and (max-width: 1199px)
+------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1199px) {}
+
+@media screen and (max-width: 1024px) {
+    .slide_1_1 {
+        margin-bottom: 0px;
+    }
+    .slide_1_1 .col-left {
+        padding-top: 180px;
+    }
+    .slide_1_1 .width {
+        height: 470px;
+    }
+    .slide_1_1 .col-text {
+        padding-top: 70px;
+    }
+    .not-slide .col-text {
+        padding-top: 70px;
+    }
+    .slide_1_1.with_slide_left .col-text {
+        padding-top: 30px
+    }
+    .not-slide .col-text-left {
+        padding-top: 30px
+    }
+    .not-slide .col-text.bullet {
+        padding-top: 0px
+    }
+}
+
+
+/* end 1024 */
+
+@media screen and (max-width: 991px) {}
+
+@media screen and (max-width: 768px) {
+    .slide_1_1 {
+        margin-bottom: 99px;
+    }
+    .slide_1_1 .width {
+        height: auto
+    }
+    .slide_1_1 .col-left {
+        padding-top: 0;
+        text-align: center;
+        margin-bottom: 37px;
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+    #custom-slide_1_1 .owl-dots {
+        bottom: -60px
+    }
+    #custom-slide_1_1.owl-carousel .owl-item img {
+        margin-left: auto;
+        margin-right: auto;
+        width: auto;
+    }
+    .slide_1_1 .col-slide,
+    .slide_1_1 .col-text {
+        padding-left: 0;
+        padding-right: 0;
+        display: inline-block;
+    }
+    .slide_1_1 .col-text {
+        padding-top: 10px;
+    }
+    .slide_1_1 .col-slide {
+        margin-bottom: 90px;
+    }
+    .not-slide .col-text {
+        padding-top: 45px;
+    }
+    .slide_1_1.with_slide_left .col-text {
+        padding-top: 10px;
+    }
+    .slide_1_1.with_slide_left .col-slide {
+        padding-left: 0px;
+        padding-right: 0;
+    }
+    .not-slide .col-img-right {
+        float: unset;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .not-slide .col-img-right img,
+    .section_1 .not-slide img,
+    ._fix_pad img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+    .col-text._row_img_2 {
+        padding-left: 0px
+    }
+    .not-slide .col-text.bullet {
+        padding-left: 0px;
+        padding-top: 30px;
+    }
+    .not-slide .col-text-left._row_img_1,
+    .col-text._row_img_1 {
+        padding-right: 0;
+    }
+}
+
+
+/*end 768px ___________________________________________________*/
+
+@media screen and (max-width: 767px) {}
+
+@media screen and (max-width: 580px) {}
+
+@media screen and (max-width: 540px) {
+    .banner-area-head .banner-text-content {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .slide_1_1 .col-left {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .slide_1_1 .width {
+        height: 750px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .slide_1_1 {
+        /* margin-bottom: 70px; */
+        margin-bottom: 0px;
+    }
+    .slide_1_1 .width {
+        height: 686px;
+        height: auto;
+        padding-bottom: 25px;
+    }
+    .slide_1_1 .col-left {
+        padding-top: 0;
+        text-align: center;
+        margin-bottom: 37px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .slide_1_1 .col-right {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #custom-slide_1_1 .owl-dots {
+        bottom: -50px;
+    }
+}
+
+
+/*end 479px ____________________________________________________*/
+
+@media screen and (max-width: 420px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 375px) {}
+
+@media screen and (max-width: 360px) {}
+
+@media screen and (max-width: 320px) {}

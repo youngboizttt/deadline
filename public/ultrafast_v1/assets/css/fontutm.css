@@ -1,0 +1,44 @@
+@font-face {
+  font-family: 'UTM Neo Sans IntelBold_Italic';
+  src: url('fontsutm/UTM Neo Sans IntelBold_Italic.eot');
+  src: url('fontsutm/UTM Neo Sans IntelBold_Italic.eot?#iefix') format('embedded-opentype'),
+    url('fontsutm/UTM Neo Sans IntelBold_Italic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMNeoSansIntel-BoldItalic';
+  src: url('fontsutm/UTMNeoSansIntel-BoldItalic.svg#UTMNeoSansIntel-BoldItalic') format('svg'),
+    url('fontsutm/UTMNeoSansIntel-BoldItalic.ttf') format('truetype'),
+    url('fontsutm/UTMNeoSansIntel-BoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMNeoSansIntel';
+  src: url('fontsutm/UTMNeoSansIntel.svg#UTMNeoSansIntel') format('svg'),
+    url('fontsutm/UTMNeoSansIntel.ttf') format('truetype'),
+    url('fontsutm/UTMNeoSansIntel.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTMNeoSansIntel-Italic';
+  src: url('fontsutm/UTMNeoSansIntel-Italic.svg#UTMNeoSansIntel-Italic') format('svg'),
+    url('fontsutm/UTMNeoSansIntel-Italic.ttf') format('truetype'),
+    url('fontsutm/UTMNeoSansIntel-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'UTM Neo Sans IntelBold';
+  src: url('fontsutm/UTMNeoSansIntelBold.svg#UTMNeoSansIntelBold') format('svg'),
+    url('fontsutm/UTMNeoSansIntelBold.ttf') format('truetype'),
+    url('fontsutm/UTMNeoSansIntelBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

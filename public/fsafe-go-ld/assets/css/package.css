@@ -1,0 +1,286 @@
+.package-section {
+    padding-top: 80px;
+    gap: 80px;
+}
+
+.package-section .tooltip-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+}
+
+.package-section .tooltip-container .icon-info {
+    font-size: 16px;
+    font-weight: 400;
+    color: #888888;
+}
+
+.package-section .tooltip-container img {
+    width: 16px;
+    height: 16px;
+}
+
+.package-section .tooltip-text {
+    visibility: hidden;
+    background-color: #fff;
+    color: #888;
+    padding: 11px 13px;
+    box-shadow: 0px 1px 7px 0 rgba(22, 22, 26, 0.1);
+    line-height: 20px;
+    position: absolute;
+    bottom: 37px;
+    right: -21px;
+    width: calc(3vw + 220px);
+    z-index: 9;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+.package-section .tooltip-container:hover .tooltip-text {
+    visibility: visible;
+}
+
+.package-section .tooltip-container:hover::after {
+    position: absolute;
+    content: '';
+    width: 39px;
+    height: 20px;
+    bottom: 17px;
+    left: calc(50% + 4px);
+    background: url('../../assets/images/tooltip-shape1.png') no-repeat center top / 39px 20px;
+    z-index: 10;
+}
+
+.package-container {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.package-container .swiper-button-next,
+.package-container .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 90px;
+    background: rgba(255, 255, 255, 0.7) url(../../assets/images/owl-arrow-right.svg) no-repeat center center / 26px;
+}
+
+.package-container .swiper-button-prev {
+    transform: rotate(180deg);
+    left: -25px;
+}
+
+.package-container .swiper-button-next {
+    right: -25px;
+}
+
+.package-container .swiper-button-next::after,
+.package-container .swiper-button-prev::after {
+    display: none;
+}
+
+.package-item {
+    flex: 1 1 25%;
+    border-radius: 8px;
+    border: 1px solid #d1d1d1;
+    overflow: hidden;
+    min-width: 262px;
+}
+
+.package-item>img {
+    width: 100%;
+}
+
+.package-item .info {
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background: linear-gradient(180deg, #F5F5F5 0%, #FFFFFF 50.13%);
+}
+
+.package-item .info .header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.package-item .info .header h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44.8px;
+    color: var(--primary, #3d3d3d);
+    text-align: center;
+}
+
+.package-item .info .header>span {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+    color: var(--primary, #3d3d3d);
+    text-align: center;
+}
+
+.package-item .info .body {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.package-item .info .body span {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: var(--primary, #3d3d3d);
+    background: url('../../assets/images/tick-circle.svg') left top no-repeat;
+    background-size: 24px;
+    padding-left: 32px;
+}
+
+.package-item .info .footer {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.package-item .info .footer a {
+    font-size: 16px;
+    font-weight: 510;
+    line-height: 22.4px;
+}
+
+.package-item .info .footer a.button {
+    color: var(--neutral100, #ffffff);
+    background: var(--BluePrimary, #4564ED);
+    text-align: center;
+    width: 100%;
+    padding: 8px 12px;
+    transition: transform .4s;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background-size: 300% 100%;
+    -moz-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 1280px) {
+    .tooltip-text {
+        width: 260px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tooltip-text {
+        width: 270px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .tooltip-text {
+        width: 280px;
+    }
+
+    .new-title-label {
+        padding-bottom: 48px;
+    }
+}
+
+@media screen and (max-width: 539px) {
+    .tooltip-text {
+        width: calc(100% + 12px);
+        right: -14px;
+    }
+}
+
+@media only screen and (max-width: 1599.98px) {
+    .package-section {
+        width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1439.98px) {
+    .package-section {
+        width: 100%;
+        padding: 40px 16px;
+    }
+
+    .package-container {
+        margin: 0 24px;
+    }
+}
+
+@media only screen and (max-width: 1399.98px) {
+    .package-container {
+        margin: 0;
+        overflow-x: auto;
+    }
+
+    .package-container::-webkit-scrollbar {
+        display: none;
+    }
+
+    .package-container .swiper-button-next,
+    .package-container .swiper-button-prev {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .package-item .info {
+        padding: 16px;
+        gap: 16px;
+    }
+
+    .package-item .info .header {
+        gap: 12px;
+    }
+
+    .package-item .info .header h3 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .package-section .tooltip-container .icon-info {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .package-section .tooltip-container img {
+        width: 12px;
+        height: 12px;
+    }
+
+    .package-item .info .header>span {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .package-item .info .body {
+        gap: 8px;
+    }
+
+    .package-item .info .body span {
+        font-size: 14px;
+        line-height: 20px;
+        background-size: 20px;
+        padding-left: 28px;
+    }
+}

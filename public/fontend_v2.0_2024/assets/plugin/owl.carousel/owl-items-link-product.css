@@ -1,0 +1,189 @@
+.owl-carousel.custom-link-products .top .img {
+    text-align: center;
+    padding-bottom: 21px;
+    padding-top: 25px;
+}
+
+.owl-carousel.custom-link-products .top .img1 img {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.owl-carousel.custom-link-products .col-data {
+    /* box-shadow: 0 0 12px 2px rgba(0, 0, 0, 0.0); */
+    width: calc(100% - 18px);
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.owl-carousel.custom-link-products .col-data:hover {
+    /* box-shadow: 0 7px 12px 2px rgba(0, 0, 0, 0.09); */
+}
+
+.owl-carousel.custom-link-products .col-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    background: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.owl-carousel.custom-owl-center {
+    /* background: blue; */
+}
+.container.block-link-products {
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+
+
+    
+}
+.owl-carousel.custom-link-products{
+    /* xử lý img có thước đúng độ rộng trong block */
+    height: 360px;
+    overflow: hidden;
+}
+
+
+
+
+.owl-carousel .owl-next,
+.owl-carousel .owl-prev {
+    width: 50px !important;
+    height: 50px !important;
+    line-height: 44px;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 25px);
+    font-size: 33px;
+    color: #000;
+    border: 1px solid rgb(70, 70, 70, .3);
+    text-align: center;
+}
+.owl-carousel .owl-nav [class*='owl-'] {
+    transition: all .3s ease;
+}
+
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #D6D6D6;
+}
+
+.home-net.owl-carousel .owl-nav .owl-next,
+.home-net.owl-carousel .owl-nav .owl-prev {
+    border: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, .6);
+    box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+}
+.nav-owl.arrow-left,
+.nav-owl.arrow-right {
+    background: url('../../images/owl-arrow-right.svg') no-repeat center center / 100% 100%;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.nav-owl.arrow-left {
+    transform: rotate(180deg);
+}
+.owl-carousel .owl-nav [class*='owl-'].disabled,
+.owl-carousel .owl-nav [class*='owl-'].disabled:hover {
+    background-color: #ebebeb;
+    opacity: 0.4;
+    /* background: red; */
+}
+/* responsive */
+
+@media screen and (max-width: 1280px) {
+    .owl-carousel.custom-link-products .top .img1 img {
+    }
+
+    .owl-carousel.custom-link-products .top .img {
+        padding-bottom: 10px;
+        padding-top: 16px;
+    }
+
+    .owl-carousel.custom-link-products.package-suggest .top .img1 img {
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .container.block-link-products {
+        width: 1366px;
+        max-width: 1366px;
+    }
+}
+/* end 1400px */
+@media screen and (min-width: 1500px) {
+    .container.block-link-products {
+        width: 1440px;
+        max-width: 1440px;
+    }
+}
+ 
+@media screen and (max-width: 1024px) {
+
+    .owl-carousel.custom-link-products {
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .owl-carousel.custom-owl-center.custom-link-products .owl-next,
+    .owl-carousel.custom-owl-center.custom-link-products .owl-prev {
+        display: none;
+    }
+    .owl-carousel.custom-link-products .top .img1 img {
+
+    }
+}
+@media screen and (max-width: 767px) {
+
+    .owl-carousel.custom-link-products {
+        max-width: 510px;
+    }
+    .owl-carousel.custom-link-products .top .img1 img {
+        max-width: 187px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-height: 750px) and (-webkit-min-device-pixel-ratio: 2) {
+    .owl-carousel.custom-link-products {
+        /* max-width: 480px; */
+    }
+}
+@media screen and (max-width: 540px) {
+    .container.block-link-products {
+        /* nếu file js: stagePadding: 60 >> thì css: width: calc(100% + 30px); */
+        width: calc(100% + 29px);
+        max-width: calc(100% + 29px);
+        margin-left: -45px;
+    }
+    .owl-carousel.custom-link-products {
+        max-width: 100%;
+    }
+    .owl-carousel.custom-link-products .top .img1 img {
+        max-width: 161px;
+    }
+    .owl-carousel.custom-link-products .col-data {
+        margin-bottom: 0;
+    }
+    .owl-carousel.custom-link-products .owl-item {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+/* doan add */

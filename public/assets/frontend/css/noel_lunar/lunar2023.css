@@ -1,0 +1,417 @@
+/* top nav */
+.secondary-link{
+    /* background: #B51A22; */
+    background: linear-gradient(269.23deg, #CC000B -13.67%, #790000 118.05%);
+}
+.secondary-link a{
+    color: rgba(255,255,255, 0.7);
+}
+/* style logo */
+.nav-brand>.logo{
+    position: relative;
+    width: 106px;
+    height: 70px;
+}
+.nav-brand>.logo img{
+    display: none;
+}
+.nav-brand>.logo:after{
+    content: '';
+    position: absolute;
+    background: url('../../img/lunar/2023/xmas-top-icon.svg') top left no-repeat;
+    background-size: 93px auto;
+    top: 17px;
+    left: -4px;
+    width: 93px;
+    height: 32px;
+    z-index: 9;
+    display: none;
+}
+.nav-brand>.logo::before{
+    content: '';
+    position: absolute;
+    background: url('../../img/lunar/2023/logo_lunar.svg') top center no-repeat;
+    background-size: 120px auto;
+    top: 8px;
+    left: -2px;
+    width: 131px;
+    height: 50px;
+    z-index: 7;
+}
+/* footer.footer */
+footer.footer{
+    padding-top: 220px;
+    background: #830707 url('../../img/lunar/2023/luna_bg_foot.svg') center 40px repeat;
+    background-size: 120%;
+    position: relative;
+}
+footer.footer::before{
+    content: '';
+    width: 100%;
+    height: 300px;
+    background: url('../../img/lunar/2023/lunar_foot_1.png') center top repeat-x;
+    background-size: auto;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+footer.footer .row-fptlogo{
+    border-bottom: 0px solid transparent;
+}
+.owl-carousel.slide-logo .owl-next, .owl-carousel.slide-logo .owl-prev{
+    color: #fff;
+}
+
+.link-footer a, .accordion-link-foot-content a{
+    color: #fff;
+}
+.link-footer a:hover, .accordion-link-foot-content a:hover{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255, 0.8);
+}
+.title-footer-item{
+    color: #fff;
+    font-weight: 600;
+}
+.title-footer-item:hover a{
+    color: rgba(255,255,255, 0.8);
+}
+.accordion-link-foot a,
+.license-text p,
+.foot-hotline,
+footer.footer .row-link-foot div:first-child p{
+    color: #fff;
+}
+
+.foot-hotline:hover{
+    color: rgba(255,255,255, 0.7);
+}
+[id*="open-accordion"]:after, [id*="close-accordion"]:after{
+    width: 16px;
+    height: 17px;
+    margin-left: 8px;
+    display: inline-block;
+    background: none;
+    background-color: #fff; /* defines the background color of the image */
+    mask: url('../../../assetv2/images/arrow.svg') no-repeat center / contain;
+    -webkit-mask: url('../../../assetv2/images/arrow.svg') no-repeat center / contain;
+}
+
+#back-to-top.show::after{
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255, 0.7);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.logo-fpt-footer,
+.logo-fpt-footer:hover{
+    width: 118px;
+    height: 40px;
+    background: none;
+    display: block;
+    display: inline-block;
+    background-color: #fff !important; /* defines the background color of the image */
+    mask: url('../../../../assets/frontend/img/footer_logo.svg') no-repeat center / contain;
+    -webkit-mask: url('../../../../assets/frontend/img/footer_logo.svg') no-repeat center / contain;
+}
+.logo-fpt-footer img{
+    opacity: 0;
+}
+footer.footer .row-fptlogo{
+    margin-bottom: 0;
+}
+.secondary-link .row-headmenu{
+    position: relative;
+}
+
+/* custom menu */
+.nav-menu > li > a, 
+.megamenu-list > li.megamenu-list-title > a{
+    font-size: 15px;
+}
+.nav-menu > li > a{
+    padding: 25px 10px;
+}
+/* khách hàng doanh nghiệp */
+footer.footer.footer-enterprise{
+    padding-top: 275px !important;
+    color: #fff;
+}
+.footer-enterprise .four-column-footer ul>li>a,
+.wrap-follow>a{
+    color: #fff;
+}
+.four-column-footer ul>li>a:hover{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255, 0.8);
+}
+.enterprise-footer-block,
+.enterprise-footer-block p{
+    color: #fff !important;
+}
+.wrap-follow>a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+.enterprise-footer-block .foot-hotline,
+.enterprise-footer-block a{
+    color: rgba(255,255,255, 1);
+}
+.enterprise-footer-block .foot-hotline:hover,
+.enterprise-footer-block a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+/* // khách hàng doanh nghiệp */
+
+
+/* responsive */
+@media screen and (min-width: 1921px){
+    .secondary-link .row-headmenu::after{
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 82px;
+        background: url('../../img/lunar/2023/top_left.svg') center -50px no-repeat;
+        background-size: 100%;
+        left: -120px;
+        top: -8px;
+    }
+    .secondary-link .row-headmenu::before{
+        content: '';
+        position: absolute;
+        width: 105px;
+        height: 52px;
+        background: url('../../img/lunar/2023/top_right.svg') center -23px no-repeat;
+        background-size: 100%;
+        right: -148px;
+        top: -6px;
+    }
+
+    footer.footer{
+        padding-top: 220px;
+        background-position: center -6px;
+        background-size: 136%;
+    }
+    footer.footer::before{
+        height: 312px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 290px !important;
+    }
+}
+
+@media screen and (min-width: 2560px){
+    footer.footer {
+        padding-top: 220px;
+        background-position: center -4px;
+        background-size: 90%;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1920px){
+    .secondary-link .row-headmenu::after{
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 82px;
+        background: url('../../img/lunar/2023/top_left.svg') center -50px no-repeat;
+        background-size: 100%;
+        left: -120px;
+        top: -8px;
+        z-index: 9;
+    }
+    .secondary-link .row-headmenu::before{
+        content: '';
+        position: absolute;
+        width: 105px;
+        height: 56px;
+        background: url('../../img/lunar/2023/top_right.svg') center -23px no-repeat;
+        background-size: 100%;
+        right: -148px;
+        top: -6px;
+        z-index: 9;
+    }
+    footer.footer{
+        padding-top: 220px;
+        background-position: center 18px;
+        background-size: 135%;
+    }
+    footer.footer::before{
+        background-size: 150%;
+        height: 330px;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 250px !important;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .secondary-link .row-headmenu::after{
+        left: -96px;
+    }
+    .secondary-link .row-headmenu::before{
+        right: -96px;
+    }
+    footer.footer{
+        padding-top: 220px;
+        background-position: center 52px;
+        background-size: 128%;
+    }
+    footer.footer::before{
+        background-size: 136%;
+    }
+}
+@media(max-width:1366px) {
+    .secondary-link .row-headmenu{
+        width: calc(100% - 150px);
+    }
+    .secondary-link .row-headmenu::after{
+        left: -84px;
+        background-position: left -50px;
+        background-size: 66px;
+    }
+    .secondary-link .row-headmenu::before{
+        right: -110px;
+        background-position: left -23px;
+        background-size: 100px;
+    }
+    footer.footer {
+        padding-top: 190px;
+    }
+    footer.footer::before {
+        background-size: 148%;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 240px !important;
+    }
+}
+@media(max-width:1280px) {
+    .secondary-link .row-headmenu::after {
+        left: -91px;
+        background-position: 3px -66px;
+        background-size: 78px;
+        height: 78px;
+        width: 66px;
+    }
+    footer.footer {
+        padding-top: 168px;
+    }
+    footer.footer::before{
+        height: 220px;
+        background-size: 138%;
+    }
+}
+@media(max-width:1024px) {
+    footer.footer {
+        padding-top: 124px;
+    }
+    footer.footer::before {
+        height: 180px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 186px !important;
+    }
+    
+}
+@media(max-width:992px) {
+
+}
+@media(max-width:768px) {
+    .nav-brand>.logo::before{
+        top: 11px;
+        left: -11px;
+    }
+    footer.footer {
+        padding-top: 126px;
+        background-size: 160%;
+    }
+    footer.footer::before {
+        height: 150px;
+        background-size: 138%;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 126px !important;
+    }
+}
+@media(max-width:540px) {
+    .nav-brand>.logo:after{
+        left: -6px;
+    }
+    footer.footer {
+        padding-top: 120px;
+        background: #830707 url(../../img/lunar/2023/luna_bg_foot_m.svg) 138% 150px no-repeat;
+        background-size: 278px;
+    }
+    footer.footer::before{
+        background: url('../../img/lunar/2023/lunar_foot_m.png') left top no-repeat;
+        background-size: 100%;
+        height: 140px;
+    }
+    .license-text {
+        border-top: 1px solid rgba(255,255,255, 0.5);
+        border-bottom: 0px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 330px !important;
+    }
+}   
+@media(max-width:479px) {
+    footer.footer {
+        background-position: 150% 193px;
+    }
+    footer.footer::before {
+        background-position: -42px top ;
+        background-size: 115%;
+        height: 200px;
+    }
+    #back-to-top.show::after{
+        left: 9px;
+        top: 4px;
+        width: 36px;
+        height: 36px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 270px !important;
+    }
+}
+@media(max-width:430px) {
+    footer.footer {
+        background-position: 170% 193px;
+    }
+    footer.footer::before{
+        /* background-size: auto; */
+    }
+}
+@media(max-width:375px) {
+    footer.footer {
+        background-position: 210% 193px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 250px !important;
+    }
+}
+@media(max-width:320px) {
+    footer.footer {
+        background-position: 300% 132px;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 210px !important;
+    }
+}
+
+/* Noel 2022 - 21/12/2022 Dvh */

@@ -1,0 +1,88 @@
+.body-wrapper {
+    min-height: 300px;
+}
+.form-send-mail {
+    margin-top: 10px;
+}
+fieldset 
+{
+    border: 1px solid #ddd !important;
+    margin: 0;
+    xmin-width: 0;
+    padding: 10px;       
+    position: relative;
+    background-color:#f0f0f0;
+    padding-left:10px!important;
+}	
+
+legend
+{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom: 0px; 
+    width: 20%; 
+    border: 1px solid #ddd;
+    border-radius: 4px; 
+    padding: 5px 5px 5px 10px; 
+    background-color: #ffffff;
+}
+legend .legend-title {
+    text-align: center;
+    text-transform: uppercase;
+}
+.agree-box {
+    font-size: 1.4rem
+}
+.success {
+    font-weight: bold;
+    color: #4d9e48;
+}
+.failure {
+    font-weight: bold;
+    color: #c81c00;
+}
+.headline {
+    display: inline-block;
+    margin: 0 0 20px 0;
+    position: relative;
+    color: #f06e28;
+    text-transform: uppercase;
+    border-bottom: 2px solid #f06e28;
+}
+.hl-ico::before {
+    bottom: 5px;
+    width: 40px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    content: '';
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center top;
+}
+.hl-ico.hl-ico-info::before {
+    background-image: url('https://fpt.vn/shop/assets/home/images/icon/headline_thongtinchuhd.png');
+}
+.headline.hl-25 {
+    font-size: 1.6em;
+}
+.hl-ico {
+    padding: 0px 0 4px 50px;
+}
+.inside-content {
+    position: relative;
+}
+.pt10 {
+    padding-top: 10px;
+}
+.inner30 {
+    padding: 5px 30px;
+}
+.bg-rv {
+    background: #f0f0f0;
+}
+.mb-50 {
+    margin-bottom: 50px;
+}

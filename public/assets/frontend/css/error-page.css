@@ -1,0 +1,22 @@
+.error-page {
+    padding: 100px;
+    text-align: center;
+}
+
+.headline {
+    font-size: 50px;
+}
+
+.text-red {
+    color: #df6f21;
+}
+
+.body-wrapper {
+    min-height: 500px !important;
+}
+
+@media screen and (max-width: 540px) {
+    .error-page {
+        padding: 100px 20px;
+    }
+  }

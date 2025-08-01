@@ -1,0 +1,650 @@
+/* slide camera */
+.home-package.home-net.product-camera-slide .top .img1 {
+    background: #fff;
+    height: 348px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-camera-slide .top .img1 span {
+    width: 100%;
+    height: 100%;
+}
+
+.home-package.product-camera-slide .top .img1 span img {
+    width: auto;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+.home-package.home-net .col-data .middle.camera-price {
+    background: #F5F5F5;
+    padding: 16px;
+}
+
+.home-package.home-net.package-suggest.product-camera-slide .col-data .package-content {
+    padding-bottom: 0;
+}
+
+.owl-custom-default.owl-carousel .owl-prev {
+    left: -3px;
+}
+
+.owl-custom-default.owl-carousel .owl-next {
+    right: -7px;
+}
+
+.home-package.home-net .col-data .middle.camera-price h5 {
+    font-size: 16px;
+    line-height: 22px;
+    color: #3D3D3D;
+    margin-bottom: 4px;
+    text-align: left;
+}
+
+.home-package.home-net .col-data .middle.camera-price .link {
+    color: #888888;
+    line-height: 22px;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+    margin: 0;
+}
+
+.home-package.home-net .col-data .middle.camera-price .link:hover {
+    text-decoration: none;
+}
+
+.home-package.home-net .col-data .middle.camera-price .link small {
+    font-weight: 500;
+    color: #4564ED;
+    padding-left: 4px;
+}
+
+/* fpt medicare */
+.fmedicare-about h3 {
+    color: #3D3D3D;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    margin-bottom: 16px;
+}
+
+.fmedicare-about p {
+    color: #3D3D3D;
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.fmedicare-about-block .fmedicare-left {
+    width: 42%;
+    max-width: 42%;
+    padding-right: 40px;
+}
+
+.fmedicare-about-block .fmedicare-right {
+    width: 58%;
+    max-width: 58%;
+    padding-left: 40px;
+}
+
+
+.list--with-tickcheck {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.list--with-tickcheck li {
+    display: inline-block;
+    width: 49.5%;
+    margin: 0;
+    padding: 0;
+}
+
+.list--with-tickcheck li:nth-child(odd) {
+    padding-right: 12px;
+}
+
+.list--with-tickcheck li:nth-child(even) {
+    padding-left: 12px;
+}
+
+.list--with-tickcheck li>div {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 8px;
+}
+
+.list--with-tickcheck .span-img {
+    margin-right: 16px;
+}
+
+.list--with-tickcheck .span-img img {
+    vertical-align: top;
+}
+
+.list--with-tickcheck .text span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: #3D3D3D;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.list--with-tickcheck .text p {
+    margin: 0;
+    color: #888888;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+.fmedicare-about-block .btn--full-blue,
+.fmedicare-about-block .btn--full-blue:hover,
+.fmedicare-about-block .btn--full-blue:active,
+.fmedicare-about-block .btn--full-blue:focus {
+    width: 100%;
+    line-height: 48px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #fff;
+    padding: 0;
+    border: 0;
+    background: #4564ED;
+    display: inline-block;
+    text-align: center;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.fmedicare-about-block .btn--full-blue.show-mobile {
+    display: none;
+}
+
+#product-camera-slide.package-suggest .col-data .package-content {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+#product-camera-slide.owl-carousel .owl-item {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+#product-camera-slide.home-package.home-net.package-suggest {
+    margin-top: 0;
+}
+
+#product-camera-slide.home-package.home-net.package-suggest .col-data {
+    padding-top: 0;
+}
+
+#product-camera-slide.home-package.home-net.package-suggest .owl-item {
+    padding-top: 0;
+    padding-bottom: 17px;
+}
+
+.row-package-suggest .new-title-label.camera-slide-title p {
+    padding-bottom: 0;
+}
+
+.row-package-suggest .new-title-label.camera-slide-title {
+    padding-bottom: 40px;
+}
+
+
+
+
+/* page FPT Smart Home */
+.row-smarthome .smarthome--block-about {}
+
+.smarthome--block-about .block-about--img-about {
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+}
+
+.newbox-bg-white {
+    background: #fff;
+}
+
+.newbox--custom-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.newbox--padding-top {
+    padding-top: 80px;
+}
+
+.newbox--padding-bottom {
+    padding-bottom: 80px;
+}
+
+.classic-content.list-item-smarthome .img-radius {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #fff;
+}
+
+.list-item-smarthome .title-product {
+    text-align: center;
+    padding: 10px;
+    font-weight: 400;
+    display: block;
+    display: -webkit-box;
+    margin: 0 auto 8px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 30px;
+    line-height: 22.4px;
+    margin-bottom: 36px;
+}
+.list-item-smarthome .row--list-item-smarthome div:nth-child(odd) {
+    padding-right: 8px;
+}
+.list-item-smarthome .row--list-item-smarthome div:nth-child(even) {
+    padding-left: 8px;
+}
+
+.newbox-bg-gray {
+    background: #ebebeb;
+}
+
+.block--giaiphap-thongminh .box-img-left {
+    padding-left: 0;
+}
+
+.block--giaiphap-thongminh .box-img-right {
+    padding-right: 0;
+}
+
+.block--giaiphap-thongminh .box-img-left .img-style {}
+
+.block--giaiphap-thongminh .box-img-right .img-style {}
+
+.block--giaiphap-thongminh.box-radius {
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+}
+
+.block--giaiphap-thongminh .img-radius-16 {
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    border-radius: 24px;
+}
+
+.block--giaiphap-thongminh .title-head {
+    padding-bottom: 16px;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+}
+
+.block--giaiphap-thongminh .text-chieusang {
+    /* color: red; */
+    padding: 0 0 33px 0;
+}
+
+.block--giaiphap-thongminh .text-giaiphap-dieukhien {
+    /* color: red; */
+}
+
+.block--giaiphap-thongminh .text-giaiphap-anninh {
+    /* color: red; */
+    padding: 36px 0;
+}
+
+.block--giaiphap-thongminh .text-giaiphap-truyenhinh {
+    /* color: red; */
+    padding: 36px 0;
+}
+
+.block--giaiphap-thongminh .text-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 25px;
+    color: #000000;
+    margin-bottom: 12px;
+}
+
+.block--giaiphap-thongminh .bulllet {
+    font-size: 6px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.block-url-fptsmarthome {
+    padding-top: 40px;
+    margin-top: 40px;
+}
+.block-url-fptsmarthome p,
+.block-url-fptsmarthome a {
+    color: #2d2d2d;
+    font-size: 30px;
+    font-weight: 400;
+}
+.block-url-fptsmarthome a {
+    color: #e9590b;
+}
+.title-item-new {
+    display: flex;
+    align-items: center;
+    color: #ff6634;
+    padding: 5px 0;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+    padding: 0;
+
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 28px;
+
+}
+
+.smart-home--about-text {}
+
+.smart-home--about-text div {
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+}
+
+.smart-home--about-text p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25px;
+    margin-bottom: 4px;
+}
+
+.smart-home--title-center-black {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 16px;
+    margin-top: 10px;
+
+}
+.block--giaiphap-thongminh.tongquan_giaiphap ._text{
+    display: none;
+}
+.sh-bullet {
+    font-size: 5px;
+    vertical-align: middle;
+    margin-right: 8px;
+    margin-left: 8px;
+}
+.block--giaiphap-thongminh {
+    padding:0px;
+    min-height:200px;
+    margin-bottom:30px;
+}
+.giaiphap-dieukhien-flex {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+}
+/* responsive */
+@media screen and (max-width: 1366px) {
+
+    .row.fmedicare-about-block {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .home-package.package-suggest.product-camera-slide .top .img1 span img {
+        height: 100%;
+    }
+
+    .fmedicare-about h3 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+}
+
+/* 1024 */
+@media screen and (max-width: 1024px) {
+    .fmedicare-about-block .fmedicare-left {
+        width: 50%;
+        max-width: 50%;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .fmedicare-about-block .fmedicare-right {
+        width: 50%;
+        max-width: 50%;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .fmedicare-about h3 {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: 12px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #product-camera-slide.owl-carousel .owl-item {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .smart-home--title-center-black {
+        line-height: 40px;
+        font-size: 26px;
+    }
+    .newbox--padding-bottom {
+        padding-bottom: 40px;
+    }
+    
+    .newbox--padding-top {
+        padding-top: 40px;
+    }
+    .block--giaiphap-thongminh .text-giaiphap-truyenhinh {
+        padding-top: 0;
+    }
+    .block-url-fptsmarthome {
+        padding-top: 20px;
+        margin-top: 20px;
+    }
+    .block-url-fptsmarthome p,
+    .block-url-fptsmarthome a {
+        font-size: 24px;
+    }
+    /* end 768 */
+}
+
+@media screen and (max-width: 767px) {
+    .fmedicare-about-block .fmedicare-left {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 20px;
+    }
+
+    .fmedicare-about-block .fmedicare-right {
+        width: 100%;
+        max-width: 100%;
+        padding-left: 20px;
+    }
+
+    .fmedicare-about-block .btn--full-blue.show-mobile {
+        display: block;
+    }
+
+    .fmedicare-about-block .btn--full-blue.hide-mobile {
+        display: none;
+    }
+
+    .fmedicare-about-block .img-group-mobile {
+        margin-bottom: 30px;
+    }
+
+    .list--with-tickcheck {
+        margin-bottom: 24px;
+    }
+
+    .fmedicare-about h3 {
+        font-size: 24px;
+        line-height: 33px;
+        margin-bottom: 8px;
+    }
+
+    .fmedicare-about p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .list--with-tickcheck {
+        margin-top: 24px;
+    }
+
+    .pull-right.pad-bottom {
+        padding-bottom: 20px;
+    }
+    .tongquan_giaiphap {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .block--giaiphap-thongminh .box-img-left {
+        padding-right: 0;
+    }
+    .block--giaiphap-thongminh .box-img-left img{
+        width: 100%;
+    }
+    .block--giaiphap-thongminh .box-img-right {
+        padding-left: 0;
+    }
+    .block--giaiphap-thongminh .box-img-right img{
+        width: 100%;
+    }
+    .giaiphap-dieukhien-flex {
+        display: block;
+    }
+    .giaiphap-dieukhien-flex img {
+        margin-bottom: 24px;
+    }
+    .text-giaiphap-dieukhien{
+        margin-bottom: 24px;
+    }
+    .block--giaiphap-thongminh .text-chieusang {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+    .div--giaiphap-dieukhien img {
+        margin-bottom: 24px;
+    }
+    .div--giaiphap-dieukhien div:nth-last-of-type(1) img {
+        margin-bottom: 0;
+    }
+    .block--giaiphap-thongminh .text-giaiphap-anninh {
+        padding: 24px 0;
+    }
+    .block--giaiphap-thongminh .text-giaiphap-truyenhinh {
+        padding: 24px 0;
+    }
+    .block--giaiphap-thongminh .text-title {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 18px;
+
+    }
+    /* end 767 */
+}
+
+@media screen and (max-width: 540px) {
+
+    .fmedicare-about-block .fmedicare-left,
+    .fmedicare-about-block .fmedicare-right {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+
+    .list--with-tickcheck li {
+        width: 100%;
+        margin-bottom: 16px;
+    }
+
+    .list--with-tickcheck li:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    .list--with-tickcheck li:nth-child(even),
+    .list--with-tickcheck li:nth-child(odd) {
+        padding: 0;
+    }
+
+    #product-camera-slide.owl-carousel .owl-stage {
+        padding-left: 0 !important;
+    }
+
+    #product-camera-slide.owl-carousel.owl-custom-default {
+        max-width: 100%;
+    }
+
+    .container.container-home-net._camera-slide {
+        width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+    }
+
+    .home-package.home-net.product-camera-slide .top .img1 {
+        max-height: 258px;
+        height: auto;
+    }
+
+    .row-package-suggest .new-title-label.camera-slide-title h2 {
+        padding-top: 20px;
+    }
+
+    .container.container-home-net._camera-slide {
+        padding-left: 9px;
+        padding-right: 9px;
+    }
+
+
+    /* FPT Smart Home */
+    .row-smarthome .smarthome--block-about img {
+        margin-top: 20px;
+    }
+    .newbox--padding-bottom.row-smarthome {
+        padding-top: 0px;
+        padding-bottom: 40px;
+    }
+    .block--giaiphap-thongminh.tongquan_giaiphap ._text{
+        display: block;
+    }
+    .smart-home--title-center-black {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 32px;
+        text-align: left;
+
+    }
+}

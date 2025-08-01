@@ -1,0 +1,275 @@
+.lunar--head{
+	background: url(../img/lunar2019/head-mn.png) center top repeat;
+}
+.lunar--head .menu-secondary>li>a{
+	color: #fcb409;
+}
+.lunar--head .menu-secondary>li a.active {
+	color: #fff;
+}
+.lunar--head .nav .open>a,
+.lunar--head .nav .open>a:focus,
+.lunar--head .nav .open>a:hover,
+.menu-secondary>li.open>a, 
+.menu-secondary>li:hover>a{
+	border: none;
+	background-color: transparent;
+	background-color: transparent;
+	border-color: transparent;
+}
+.lunar--head .menu-active > a{
+	color: #fff !important
+
+}
+.lunar--head .navbar{
+	min-height: 68px;
+}
+.lunar--head .container{
+	position: relative;
+}
+.lunar--head .container .logo-bg{
+	position: absolute;
+	background: url(../img/lunar2019/logo-bg.png) center right no-repeat;
+	width: 700px;
+	height: 69px;
+	top: 0px;
+	left: -458px;
+	/*z-index: 9;*/
+}
+.lunar--head .container .pattern{
+	position: absolute;
+	background: url(../img/lunar2019/head-pattern.png) right top no-repeat;
+	background-size: 195px;
+	width: 195px;
+	height: 195px;
+	top: -45px;
+	left: -205px;
+	z-index: 10;
+}
+/*footer*/
+.lunar-footer{
+	background: url(../img/lunar2019/footer-bg.png) center top repeat;
+}
+.lunar-footer .title-footer-item{
+	color: #fcb409;
+}
+.lunar-footer .container{
+	position: relative;
+}
+.lunar-footer .container .style-1{
+	position: absolute;
+	left: -345px;
+	top: -50px;
+	background: url(../img/lunar2019/footer-1.png) center top no-repeat;
+	background-size: 390px;
+	width: 390px;
+	height: 467px;
+	z-index: 9;
+}
+.lunar-footer .container .style-2{
+	position: absolute;
+	right: -110px;
+	top: 0;
+	background: url(../img/lunar2019/footer-2.png) center top no-repeat;
+	background-size: 120px;
+	width: 120px;
+	height: 315px;
+	z-index: 9;
+}
+.lunar-footer .container .style-3{
+	position: absolute;
+	left: -50px;
+	bottom: -40px;
+	background: url(../img/lunar2019/footer-3.png) center top no-repeat;
+	background-size: 115px;
+	width: 115px;
+	height: 76px;
+	z-index: 9;
+}
+
+@media only screen and  (max-width: 1024px) {
+	.lunar--head .container .logo-bg{
+		left: -491px;
+	}
+	.lunar-footer .container .style-1{
+		left: -291px;
+		top: -50px;
+		background-size: 364px;
+		width: 364px;
+		height: 119px;
+	}
+	.lunar-footer .container .style-2{
+		right: -25px;
+		background-size: 92px;
+		width: 92px;
+		height: 211px;
+	}
+	.lunar--head .container .pattern{
+		background-size: 156px;
+		width: 156px;
+		height: 156px;
+		top: -28px;
+		left: -136px;
+	}
+}
+@media only screen and  (max-width: 768px) {
+	.lunar--head .container .logo-bg {
+		left: -539px;
+	}
+	.lunar--head .container .pattern{
+		left: -120px;
+	}
+	.lunar-footer .container .style-1{
+		left: -200px;
+		top: -50px;
+		background-size: 296px;
+		width: 296px;
+		height: 99px;
+	}
+	.lunar-footer .container .style-2{
+		right: 10px;
+		top: 123px;
+		background-size: 100px;
+		width: 100px;
+		height: 217px;
+	}
+}
+
+@media only screen and  (max-width: 479px) {
+	
+	.lunar--head:before{
+		/*content: ' ';*/
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 1;
+    background: url(../img/lunar2019/head-mn.png) center top repeat;
+    z-index: 1;
+	}
+
+	.lunar--head .search-query.form-control{
+		border: 1px solid #dc362c;
+	}
+	.lunar--head .container .logo-bg{
+		left: 103px;
+		height: 73px;
+		width: 214px;
+	}
+	.lunar--head .container .pattern{
+		left: 261px;
+		top: -12px;
+		width: 73px;
+		background-size: 125px;
+		height: 123px;
+	}
+	.lunar-footer .container .style-1{
+		left: -152px;
+		top: -30px;
+		background-size: 283px;
+		width: 283px;
+		height: 350px;
+	}
+	.lunar-footer .container .style-2{
+		background-size: 72px;
+		width: 72px;
+		height: 157px;
+		right: 4px;
+		top: 0px
+	}
+	.lunar-footer .container .style-3{
+		left: -32px;
+		bottom: -17px;
+		background-size: 83px;
+		width: 83px;
+		height: 61px;
+	}
+	.lunar--head .navbar-header>div{
+		border-right: 1px solid #d53127;
+	}
+
+	.lunar--head .navbar-header>div.logo-head-phone{
+		text-align: left;
+		padding-left: 5px;
+	}
+	.lunar--head .menu-customer-phone p{
+		color: #fcb409
+
+	}
+	.menu-customer-phone.show-arr:before{
+		border-top: #fcb409 9px solid
+	}
+	.lunar--head .info-customer-phone.show{
+		background: url(../img/lunar2019/head-mn.png) center top repeat;
+		margin-top: -2px;
+	}
+
+	.lunar--head .item-level-child .text-name{
+		color: #cacaca
+	}
+	.lunar--head .menu-secondary>li>a {
+    color: #fcb409;
+}
+.lunar--head .top-bar-info-customer li a, .lunar--head .ul-top-bar-support li span>a{
+	color: #cacaca
+}
+.lunar--head .top-bar-info-customer>ul{
+	border-top: 1px solid #dc362c ;
+}
+.lunar--head .top-bar-info-customer, 
+.lunar--head .info-customer-phone.show,
+.lunar--head .navbar-nav.menu-secondary>li>a,
+.lunar--head .navbar-menu-second>div.navbar-header
+{
+	border-bottom: 1px solid #dc362c ;
+}
+.lunar--head .info-customer-phone.show{
+	z-index: 8;
+}
+.mega-dropdown-menu>li{
+	border-bottom: 1px solid #dc362c;
+}
+}
+@media only screen and  (max-width: 375px) {
+	.lunar--head .container .logo-bg {
+    left: 94px;
+    width: 195px;
+}
+.lunar--head .container .pattern {
+    left: 231px;
+    top: -12px;
+    width: 74px;
+    background-size: 125px;
+    height: 125px;
+}
+}
+@media only screen and  (max-width: 360px) {
+	.lunar--head .container .logo-bg{
+		    left: 90px;
+    height: 73px;
+    width: 196px;
+	}
+	.lunar--head .container .pattern {
+    left: 227px;
+    top: -12px;
+    width: 64px;
+    background-size: 109px;
+}
+}
+@media only screen and  (max-width: 320px) {
+.lunar--head .container .logo-bg{
+		left: 80px;
+		height: 73px;
+		width: 169px;
+	}
+	.lunar--head .navbar-header>div.logo-head-phone .logo-head img{
+		width: 125px;
+		margin-top: 16px;
+	}
+	.lunar--head .container .pattern{
+		left: 184px;
+	}
+}

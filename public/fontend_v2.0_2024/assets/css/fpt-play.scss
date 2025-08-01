@@ -1,0 +1,682 @@
+.sec-about-fpt-play {
+    // background: #fa500d url('../images/fpt-play-bg.jpg') repeat-y top center;
+    background: #d72217 url('https://s3-api.fpt.vn/fptvn-storage/2025-06-09/1749455545_fpt-play-9-6-2025.jpg') no-repeat top center;
+
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .rowfull-margin {
+        padding: 0;
+    }
+
+    .row-img-head {
+        display: flex;
+        align-items: center;
+        margin-bottom: 80px;
+
+        .img-header {
+            height: auto;
+            margin: 0 auto;
+        }
+    }
+
+    .row-about {
+        .img-block {
+            height: auto;
+            margin: 0 auto;
+
+            img {
+                margin: 0 auto;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+            }
+        }
+
+        .title {
+            color: #fff;
+            font-size: 32px;
+            font-weight: 700;
+            line-height: 44px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .div-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .link {
+                line-height: 48px;
+                padding: 0 24px;
+                color: #fff;
+                font-size: 16px;
+                font-weight: 500;
+                background: #4564ED;
+                -webkit-border-radius: 8px;
+                -moz-border-radius: 8px;
+                border-radius: 8px;
+
+                &.mt {
+                    margin-top: 20px;
+                }
+            }
+        }
+
+        .items-rectangle {
+            display: flex;
+            gap: 32px;
+
+            .div-block {
+                display: flex;
+                flex-direction: column;
+                gap: 32px 0;
+
+                .item {
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: center;
+                    // align-items: center;
+                    background: #fff;
+                    -webkit-border-radius: 12px;
+                    -moz-border-radius: 12px;
+                    border-radius: 12px;
+                    padding: 40px;
+                    width: 336px;
+
+                    img {
+                        width: 44px;
+                        height: 44px;
+                        object-fit: cover;
+                        margin-bottom: 18px;
+                    }
+
+                    .h-title {
+                        color: #3D3D3D;
+                        font-size: 28px;
+                        font-weight: 700;
+                        line-height: 36px;
+                        margin-bottom: 24px;
+                    }
+
+                    p {
+                        color: #888888;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 22px;
+                        text-align: left;
+                        margin: 0;
+                    }
+                }
+
+                &.empty-block {
+                    padding-top: 275px;
+                }
+            }
+        }
+    }
+
+}
+
+// 1500
+@media screen and (max-width: 1536px) {
+    .sec-about-fpt-play .rowfull-margin {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .sec-about-fpt-play .rowfull-margin {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .sec-about-fpt-play .row-about .items-rectangle {
+        .div-block {
+            width: calc(50% - 16px);
+            width: 50%;
+
+            .item {
+                width: 100%;
+            }
+
+            &.empty-block {
+                width: calc(50% - 16px);
+                width: 50%;
+            }
+        }
+    }
+}
+
+//1366 
+@media screen and (max-width: 1366px) {
+    .sec-about-fpt-play .row-about .items-rectangle .div-block .item {
+        padding: 36px;
+    }
+}
+
+//1280
+@media screen and (max-width: 1280px) {
+    .sec-about-fpt-play .row-about .items-rectangle .div-block {
+        .item {
+            padding: 30px;
+        }
+
+        &.empty-block {
+            padding-top: 252px;
+        }
+    }
+}
+
+// 1200
+@media screen and (max-width: 1200px) {
+    .sec-about-fpt-play .row-about .items-rectangle .div-block .item {
+        padding: 20px;
+    }
+
+    .sec-about-fpt-play .row-about .items-rectangle .div-block.empty-block {
+        padding-top: 240px;
+    }
+}
+
+//1024
+@media screen and (max-width: 1024px) {
+    .sec-about-fpt-play .rowfull-margin .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .sec-about-fpt-play .row-about {
+        .items-rectangle {
+            width: 100%;
+            gap: 15px;
+
+            .div-block {
+                width: 50%;
+                gap: 15px 0;
+
+                .item {
+                    width: 100%;
+                    padding: 15px;
+
+                    img {
+                        margin-bottom: 12px;
+                    }
+
+                    .h-title {
+                        font-size: 22px;
+                        line-height: 26px;
+                        margin-bottom: 12px;
+                    }
+                }
+
+                &.empty-block {
+                    padding-top: 199px;
+                }
+            }
+        }
+
+        .title {
+            font-size: 28px;
+            line-height: 38px;
+        }
+    }
+
+    // .sec-about-fpt-play .row-about .items-rectangle .div-block.empty-block
+
+}
+
+@media screen and (max-width: 884px) {
+    .sec-about-fpt-play .row-about .items-rectangle {
+        width: 664px;
+        margin: 0 auto;
+        margin-top: 40px;
+
+        .div-block.empty-block {
+            padding-top: 130px;
+        }
+    }
+}
+
+//820
+@media screen and (max-width: 820px) {
+    .sec-about-fpt-play {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        .row-about {
+            .img-block img {
+                max-width: 520px;
+            }
+
+            .items-rectangle {
+                width: 520px;
+                margin: 0 auto;
+                margin-top: 40px;
+
+                .div-block {
+                    .item {
+                        padding: 12px;
+
+                        .h-title {
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+
+                    // .sec-about-fpt-play .row-about .items-rectangle .div-block .item .h-title
+
+                    &.empty-block {
+                        padding-top: 135px;
+                    }
+                }
+            }
+        }
+
+        .row-img-head {
+            display: block;
+            margin-bottom: 40px;
+
+            .img-header img {
+                margin: 0 auto;
+                max-width: 520px;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .sec-about-fpt-play {
+        .row-img-head {
+            display: block;
+        }
+    }
+
+    .sec-about-fpt-play .row-about .items-rectangle .div-block {
+        width: 50%;
+
+        .item {
+            width: 100%;
+        }
+    }
+
+    .sec-about-fpt-play .row-img-head .img-header {
+        img {
+            margin: 0 auto;
+            max-width: 520px;
+        }
+    }
+
+    .sec-about-fpt-play .row-about .img-block {
+        img {
+            max-width: 520px;
+        }
+    }
+
+    .sec-about-fpt-play {
+        .container.width-parent {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 540px) {
+    .sec-about-fpt-play .rowfull-margin {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .sec-about-fpt-play {
+        background: #d41616 url('https://s3-api.fpt.vn/fptvn-storage/2025-06-09/1749457395_fpt-play-9-6-2025_mobile.jpg') no-repeat center top;
+        background-size: cover;
+
+        .row-img-head {
+            .img-header img {
+                width: 100%;
+            }
+        }
+
+        .container.width-parent {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .row-about {
+            .title {
+                font-size: 16px;
+                line-height: 22px;
+            }
+
+            .img-block img {
+                width: 100%;
+            }
+
+            .items-rectangle {
+                width: 100%;
+
+                .div-block {
+                    .item {
+                        img {
+                            margin-bottom: 9px;
+                            width: 20px;
+                            height: 20px;
+                        }
+
+                        .h-title {
+                            font-size: 14px;
+                            line-height: 20px;
+                        }
+
+                        p {
+                            font-size: 12px;
+                            line-height: 16px;
+                        }
+                    }
+
+                    &.empty-block {
+                        padding-top: 110px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+// 26/6: add block movie 
+.sec-fpt-movie {
+    background-color: #450d10;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    .rowfull-margin {
+        padding: 0;
+
+        @media screen and (max-width: 1536px) {
+            max-width: 1440px;
+            margin: 0 auto;
+        }
+
+        @media screen and (max-width: 1440px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media screen and (max-width: 820px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+
+    }
+
+    .new-title-label {
+        color: #fff;
+        @media screen and (max-width: 1024px) {
+            padding-left: 0;
+            padding-right: 0;
+            
+            h2 {
+                font-size: 36px;
+            }
+        }
+        @media screen and (max-width: 820px) {
+            padding-left: 15px;
+            padding-right: 15px;
+            h2 {
+                font-size: 28px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            h2 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    
+
+    @media screen and (max-width: 1024px) {
+        padding-top: 50px;
+        padding-bottom: 55px;
+    }
+
+}
+
+// sec hướng dẫn xem film
+.movie-guide {
+    background: #030202;
+    min-height: 200px;
+    color: #fff;
+
+    .background {
+        background-size: cover;
+        padding-bottom: 1px;
+        background: #030202 url('../images/ldp-entertainment/movie-guide-bg.jpg') center top repeat-y;
+        max-width: 1920px;
+        min-height: 700px;
+        margin: 0 auto;
+
+        @media screen and (max-width: 540px) {
+            min-height: auto;
+        }
+
+
+    }
+
+    .rowfull {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1440px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+
+        .new-title-label {
+            padding-bottom: 40px;
+            text-align: center;
+            color: #fff;
+
+            h2 {
+                margin-bottom: 8px;
+                line-height: 48px;
+
+                @media screen and (max-width: 540px) {
+                    line-height: 34px;
+                }
+            }
+
+            @media screen and (max-width: 540px) {
+                padding-left: 48px;
+                padding-right: 48px;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        @media screen and (max-width: 540px) {
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    // ------------------------------------------
+    /*
+| 
+|
+|---------------------------- tab content
+|
+|
+https://c.io/cssjockey/pen/njywEE
+
+swiper:
+https://c.io/sahla-thasneem/pen/QWJppKz
+*/
+
+    .div-tabs {
+        ul.tabs-movie-guide {
+            margin: 0px;
+            padding: 0px;
+            list-style: none;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            margin-bottom: 40px;
+            gap: 24px;
+
+            @media screen and (max-width: 768px) {
+                margin-bottom: 30px;
+                gap: 18px;
+            }
+
+            @media screen and (max-width: 540px) {
+                gap: 6px;
+            }
+
+            @media screen and (max-width: 390px) {
+                margin-bottom: 20px;
+                gap: 12px;
+            }
+
+            @media screen and (max-width: 375px) {
+                gap: 8px;
+            }
+
+            li {
+                background: none;
+                color: #ffffff;
+                display: inline-block;
+                padding: 0 16px 0 62px;
+                cursor: pointer;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 64px;
+                -webkit-border-radius: 12px;
+                -moz-border-radius: 12px;
+                border-radius: 12px;
+                border: 1px solid transparent;
+
+                @media screen and (max-width: 540px) {
+                    font-size: 14px;
+                    padding: 0 12px 0 34px;
+                    line-height: 48px;
+                }
+
+                @media screen and (max-width: 390px) {
+                    padding: 0 10px 0 32px;
+                }
+
+                &.current {
+                    background: rgba(80, 80, 80, 0.25);
+                    border: 1px solid #FF730A;
+                }
+
+                &.tab_link_mobile {
+                    background: url('../images/ldp-entertainment/guide-tab-mobile.svg');
+
+                }
+
+                &.tab_link_desktop {
+                    background: url('../images/ldp-entertainment/guide-tab-desktop.svg');
+                }
+
+                &.tab_link_tv {
+                    background: url('../images/ldp-entertainment/guide-tab-tv.svg');
+                }
+
+                &.tab_link {
+                    background-size: 32px;
+                    background-position: 16px center;
+                    background-repeat: no-repeat;
+
+                    @media screen and (max-width: 540px) {
+                        background-size: 24px;
+                        background-position: 6px center;
+                    }
+                }
+            }
+        }
+
+        .tab-content {
+            display: none;
+
+            &.current {
+                display: inherit;
+                display: flex;
+                justify-content: center
+            }
+
+            &>div {
+                display: flex;
+                overflow: auto;
+                white-space: nowrap;
+
+                .img-tab-mobile {
+                    @media screen and (max-width: 540px) {
+                        width: 586px;
+                    }
+                }
+
+                .img-tab-desktop {
+                    @media screen and (max-width: 540px) {
+                        width: 569px;
+                    }
+                }
+
+                .img-tab-tv {
+                    img {
+                        @media screen and (max-width: 1439px) {
+                            width: 100%;
+                        }
+
+                        @media screen and (max-width: 1200px) {
+                            width: 1360px;
+                        }
+
+                        @media screen and (max-width: 820px) {
+                            width: 1200px;
+                        }
+
+                        @media screen and (max-width: 540px) {
+                            width: 584px;
+                        }
+                    }
+                }
+            }
+        }
+
+        @media screen and (max-width: 1439px) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media screen and (max-width: 768px) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+
+
+}

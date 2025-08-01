@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <title>FPT Telecom - Công ty Cổ phần Viễn thông FPT</title>
+  <meta name="description"
+    content="Website chính thức cung cấp đầy đủ, chính xác thông tin về Internet FPT, Truyền hình FPT, FPT Play, FPT Play Box, FPT Camera, Foxpay, Fshare, Hi FPT - Trang chủ">
+  <meta name="keywords"
+    content="Internet FPT, Truyền hình FPT, FPT Camera, FPT Play Box,  FPT Play, Thanh toán điện tử Foxpay, FPT Telecom">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link href="./assets/css/normalize.min.css" rel="stylesheet">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+  <link href="./assets/css/bootstrap-theme.min.css" rel="stylesheet">
+
+  <link href="./assets/css/layout.min.css?V=1.2" rel="stylesheet" type="text/css">
+  <link href="./assets/css/layout_v1.3.css" rel="stylesheet" type="text/css">
+
+  <link href="./assets/css/navbar.css" rel="stylesheet" type="text/css">
+
+
+  <link href="./assets/css/responsive.min.css?V=1.22" rel="stylesheet" type="text/css">
+  <link href="./assets/css/responsive_v1.3.css" rel="stylesheet" type="text/css">
+  <link href="../assets/css/custom.css" rel="stylesheet" type="text/css">
+
+
+  <!-- swiper -->
+  <link href="./assets/plugin/swiper/swiper-bundle.min.css" rel="stylesheet" type="text/css">
+  <!-- //end swiper -->
+
+  <!-- news css  -->
+  <link href="./assets/css/news.css" rel="stylesheet" type="text/css">
+  
+  <!-- <link href="./assets/plugin/swiper/news-video.css" rel="stylesheet" type="text/css">
+  <link href="./assets/plugin/swiper/promotion.css" rel="stylesheet" type="text/css"> -->
+  <!-- youtube -->
+  <!-- <link href="./assets/plugin/youtube/yt-modal.css" rel="stylesheet" type="text/css"> -->
+
+  <!-- location -->
+  <link href="../assets/frontend/css/layout_custome_2025.css" rel="stylesheet" type="text/css">
+
+
+  <!--****** CAI DAT APP HI FPT ******-->
+  <meta name="smartbanner:title" content="Hi FPT">
+  <meta name="smartbanner:author" content="FPT Telecom">
+  <meta name="smartbanner:price" content="FREE">
+  <meta name="smartbanner:price-suffix-apple" content=" - In the App Store">
+  <meta name="smartbanner:price-suffix-google" content=" - In Google Play">
+  <meta name="smartbanner:icon-apple"
+    content="https://is4-ssl.mzstatic.com/image/thumb/Purple123/v4/b3/f9/56/b3f956d2-357c-5ae3-9d2c-d6f7abe92304/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/217x0w.png">
+  <meta name="smartbanner:icon-google"
+    content="https://lh3.googleusercontent.com/kjrGoTEjgsHSMBuQuMoEKOJEMxyBQD06uvSzvGd2cCvmYebBpoXM3abvv4YDhlhIg3M=s180-rw">
+  <meta name="smartbanner:button" content="Mở App ngay">
+  <meta name="smartbanner:rating-Itunes" content="70.654646489439%">
+  <meta name="smartbanner:rating-Google" content="84.99462127686%">
+  <meta name="smartbanner:button-url-apple" content="https://itunes.apple.com/vn/app/hi-fpt/id1144417173">
+  <meta name="smartbanner:button-url-google" content="https://play.google.com/store/apps/details?id=com.rad.hifpt">
+  <meta name="smartbanner:enabled-platforms" content="android,ios">
+
+  <!--******** Data/css ********-->
+  <!-- <link href="./assets/plugin/smart_banner/smartbanner.css" rel="stylesheet">
+    <script src="./assets/plugin/smart_banner/smartbanner.js" type="text/javascript"></script>
+    <script src="./assets/plugin/smart_banner/data_smartbanner.js" type="text/javascript"></script> -->
+  <!--******** // CAI DAT APP HI FPT  *****-->
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!-- WARNING: don't remove 2 js file below -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+</head>
+
+<body>
+  <!-- head menu -->
+  <header class="header-menu header_area">
+    <div class="header-top">
+      <div class="head-top--contain">
+        <div>
+          <ul class="links-top">
+            <li><a href="" class="active">Khách hàng cá nhân</a></li>
+            <li><a href="">Khách hàng doanh nghiệp</a></li>
+          </ul>
+        </div>
+        <div class="col-head-login">
+          <div class="login" style="display: none;">
+            <!-- khi chưa login -->
+            <div class="choose-location-btn">
+              <img src="../assets/frontend/img/icon/location-des.svg" alt="Chọn vị trí"><span class="locationname">Chọn vị trí</span>
+            </div>
+            <a href=""><img src="./assets/images/profile-circle.svg" alt="Đăng nhập" class="icon-profile"><span>Đăng nhập</span> </a>
+          </div>
+          <div class="nav navbar-nav login _has-login">
+            <div class="choose-location-btn">
+              <img src="../assets/frontend/img/icon/location-des.svg" alt="Chọn vị trí"><span class="locationname">Chọn vị trí</span>
+            </div>
+            <div class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                aria-expanded="false">
+                <img src="./assets/images/profile-circle.svg" alt="Đăng nhập" class="icon-profile">
+                <span>Trần Trung Trực</span>
+                <span class="caret"></span>
+              </a>
+              <ol class="dropdown-menu fid">
+                <li class="fid--info">
+                  <div>Trần Trung Trực</div>
+                  <p>PTB20082002</p>
+                  <span>Lô S1.06, T.35, P.3514, BCC The Rainbow, Vinhome, BCC The Rainbow, Vinhome,
+                  </span>
+                </li>
+                <li><a href="#" class="info-acc">Thông tin tài khoản</a></li>
+                <li><a href="#">Danh sách mã hợp đồng</a></li>
+                <li><a href="#">Giới thiệu bạn bè</a></li>
+                <li><a href="#" class="logout">Đăng xuất</a></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-default navbar-static-top menu-head">
+      <div class="headmenu-width">
+        <div class="container menu-container">
+
+          <div class="navbar-header nav-logofpt">
+            <div class="navbar-brand" alt="FPT Telecom" title="FPT Telecom">
+              <a href="https://fpt.vn"><img src="./assets/images/fpt-logo-tet.svg" alt="FPT Telecom"
+                  title="FPT Telecom"></a>
+            </div>
+            <button class="navbar-toggle" data-toggle="collapse" data-target=".btnCollapse">
+              <!-- <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> -->
+
+              <span class="icon-bar icon-hamburger"></span>
+              <span class="icon-bar icon-close" style="display: none;"></span>
+
+            </button>
+          </div>
+          <div class="wrap-location">
+            <div class="choose-location-btn"><img src="../assets/frontend/img/icon/location.svg"
+            alt="Chọn vị trí"><span class="locationname">Chọn vị trí</span></div>
+          </div>
+
+          <div class="collapse navbar-collapse btnCollapse menu-links">
+            <div class="login-mobiles">
+              <a href="" class="login" style="display: none;"> <!-- nếu chưa login thì dùng thẻ này -->
+                <img src="./assets/images/profile-circle-black.svg" alt="Đăng nhập">
+                <span>Đăng nhập</span>
+              </a>
+
+              <!-- nếu đã login thì dùng thì dùng 2 thẻ dưới đây: class="login" và class="mobile-fid--info" -->
+              <a href="" class="login">
+                <img src="./assets/images/profile-circle-black.svg" alt="Đăng nhập">
+                <span>Trần Trung Trực</span>
+              </a>
+              <div class="mobile-fid--info">
+
+                <!-- Nếu không có hợp đồng thì ẩn cụm này -->
+                <p>BEAAA3527</p>
+
+                <span>
+                  199 Nguyễn Đình Chiểu Phường 6, Quận 3, TP.HCM
+                </span>
+                <!-- End -->
+                <a href="#" class="link-contracts btn_blue">Thông tin tài khoản</a>
+
+                <a href="#" class="link-contracts">Danh sách mã hợp đồng</a>
+                <a href="#" class="link-contracts">Giới thiệu bạn bè</a>
+              </div>
+            </div>
+
+            <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">ve fpt</a></li> nếu có dùng color active thì dùng class active ở thẻ li -->
+              <li class="dropdown">
+
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Sản phẩm dịch vụ<span
+                    class="icon-dropdown-mn"></span></a>
+                <ul class="dropdown-menu"> <!-- __role="menu" -->
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-internet-fpt.png"
+                          alt=""></span>
+                      <span class="title-product">Internet Cáp Quang</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                      <li><a href="">link 3 </a></li>
+                      <li><a href="">link 4 </a></li>
+                      <li><a href="">link 5 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fptplay.png" alt=""></span>
+                      <span class="title-product">Truyền hình & Giải trí</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                      <li><a href="">link 3 </a></li>
+                      <li><a href="">link 4 </a></li>
+                      <li><a href="">link 5 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-camera.png" alt=""></span>
+                      <span class="title-product">Giám Sát Thông Minh</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                      <li><a href="">link 3 </a></li>
+                      <li><a href="">link 4 </a></li>
+                      <li><a href="">link 5 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/462564079_881786490796767_4512469286751778495_n.png"
+                          alt=""></span>
+                      <span class="title-product">Bảo Mật An Toàn</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png"
+                          alt=""></span>
+                      <span class="title-product">Sức khỏe & Y tế</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown other-link">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Tin tức & Khuyến mãi<span
+                    class="icon-dropdown-mn"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Tin tức</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Khuyến mãi</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Blogs</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown other-link">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ưu đãi<span
+                    class="icon-dropdown-mn"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Khách hàng thân thiết</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Giới thiệu bạn bè</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hỗ trợ<span
+                    class="icon-dropdown-mn"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-internet-fpt.png"
+                          alt=""></span>
+                      <span class="title-product">Internet Cáp Quang</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                      <li><a href="">link 3 </a></li>
+                      <li><a href="">link 4 </a></li>
+                      <li><a href="">link 5 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fptplay.png" alt=""></span>
+                      <span class="title-product">Truyền hình & Giải trí</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                      <li><a href="">link 3 </a></li>
+                      <li><a href="">link 4 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-camera.png" alt=""></span>
+                      <span class="title-product">Giám Sát Thông Minh</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                      <li><a href="">link 3 </a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/462564079_881786490796767_4512469286751778495_n.png"
+                          alt=""></span>
+                      <span class="title-product">Bảo Mật An Toàn</span>
+                    </a>
+                    <ul class="list-child-menu">
+                      <li><a href="">link 1</a></li>
+                      <li><a href="">link 2 </a></li>
+                    </ul>
+                  </li>
+
+                </ul>
+              </li>
+
+              <li class="dropdown other-link">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Khác<span
+                    class="icon-dropdown-mn"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Member FPT</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="title-product-mn">
+                      <span class="icon-product"><img
+                          src="https://staging.fpt.vn/storage/upload/images/menus/icons/icon-fpt-medicare.png" alt="">
+                      </span>
+                      <span class="title-product">Thanh toán Online</span>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+
+              <!-- 2 link cho mobile -->
+              <li class="second-link_mobile"><a href="#">Khách hàng cá nhân</a></li>
+              <li class="second-link_mobile"><a href="#">Khách hàng doanh nghiệp</a></li>
+
+            </ul>
+
+            <!-- code cũ đặt block logout-mobiles ở đây, nhưng bị lỗi -->
+
+          </div>
+          <div class="nav--search-menu">
+            <button id="toggle-search"></button>
+          </div>
+
+          <form action="" id="searchBar" class="search-bar" style="display: none;">
+            <input type="text" class="text-search" placeholder="Tìm kiếm" maxlength="50">
+          </form>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- //head menu -->
+  <div>
+    <section class="breadcrumb-news first-section">
+      <div class="rowfull-margin">
+        <ul>
+          <li class="home-news-text"><a href=""><span></span><span>Trang chủ</span></a></li>
+          <li><a href="">tin tức</a></li>
+          <li class="active"><a href="">Thể thao</a></li>
+
+        </ul>
+      </div>
+    </section>
+    <section class="nav-news">
+      <div class="rowfull-margin">
+        <ul class="scroll--horizontal">
+          <li class="active"><a href="">Tin nổi bật</a></li>
+          <li><a href="">Sản phẩm hot</a></li>
+          <li><a href="">Khuyến mại</a></li>
+          <li><a href="">Viễn thông - Công nghệ</a></li>
+          <li><a href="">Giải trí</a></li>
+          <li><a href="">Thể thao</a></li>
+          <li><a href="">Game</a></li>
+          <li><a href="">Tin FPT</a></li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+  <div>
+
+    <section class="sec-hotnews sec-tags">
+      <div class="hotnews-container">
+        <div class="category-label">Chủ đề: Công nghệ và sức khỏe</div>
+        <div class="hotnews-content">
+          <div class="hotnews-item">
+            <a href="" class="img">
+              <img
+                data-original="https://fpt.vn/storage/upload/images/promotions/khuyen_mai/giam-200k-khi-mua-internet-va-combo-tren-fptvn.jpg"
+                class="lazyload" alt="" class="lazyload">
+            </a>
+            <div class="text">
+              <a href="" class="author">Nhíp Phong</a>
+              <a href="" class="title">
+                <p>Khuyến mại độc quyền GIẢM NGAY 200K cho mọi đơn hàng Internet và Combo Internet</p>
+                <span>Hòa chung không khí cuồng nhiệt tại ASEAN Cup 2024 cùng Đội tuyển Việt Nam, FPT Telecom triển khai
+                  chương trình khuyến mại ĐỘC QUYỀN chưa từng có, mang đến cho bạn cơ hội trải nghiệm Internet tốc độ
+                  cao với mức giá cực kỳ ưu đãi.</span>
+              </a>
+            </div>
+          </div>
+          <div class="hotnews-item">
+            <a href="" class="img">
+              <img data-original="https://fpt.vn/storage/upload/images/promotions/710x400-gtbb-t8-2024.jpg"
+                class="lazyload" alt="" class="lazyload">
+            </a>
+            <div class="text">
+              <a href="" class="author">Nhíp Phong</a>
+              <a href="" class="title">
+                <p>Đơn hàng Internet và Combo Internet</p>
+                <span>Khi bạn giới thiệu một người bạn đăng ký thành công dịch vụ Internet, cả bạn và người được giới
+                  thiệu sẽ cùng nhận 30.000 FGold, tương đương 300.000 VNĐ. Còn nếu, bạn tự giới thiệu bản thân bằng
+                  cách sử dụng mã giới thiệu của chính mình để đăng ký thêm dịch vụ, bạn sẽ nhận được đến 600.000 VNĐ.
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="hotnews-item">
+            <a href="" class="img">
+              <img data-original="https://s3-api.fpt.vn/fptvn-storage/2025-02-11/1739271160_1100x6600.jpg"
+                class="lazyload" alt="" class="lazyload">
+            </a>
+            <div class="text">
+              <a href="" class="author">Nhíp Phong</a>
+              <a href="" class="title">
+                <p>Lễ tình nhân ‘vàng’ cùng cơ hội săn deal siêu hời, trúng 1 cây vàng 9999 trên livestream của FPT</p>
+                <span>Ngày 14/02/2025, FPT Telecom tổ chức siêu sự kiện Mega Live Trúng Vàng. Người xem sẽ có cơ hội
+                  nhận về những phần quà giá trị </span>
+              </a>
+            </div>
+          </div>
+          <div class="hotnews-item">
+            <a href="" class="img">
+              <img
+                data-original="https://fpt.vn/storage/upload/images/promotions/khuyen_mai/giam-200k-khi-mua-internet-va-combo-tren-fptvn.jpg"
+                class="lazyload" alt="" class="lazyload">
+            </a>
+            <div class="text">
+              <a href="" class="author">Nhíp Phong</a>
+              <a href="" class="title">
+                <p>Khuyến mại độc quyền GIẢM NGAY 200K cho mọi đơn hàng Internet và Combo Internet</p>
+                <span>Hòa chung không khí cuồng nhiệt tại ASEAN Cup 2024 cùng Đội tuyển Việt Nam, FPT Telecom triển khai
+                  chương trình khuyến mại ĐỘC QUYỀN chưa từng có, mang đến cho bạn cơ hội trải nghiệm Internet tốc độ
+                  cao với mức giá cực kỳ ưu đãi.</span>
+              </a>
+            </div>
+          </div>
+          <div class="hotnews-item">
+            <a href="" class="img">
+              <img data-original="https://fpt.vn/storage/upload/images/promotions/710x400-gtbb-t8-2024.jpg"
+                class="lazyload" alt="" class="lazyload">
+            </a>
+            <div class="text">
+              <a href="" class="author">Nhíp Phong</a>
+              <a href="" class="title">
+                <p>Đơn hàng Internet và Combo Internet</p>
+                <span>Khi bạn giới thiệu một người bạn đăng ký thành công dịch vụ Internet, cả bạn và người được giới
+                  thiệu sẽ cùng nhận 30.000 FGold, tương đương 300.000 VNĐ. Còn nếu, bạn tự giới thiệu bản thân bằng
+                  cách sử dụng mã giới thiệu của chính mình để đăng ký thêm dịch vụ, bạn sẽ nhận được đến 600.000 VNĐ.
+                </span>
+              </a>
+            </div>
+          </div>
+          <div class="hotnews-item">
+            <a href="" class="img">
+              <img data-original="https://s3-api.fpt.vn/fptvn-storage/2025-02-11/1739271160_1100x6600.jpg"
+                class="lazyload" alt="" class="lazyload">
+            </a>
+            <div class="text">
+              <a href="" class="author">Nhíp Phong</a>
+              <a href="" class="title">
+                <p>Lễ tình nhân ‘vàng’ cùng cơ hội săn deal siêu hời, trúng 1 cây vàng 9999 trên livestream của FPT</p>
+                <span>Ngày 14/02/2025, FPT Telecom tổ chức siêu sự kiện Mega Live Trúng Vàng. Người xem sẽ có cơ hội
+                  nhận về những phần quà giá trị </span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+        <div class="news-pagination">
+          <!-- class "page-btn" dùng thẻ a hoặc btn đều được -->
+          <button class="page-btn arrow-left disabled"></button> <!-- ở trang đầu tiên thì thêm class disabled -->
+          <button class="page-btn">1</button>
+          <span class="dots">...</span>
+          <button class="page-btn">6</button>
+          <button class="page-btn active">7</button>
+          <button class="page-btn">8</button>
+          <span class="dots">...</span>
+          <button class="page-btn">20</button>
+          <button class="page-btn arrow-right"></button> <!-- ở trang cuối cùng thì thêm class disabled -->
+        </div>
+
+        <div class="no-article">
+          <img src="./assets/images/empty-article.svg" alt="">
+          <p>Chưa có bài viết nào</p>
+          <span>Hiện chưa có bài viết nào. Hãy quay lại khi có bài viết mới được đăng tải.</span>
+          
+        </div>
+
+
+      </div>
+    </section>
+
+  </div>
+
+  <!-- footer -->
+  <footer class="footer">
+    <div class="rowfull-margin">
+      <!-- start .container -->
+      <div class="container link-footer-desktop">
+        <div class="row row-fptlogo">
+          <div class="col-sm-6"><span><img src="./assets/images/fpt-logo.svg" alt="FPT Telecom"></span></div>
+          <div class="col-sm-6">
+            <ul class="foot-social">
+              <li><a href=""><img src="./assets/images/foot-hifpt.png" alt="Hi FPT"></a></li>
+              <li><a href=""><img src="./assets/images/foot-youtube.png" alt="Youtube"></a></li>
+              <li><a href=""><img src="./assets/images/foot-instagram.png" alt="Instagram"></a></li>
+              <li><a href=""><img src="./assets/images/foot-facebook.png" alt="Facebook"></a></li>
+              <li><a href=""><img src="./assets/images/foot-zalo.png" alt="Zalo"></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row row-link-foot">
+          <div class="col-sm-7 col-left">
+            <p>Giấy chứng nhận ĐKDN số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày
+              28/07/2005</p>
+            <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+            <p class="space"><b>Công ty Cổ phần Viễn thông FPT</b></p>
+            <p><img src="./assets/images/f-imap.svg" alt="">Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10
+              Phạm
+              Văn Bạch, quận Cầu Giấy, TP.
+              Hà Nội</p>
+            <p><img src="./assets/images/f-iemail.svg" alt=""><a href="">hotrokhachhang@fpt.com</a></p>
+            <p><img src="./assets/images/f-iphone.svg" alt=""><a href="">024 7300 2222</a></p>
+            <p class="space">Người đại diện: Ông Hoàng Việt Anh</p>
+
+            <div class="online-gov-vn">
+              <a href="http://online.gov.vn/Home/WebDetails/35561" target="_blank" class="img">
+                <img alt="FPT Telecom" src="https://fpt.vn/storage/upload/images/blocks/20150827110756-dathongbao.png">
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-5 col-right">
+            <div class="col-sm-4">
+              <h3 class="foot-title">Về FPT Telecom</h3>
+              <ul class="link-footer">
+                <li>
+                  <h4><a href="">Giới thiệu chung</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Chất lượng dịch vụ</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Công ty thành viên</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Giải thưởng</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Đối tác</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Về tập đoàn FPT</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Tuyển dụng</a></h4>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="foot-title">Khách hàng FPT Telecom</h3>
+              <ul class="link-footer">
+                <li>
+                  <h4><a href="">Điều lệ công ty</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Quản trị công ty</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Đại hội đồng cổ đông</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Liên hệ cổ đông</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Thông báo chung</a></h4>
+                </li>
+              </ul>
+            </div>
+            <div class="col-sm-4">
+              <h3 class="foot-title">Chưa là khách hàng</h3>
+              <ul class="link-footer">
+                <li>
+                  <h4><a href="">Internet FPT</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Truyền hình FPT</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Dịch vụ online</a></h4>
+                </li>
+                <li>
+                  <h4><a href="">Smart Home</a></h4>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+        <!-- end /.row -->
+      </div>
+
+      <div class="link-footer-mobile">
+        <div>
+          <a class="logo-fpt-footer" title="FPT Telecom" href="https://fpt.vn">
+            <img class="" src="./assets/images/fpt-logo.svg" alt="FPT Telecom">
+          </a>
+        </div>
+        <div class="license-text-mobile">
+          <p>Giấy chứng nhận ĐKDN số 0101778163 do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày
+            28/07/2005</p>
+          <p>Giấy phép cung cấp dịch vụ viễn thông số 255/GP-CVT do Cục Viễn Thông cấp ngày 07/11/2022</p>
+          <p class="space"><b>Công ty Cổ phần Viễn thông FPT</b></p>
+          <p><img src="./assets/images/f-imap.svg" alt="">Tầng 9, Block A, tòa nhà FPT Cầu Giấy, số 10 Phạm
+            Văn
+            Bạch, quận Cầu Giấy, TP.
+            Hà Nội</p>
+          <p><img src="./assets/images/f-iemail.svg" alt=""><a href="">hotrokhachhang@fpt.com</a></p>
+          <p><img src="./assets/images/f-iphone.svg" alt=""><a href="">024 7300 2222</a></p>
+          <p class="space">Người đại diện: Ông Hoàng Việt Anh</p>
+
+
+        </div>
+        <div class="accor-link-foot">
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb1" checked>
+            <label for="cb1" class="tab__label">Về FPT Telecom</label>
+            <div class="tab__content">
+              <ul>
+                <li><a href="">Giới thiệu chung</a></li>
+                <li><a href="">Chất lượng dịch vụ</a></li>
+                <li><a href="">Công ty thành viên</a></li>
+                <li><a href="">Giải thưởng</a></li>
+                <li><a href="">Đối tác</a></li>
+                <li><a href="">Về tập đoàn FPT</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb2">
+            <label for="cb2" class="tab__label">Khách hàng FPT Telecom</label>
+            <div class="tab__content">
+              <ul>
+                <li><a href="">Điều lệ công ty</a></li>
+                <li><a href="">Quản trị công ty</a></li>
+                <li><a href="">Đại hội đồng cổ đông</a></li>
+                <li><a href="">Liên hệ cổ đông</a></li>
+                <li><a href="">Thông báo chung</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab">
+            <input type="checkbox" name="accordion-1" id="cb3">
+            <label for="cb3" class="tab__label">Chưa là khách hàng </label>
+            <div class="tab__content">
+              <ul>
+                <li><a href="">Đăng ký Online</a></li>
+                <li><a href="">Sản phẩm dịch vụ</a></li>
+                <li><a href="">Khuyến mại</a></li>
+                <li><a href="">Tìm điểm giao dịch</a></li>
+                <li><a href="">Tin tức</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <ul class="foot-social social-mobile">
+            <li><a href=""><img src="./assets/images/foot-hifpt.png" alt="Hi FPT"></a></li>
+            <li><a href=""><img src="./assets/images/foot-youtube.png" alt="Youtube"></a></li>
+            <li><a href=""><img src="./assets/images/foot-instagram.png" alt="Instagram"></a></li>
+            <li><a href=""><img src="./assets/images/foot-facebook.png" alt="Facebook"></a></li>
+            <li><a href=""><img src="./assets/images/foot-zalo.png" alt="Zalo"></a></li>
+          </ul>
+          <div class="online-gov-vn">
+            <a href="http://online.gov.vn/Home/WebDetails/35561" target="_blank" class="img">
+              <img alt="FPT Telecom" src="https://fpt.vn/storage/upload/images/blocks/20150827110756-dathongbao.png">
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- end /.container -->
+    </div>
+  </footer>
+
+  <!-- //footer -->
+  <!-- nếu chưa đăng nhập thì ko có block div_logout-mobiles này
+  block này đặt dưới cùng, gần thẻ body -->
+  <div class="div_logout-mobile">
+    <div class="logout-mobiles _js_logout_mobile">
+      <div class="row-logout-mobile">
+        <a href="#">
+          <span>Đăng xuất</span>
+          <img src="./assets/images/profile-logout-black.svg" alt="Đăng xuất">
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Modal video -->
+  <section class="video-modal">
+    <!-- modal content wrapper -->
+    <div id="video-modal-content" class="video-modal-content">
+      <!-- iframe -->
+      <iframe id="youtube" width="100%" height="100%" frameborder="0" allow="autoplay" allowfullscreen src=></iframe>
+      <a href="#" class="close-video-modal">
+        <!-- X close video icon -->
+      </a>
+    </div>
+    <!-- clickable overlay element -->
+    <div class="overlay"></div>
+  </section>
+
+  <script src="./assets/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+  <script src="./assets/js/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js/navbar.js"></script>
+  <!-- 
+      <script src="./assets/plugin/smart_banner/smartbanner.js" type="text/javascript"></script>
+      <script src="./assets/plugin/smart_banner/data_smartbanner.js" type="text/javascript"></script> 
+    -->
+
+  <script src="./assets/js/script.js"></script>
+
+  <!-- swiper -->
+  <script src="./assets/plugin/swiper/swiper-bundle.min.js"></script>
+  <script src="./assets/plugin/swiper/news-video.js"></script>
+  <script src="./assets/plugin/swiper/promotion.js"></script>
+  <!-- //end swiper -->
+
+  <!-- lazyload img -->
+  <script src="./assets/plugin/lazyload/jquery.lazyload.min.js"></script>
+  <script src="./assets/plugin/lazyload/lazyload-script.js"></script>
+  <!-- end lazyload img -->
+
+  <!-- youtube -->
+  <script src="./assets/plugin/youtube/yt-modal.js"></script>
+
+</body>
+
+</html>

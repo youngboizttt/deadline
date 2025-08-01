@@ -1,0 +1,18 @@
+footer.footer.footer-enterprise{
+    padding-top: 30px;
+}
+.enterprise-footer-block{
+    color: #b3b3b3;
+    font-size: 12px;
+    line-height: 18px;
+}
+.enterprise-footer-block .foot-hotline, 
+.enterprise-footer-block .foot-hotline:hover, 
+.enterprise-footer-block .link-footer a,
+.enterprise-footer-block .link-footer a:hover {
+    font-size: 12px;
+}
+.secondary-link .login._has-login {
+    /* custom khi ở các trang KHDN  */
+    top: -18px;
+}

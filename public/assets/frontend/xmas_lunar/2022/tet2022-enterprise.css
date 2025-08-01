@@ -1,0 +1,85 @@
+
+footer.footer .tet2022>.col-left{
+    position: absolute;
+    background: url('./img-tet/tet22-foot-left.png') no-repeat bottom left;
+    bottom: 106px;
+    left: 8px;
+    width: 420px;
+    height: 85%;
+    background-size: 404px;
+}
+footer.footer .tet2022>.col-right{
+    position: absolute;
+    background: url('./img-tet/tet22-foot-right.png') no-repeat bottom right;
+    bottom: 112px;
+    right: 8px;
+    width: 420px;
+    height: 75%;
+    background-size: 330px;
+}
+@media(max-width:1366px) {
+    footer.footer .tet2022>.col-left{
+        bottom: 112px;
+        left: 0;
+    }
+    footer.footer .tet2022>.col-right{
+        bottom: 116px;
+        right: 0px;
+    }
+}
+@media(max-width:1200px) {
+}
+@media(max-width:1024px) {
+    
+}
+@media(max-width:820px) {
+    footer.footer .tet2022>.col-left{
+        bottom: 137px;
+        left: 0;
+    }
+    footer.footer .tet2022>.col-right{
+        bottom: 142px;
+        right: 0px;
+    }
+}
+@media(max-width:768px) {
+    footer.footer .tet2022>.col-left{
+        bottom: 113px;
+        left: 0;
+    }
+    footer.footer .tet2022>.col-right{
+        bottom: 115px;
+        right: 0px;
+    }
+}
+@media(max-width:540px) {
+    footer.footer .tet2022>.col-left{
+        background-size: 196px;
+        bottom: 120px;
+        left: 0;
+    }
+    footer.footer .tet2022>.col-right{
+        background-size: 196px;
+        bottom: 123px;
+        right: 0px;
+    }
+    
+}   
+@media(max-width:479px) {
+    footer.footer .tet2022>.col-right {
+        bottom: 176px;
+        right: 0px;
+    }
+    footer.footer .tet2022>.col-left {
+        bottom: 176px;
+        left: 0;
+    }
+}
+@media(max-width:375px) {
+    
+}
+@media(max-width:320px) {
+    
+}
+
+/* Tet 2022 _ enterprise - 17/1/2022*/

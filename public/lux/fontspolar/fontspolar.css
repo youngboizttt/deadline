@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-Bold.eot');
+    src: url('Polar-Bold.eot?#iefix') format('embedded-opentype'),
+        url('Polar-Bold.woff2') format('woff2'),
+        url('Polar-Bold.woff') format('woff'),
+        url('Polar-Bold.ttf') format('truetype'),
+        url('Polar-Bold.svg#Polar-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-BoldItalic.eot');
+    src: url('Polar-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Polar-BoldItalic.woff2') format('woff2'),
+        url('Polar-BoldItalic.woff') format('woff'),
+        url('Polar-BoldItalic.ttf') format('truetype'),
+        url('Polar-BoldItalic.svg#Polar-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-Light.eot');
+    src: url('Polar-Light.eot?#iefix') format('embedded-opentype'),
+        url('Polar-Light.woff2') format('woff2'),
+        url('Polar-Light.woff') format('woff'),
+        url('Polar-Light.ttf') format('truetype'),
+        url('Polar-Light.svg#Polar-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-LightItalic.eot');
+    src: url('Polar-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('Polar-LightItalic.woff2') format('woff2'),
+        url('Polar-LightItalic.woff') format('woff'),
+        url('Polar-LightItalic.ttf') format('truetype'),
+        url('Polar-LightItalic.svg#Polar-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-Medium.eot');
+    src: url('Polar-Medium.eot?#iefix') format('embedded-opentype'),
+        url('Polar-Medium.woff2') format('woff2'),
+        url('Polar-Medium.woff') format('woff'),
+        url('Polar-Medium.ttf') format('truetype'),
+        url('Polar-Medium.svg#Polar-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-MediumItalic.eot');
+    src: url('Polar-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('Polar-MediumItalic.woff2') format('woff2'),
+        url('Polar-MediumItalic.woff') format('woff'),
+        url('Polar-MediumItalic.ttf') format('truetype'),
+        url('Polar-MediumItalic.svg#Polar-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-Regular.eot');
+    src: url('Polar-Regular.eot?#iefix') format('embedded-opentype'),
+        url('Polar-Regular.woff2') format('woff2'),
+        url('Polar-Regular.woff') format('woff'),
+        url('Polar-Regular.ttf') format('truetype'),
+        url('Polar-Regular.svg#Polar-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar Regular';
+    src: url('Polar-RegularItalic.eot');
+    src: url('Polar-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('Polar-RegularItalic.woff2') format('woff2'),
+        url('Polar-RegularItalic.woff') format('woff'),
+        url('Polar-RegularItalic.ttf') format('truetype'),
+        url('Polar-RegularItalic.svg#Polar-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-SemiBold.eot');
+    src: url('Polar-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('Polar-SemiBold.woff2') format('woff2'),
+        url('Polar-SemiBold.woff') format('woff'),
+        url('Polar-SemiBold.ttf') format('truetype'),
+        url('Polar-SemiBold.svg#Polar-SemiBold') format('svg');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Polar';
+    src: url('Polar-SemiBoldItalic.eot');
+    src: url('Polar-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('Polar-SemiBoldItalic.woff2') format('woff2'),
+        url('Polar-SemiBoldItalic.woff') format('woff'),
+        url('Polar-SemiBoldItalic.ttf') format('truetype'),
+        url('Polar-SemiBoldItalic.svg#Polar-SemiBoldItalic') format('svg');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+

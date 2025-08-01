@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+        @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+        body {
+          font-family: 'Open Sans', sans-serif;
+          margin: 0;
+        }
+        .intro h1, .outro h2 {
+          font-weight: 300;
+          text-align: center;
+          text-transform: uppercase;
+        }
+        .space {
+          height: 130vh;
+        }
+        .vid-section {
+          background: #ccc;
+          padding: 0px;
+        }
+        .vid-wrap {
+          width: 100%;
+          height: 600px;
+          background: white;
+          opacity: 1;
+          position: relative;
+          overflow: hidden;
+          margin-top: 150px;
+        }
+        .responsive-vid {
+          padding-top: 56.25%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          width: 100%;
+        }
+        .responsive-vid iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        #player {
+          opacity: 0;
+          transition: all .5s ease-in-out;
+        }
+        .video__overlay {
+          background: black;
+          opacity: 0.35;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .video__title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: #fff;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          font-size: 36px;
+        }
+
+        /* mute / unmute */
+
+        #mute {
+          position: absolute;
+          left: 24px;
+          bottom: 28px;
+          color: #ff701d;
+          border: 0;
+          background: transparent;
+          font-size: 32px;
+          cursor: pointer;
+          padding: 12px;
+          display: flex;
+          outline: 0;
+          z-index: 33;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // 2. This code loads the IFrame Player API code asynchronously.
+        var tag = document.createElement('script');
+    
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+    
+        // 3. This function creates an <iframe> (and YouTube player)
+        //    after the API code downloads.
+        var player;
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+              videoId: "tu0qtEwb9gE", // YouTube Video ID tu0qtEwb9gE (or: mzJe5yKeLiE)
+              width: 1920, // Player width (in px)
+              playerVars: {
+                autoplay: 1, // Auto-play the video on load
+                controls: 0, // Show pause/play buttons in player
+                showinfo: 0, // Hide the video title
+                modestbranding: 1, // Hide the Youtube Logo
+                loop: 1, // Run the video in a loop
+                fs: 0, // Hide the full screen button
+                cc_load_policy: 0, // Hide closed captions
+                iv_load_policy: 3, // Hide the Video Annotations
+                autohide: 1, // Hide video controls when playing
+                start: 15,
+                end: 64,
+                mute: 1, // Sound Off On
+                rel: 0,
+                },
+                events: {
+                  'onReady': onPlayerReady,
+                  // 'onStateChange': onPlayerStateChange
+                },
+            });
+        }
+        function onPlayerReady(event) {
+          // event.target.mute();
+          // event.target.setVolume(0);
+          event.target.setVolume(50);
+          event.target.playVideo();
+        }
+    </script>
+    
+    <div class="intro">
+      <h1>Scroll down<br>↓</h1>
+    </div>
+    <div class="space"></div>
+    <div class="vid-section">
+      <div class="vid-wrap">
+        <div class="responsive-vid">
+          <div id="player"></div> <!-- data-autoplay="1"  >> Doan them-->
+        </div>
+      <div class="video__overlay"></div>
+      <button title="Mute / Unmute Video" id="mute">
+        <i class="vc_btn3-icon fas fa-volume-mute"></i>
+      </button>
+      <div class="video__title">"Вино, как и искусство — источник удовольствия."</div>
+      </div>
+    </div>
+    <div class="space"></div>
+    <div class="outro">
+      <h2>THE END :)</h2>
+    </div>
+
+    <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script> -->
+    <script src="https://fpt.vn/lux/js/jquery.min.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+        // Play when in viewport
+        $(window).on('scroll load', function(){
+            $('.responsive-vid iframe').each( function(i){
+            player.pauseVideo();
+            var scroll_position = $(window).scrollTop();
+            var bottom_of_video = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window3 = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window3 > bottom_of_video && scroll_position < bottom_of_video ) {  
+                player.playVideo();
+                $('#player').css({'opacity':'1'});
+            } else {
+                player.pauseVideo();
+                $('#player').css({'opacity':'.6'});
+            }
+            });
+        });
+        
+        });
+
+        $("#mute").click(function () {
+          if (player.isMuted()) {
+            player.unMute();
+            // console.log("unMute Player");
+            $("#mute i.vc_btn3-icon")
+              .removeClass("fa-volume-mute")
+              .addClass("fa-volume-up");
+          } else {
+            player.mute();
+            // console.log("Mute Player");
+            $("#mute i.vc_btn3-icon")
+              .removeClass("fa-volume-up")
+              .addClass("fa-volume-mute");
+          }
+        });
+    </script>
+</body>
+</html>

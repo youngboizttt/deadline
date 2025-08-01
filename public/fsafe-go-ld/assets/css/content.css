@@ -1,0 +1,110 @@
+.content-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding-top: 80px;
+}
+
+.content-header {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-title {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 44px;
+    color: var(--primary, #3d3d3d);
+}
+
+.content-description {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: var(--primary, #3d3d3d);
+}
+
+.content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.content-video>iframe {
+    max-height: 550px;
+    aspect-ratio: 1440 / 550;
+}
+
+.content-list .group {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.content-list .group .content-item {
+    flex: 1 1 33%;
+    position: relative;
+    width: 33%;
+}
+
+.content-item img {
+    width: 100%;
+}
+
+.content-list .group .content-item .title {
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.81) 0%, rgba(0, 0, 0, 0.7938) 52%, rgba(0, 0, 0, 0) 100%);
+    padding: 16px;
+    width: 100%;
+}
+
+.content-list .group .content-item .title span {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px;
+    color: var(--neutral100, #ffffff);
+}
+
+@media only screen and (max-width: 1599.98px) {
+    .content-section {
+        width: 1440px;
+        margin: 0 auto;
+        padding: 80px 0 0;
+    }
+}
+
+@media only screen and (max-width: 1439.98px) {
+    .content-section {
+        width: 100%;
+        padding: 0px 16px 40px 16px;
+    }
+}
+
+@media only screen and (max-width: 991.98px) {
+    .content-list .group .content-item {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .content-header {
+        gap: 12px;
+    }
+
+    .content-title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .content-list .group .content-item .title span {
+        font-size: 10px;
+        line-height: 16px;
+    }
+}
+
+@media only screen and (max-width: 767.98px) {
+    .content-list .group {
+        flex-direction: column;
+    }
+}

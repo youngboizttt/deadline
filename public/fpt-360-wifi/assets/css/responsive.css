@@ -1,0 +1,226 @@
+/*  To make Responsive
+---------------------------------------------------------------------- /
+*   1 - media screen and (max-width: 1199px)
+*   2 - media screen and (max-width: 991px)
+*   3 - media screen and (max-width: 767px)
+*   4 - media screen and (max-width: 680px)
+*   5 - media screen and (max-width: 480px)
+*
+---------------------------------------------------------------------- 
+
+
+/*  1 - media screen and (max-width: 1199px)
+------------------------------------------------------------------------------------------ */
+
+@media screen and (max-width: 1199px) {
+}
+
+@media screen and (max-width: 1024px) {
+    .bg-banner {
+        height: 650px;
+    }
+    .text-banner .text{
+    }
+    .text-banner .text h3{
+        font-size: 46px;
+        line-height: 66px;
+    }
+    .img-phone{
+        background-size: auto 576px; 
+    }
+    .img-phone-vi{
+        background-size: auto 576px; 
+    }
+    .block-video h3{
+        font-size: 46px;
+        line-height: 66px;
+    }
+}
+
+/* end 1024 */
+
+@media screen and (max-width: 992px) {
+    .promotion{
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .promotion>div{
+        background: url('../imagess/box-dk-tablet.png') center top no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 566px;
+        padding: 48px 56px;
+    }
+    .promotion .left,
+    .promotion .right{
+        width: 100%;
+    }
+    .promotion .right {
+        padding-top: 40px;
+    }
+    
+}
+
+@media screen and (max-width: 768px) {
+    .bg-banner>div>div {
+        height: auto;
+    }
+    .bg-banner {
+        height: 900px;
+    }
+    .bg-banner>div>.img-in-banner{
+        height: 520px;
+    }
+    .img-phone {
+        background-position: center 123%;
+        background-size: auto 456px;
+    }
+    .img-phone-vi{
+        background-position: center 123%;
+        background-size: auto 456px;
+    }
+    .text-banner{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 60px;
+    }
+    .text-banner .text h3 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .title-medium{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    .block-video h3 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+    .promotion .right{
+        height: unset;
+    }
+}
+
+/*end 768px ___________________________________________________*/
+
+
+@media screen and (max-width: 540px) {
+    .promotion>div{
+        background: url('../imagess/box-dk-mobile.png') center top no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 590px;
+        padding: 44px 32px;
+    }
+    .promotion .left div{
+        font-size: 32px;
+    }
+    .promotion .left p{
+        font-size: 16px;
+    }
+    .promotion .right {
+        /* padding-top: 20px; */
+    }
+    .title-medium{
+        font-size: 36px;
+    }
+    .text-contact-hotline{
+        font-size: 28px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .block-video h3 {
+        font-size: 37px;
+        line-height: 56px;
+    }
+    .promotion .left, 
+    .promotion .right{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .text-banner .text h3 {
+        font-size: 37px;
+        line-height: 56px;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    .text-banner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .text-banner .text h3 {
+        font-size: 32px;
+        line-height: 52px;
+    }
+    .title-medium {
+        padding-left: 0px; 
+        padding-right: 0px;
+    }
+    .bg-banner>div>div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .promotion .left ul li>span{
+        display: unset;
+    }
+    .promotion .right {
+        padding-top: 20px;
+    }
+    .promotion>div{
+        height: 624px;
+        padding: 32px;
+    }
+    .block-video h3 {
+        font-size: 32px;
+        line-height: 52px;
+    }
+}
+
+/*end 479px ____________________________________________________*/
+
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 375px) {
+    
+}
+
+@media screen and (max-width: 375px) {
+   
+}
+
+@media screen and (max-width: 360px) {
+   
+}
+
+@media screen and (max-width: 320px) {
+  
+}
+
+@media screen and (min-width: 1024px) {
+    .container.width-slide{
+        width: 1024px;
+        max-width: unset;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container.width-slide{
+        width: 1280px;
+    }
+}
+@media screen and (min-width: 1366px) {
+    .container.width-slide{
+        width: 1366px;
+    }
+}
+@media screen and (min-width: 1400px) {
+    .container.width-slide{
+        width: 1400px;
+    }
+}
+@media screen and (min-width: 1512px) {
+    .container.width-slide{
+        width: 1512px;
+    }
+}

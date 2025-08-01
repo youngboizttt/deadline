@@ -1,0 +1,648 @@
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 1024px) {
+    .flex-choose-fpro{
+        /* width: 1280px;
+        overflow-x: scroll;
+        overflow: auto;
+        white-space: nowrap;
+
+        display: flex;
+        flex-flow: row wrap; */
+        justify-content: center;
+    }
+    .flex-item {
+        padding: 6px;
+        width: 33.33333%;
+    }
+    .flex-choose-fpro::-webkit-scrollbar {
+        height: 9px;
+        width: 9px;
+    }
+    .flex-choose-fpro::-webkit-scrollbar-track {
+        /*background*/
+        background-color: rgba(209, 213, 219, 0);
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+    }
+    
+    .flex-choose-fpro::-webkit-scrollbar-track:hover {
+        /*background*/
+        background-color: rgba(209, 213, 219, 1);
+    }
+    .flex-choose-fpro::-webkit-scrollbar-thumb {
+        /*color*/
+        background: #828AA0;
+        -webkit-border-radius: 6px;
+        -moz-border-radius: 6px;
+        border-radius: 6px;
+    }
+    .div-table-div.tbl-scroll{
+        overflow-x: scroll;
+    }
+    .div-table-div .table_div{
+        width: 1200px;
+    }
+    .block-quy_trinh .col_left h5 {
+        margin: 0 0 36px;
+        font-weight: 600;
+        font-size: 44px;
+        line-height: 56px;
+    }
+    .block-quy_trinh .col_left p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .about-hi .row-img img{
+        width: 96%;
+    }
+    /* end 1024  */
+}
+@media screen and (max-width: 992px) {
+    .item-contact-us .icon {
+        margin-bottom: 12px;
+    }
+    .item-contact-us .info{
+        padding-bottom: 8px;
+    }
+    .headFpro._pad_home{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 991px) {
+    .block-title-fpro.on-mobile{
+        display: block;
+        text-align: center;
+    }
+    .block-title-fpro{
+        display: none;
+    }
+    .about-service-fpro ._col_img{
+        padding-bottom: 40px;
+    }
+    .about-service-fpro ._col_img img{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .label-fpro--in-slide.mobile{
+        display: block;
+        text-align: center;
+        font-size: 36px;
+        line-height: 42px;
+        padding-bottom: 30px;
+    }
+    .label-fpro--in-slide{
+        display: none;
+    }
+    .fpro-slide.owl-carousel .owl-item img{
+        width: 100%;
+        height: 580px;
+        margin: 0 auto;
+    }
+    .col-slide-fpro{
+        width: 500px;
+        float: unset !important;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 20px;
+    }
+    .col-slide-thumb{
+        width: 500px;
+        float: unset;
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .label-fpro--in-slide.label-hi{
+        display: inline-block;
+        font-size: 28px;
+        line-height: 32px;
+    }
+    .btn-dat-lich{
+        padding-left: 0;
+    }
+    #sync2.fpro-slide-thumb.hi-slide .item{
+        min-height: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    #sync2.fpro-slide-thumb.hi-slide .item div{
+        font-size: 16px;
+        line-height: 26px;
+        padding-left: 80px;
+    }
+    #sync2.fpro-slide-thumb.hi-slide .item div span{
+        background-size: 54px auto;
+    }
+    #sync2.fpro-slide-thumb.hi-slide .current .item div span{
+        background-size: 67px auto;
+    }
+    #sync2.fpro-slide-thumb.hi-slide{
+        height: 580px;
+    }
+    #sync2.fpro-slide-thumb.hi-slide .item div span,
+    #sync2.fpro-slide-thumb.hi-slide .current .item div span{
+        width: 69px;
+    }
+    #sync2.fpro-slide-thumb.hi-slide .item div::before{
+        left: 35px;
+    }
+    .block-title-fpro.title-hi{
+        display: block;
+    }
+    .hi-list-item{
+        padding-bottom: 24px;
+    }
+    .label-fpro--in-slide.label-hi._with_line::before {
+        height: 58px;
+        top: 5px;
+    }
+    .label-fpro--in-slide.label-hi._on_desktop{
+        display: none;
+    }
+    .label-fpro--in-slide.label-hi._on_mobile{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    }
+    .hi-logo-doitac div{
+        width: 25%;
+    }
+    /* end 991 */
+}
+@media screen and (max-width: 768px) {
+    /* slide */
+    .slider.fpro_slider>.bx-wrapper,
+    .slider.fpro_slider>.bx-pager{
+        width: 50%;
+    }
+    .slider.fpro_slider>.bx-pager a p,
+    .slider.fpro_slider>.bx-pager div._slides p
+    {
+        padding-top: 16px;
+    }
+    .slider.fpro_slider,
+    .slider.fpro_slider ul.bxslider img{
+        height: 674px;
+    }
+    .slider.fpro_slider, 
+    .slider.fpro_slider ul.bxslider img{
+        height: 600px;
+    }
+    .slider.fpro_slider>.bx-pager .list-item {
+        height: 474px;
+    }
+    /* //slide */
+
+    .carousel.slide-fpro{
+        width: 100%;
+        height: 424px;
+    }
+    .item-contact-us .icon {
+        margin-bottom: 12px;
+    }
+    .flex-choose-fpro{
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .item-contact-us{
+        margin-bottom: 40px;
+    }
+    .label-fpro--in-slide {
+        font-size: 36px;
+        line-height: 42px;
+        padding-bottom: 30px;
+    }
+    .block-bxslider--main{
+        margin: 0;
+    }
+    .slider.fpro_slider.list_product>.bx-pager{
+        padding-right: 8px;
+    }
+    .slider.fpro_slider.list_product>.bx-wrapper{
+        padding-left: 8px;
+    }
+    .slider.fpro_slider.list_product>.bx-pager .list-item {
+        height: 480px;
+    }
+    .block-support-fpro{
+        padding: 32px 44px;
+        background-position: 62% center;
+    }
+    .it_outsource-content h5{
+        font-size: 32px;
+    }
+    .box-bg-gray.choose-fpro {
+        background: url('https://fpt.vn/storage/upload/images/services/fpro/bg-fpro-m.png') center top repeat;
+        background-size: cover;
+    }
+    .my-services{
+        width: 500px;
+        margin: 12px auto;
+        float: unset;
+    }
+    .headFpro._pad_home{
+        width: 90%;
+    }
+    .block-quy_trinh .col_left p{
+        padding-bottom: 24px;
+    }
+    #owl_fpro_banner.owl-carousel{
+        width: 100%;
+        height: 424px;
+    }
+    .block-title-fpro.on-mobile{
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+    /* hi fpt */
+    .about-hi .head-content h3{
+        font-size: 28px;
+        line-height: 47px;
+        padding: 8px 0 20px;
+    }
+    .about-hi .head-content p.desc {
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+    .about-hi .hifpt-bg{
+        background-position: 342px -100px;
+    }
+    .about-hi .row-img{
+        background-position: -760px center;
+    }
+    .hi-logo-doitac div{
+        width: 33.3%;
+    }
+    .fmc-nippro .img-medium,
+    .fmc-nippro .img-large {
+        max-width: 560px;
+    }
+    .fmc-about .title {
+        font-size: 32px;
+    }
+    .fmc-nippro .title {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .fmc-nippro .title span {
+        font-size: 32px;
+    }
+    /* end 768 */
+}
+@media screen and (max-width: 540px) {
+    /* slide */
+    .slider.fpro_slider>.bx-wrapper{
+        width: 100%;
+        float: unset
+    }
+    .slider.fpro_slider, 
+    .slider.fpro_slider ul.bxslider img{
+        height: 490px;
+    }
+    .slider.fpro_slider>.bx-pager{
+        width: 100%;
+        padding-right: 0;
+        padding-top: 16px;
+    }
+    /* // slide */
+    .headFpro._pad_home{
+        width: 96%;
+    }
+    .headFpro .desc{
+        text-align: center;
+    }
+    .flex-item {
+        width: 100%;
+    }
+    .carousel.slide-fpro{
+        height: 300px;
+    }
+    
+    .flex-item > div .icon{
+        float: left;
+    }
+    .block-service-fpro{
+        padding: 36px;
+        min-height: 200px;
+        max-height: 200px;
+        background-position: 92% center;
+        background-size: auto 200px;
+    }
+    .block-service-fpro > div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .service-fpro-l span {
+        width: 30px;
+        height: 30px;
+        background-size: 30px;
+    }
+    .service-fpro-l div{
+        font-size: 16px;
+        line-height: 1;
+        padding-top: 12px;
+    }
+    .service-fpro-l h5{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .service-fpro-r span {
+        font-size: 32px;
+    }
+    .service-fpro-r div {
+        font-size: 16px;
+        padding-top: 4px;
+    }
+
+    .block-contact-us .cap-product{
+        padding-bottom: 8px;
+    }
+    .block-contact-us .headFpro h2{
+        font-size: 28px;
+    }
+
+    .fpro_slider.list_product .label-fpro-sub--in-slide{
+        display: none;
+    }
+    
+    .label-fpro--in-slide p{
+        display: inline-block
+    }
+    .label-fpro--in-slide {
+        font-size: 28px;
+        text-align: center;
+    }
+    .label-fpro--in-slide._sub.mobile{
+        font-size: 28px;
+    }
+    .label-fpro--in-slide._sub.mobile p{
+        font-size: 18px;
+        font-weight: 500;
+        display: block;
+        padding-top: 8px;
+    }
+    .item-contact-us .info {
+        padding-bottom: 0;
+    }
+    .slider.fpro_slider.list_product>.bx-wrapper{
+        width: 100%;
+        padding-left: 0;
+    }
+    .slider.fpro_slider.list_product>.bx-pager{
+        width: 100%;
+        padding-right: 0;
+    }
+    .block-support-fpro{
+        background: url('../../../images/fpro/bg-support-m.png') center bottom no-repeat;
+        background-size: cover;
+        min-height: 460px;
+        /* max-height: 460px; */
+        padding: 40px 28px;
+    }
+    .block-support-fpro>div{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .it_outsource-content h5{
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .item-quy_trinh>div{
+        width: 100%;
+    }
+    .item-quy_trinh>div:hover{
+        transform: scale(1.04);
+    }
+    .cap-product .headFpro h2{
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+    .choose-fpro .cap-product{
+        padding: 0;
+    }
+    .box-bg-gray.choose-fpro {
+        background-size: 100%;
+        padding: 40px 0;
+    }
+    .block-why-it_outsource{
+        padding: 32px;
+    }
+    .block-title-fpro h5{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .block-title-fpro div {
+        font-size: 19px;
+        line-height: 29px;
+    }
+    .col-slide-fpro,
+    .col-slide-thumb{
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    
+    .fpro-slide.owl-carousel.owl-drag .owl-item{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #sync2.fpro-slide-thumb .item{
+        padding: 18px;
+        margin-bottom: 13px;
+    }
+    #sync2.fpro-slide-thumb .item p {
+        padding-top: 16px;
+        font-size: 16px;
+        line-height: 22px;
+    }
+    #sync2.fpro-slide-thumb {
+        height: 400px;
+    }
+    .fpro-slide.owl-carousel .owl-item img{
+        height: 460px;
+    }
+    .cap-product.pad_fpro{
+        padding: 12px 0;
+    }
+    .label-fpro--in-slide.mobile{
+        padding-top: 32px;
+    }
+    .flex-item > div{
+        padding: 20px;
+        display: flex;
+        align-items: center;
+    }
+    .flex-item > div h5{
+        padding: 0px 0px 12px;
+    }
+    .flex-item > div > ._block-r{
+        width: calc(100% - 120px);
+    }
+    #owl_fpro_banner.owl-carousel{
+        height: 262px;
+    }
+    .outsource-mobile.div-table-div{
+        display: block;
+    }
+    .outsource-desktop.div-table-div{
+        display: none;
+    }
+    .my-services{
+        width: 100%;
+    }
+    .block-title-fpro.on-mobile {
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .my-project-fpro h5{
+        width: 100%;
+        font-size: 28px;
+        line-height: 42px;
+        padding-bottom: 28px;
+    }
+    .block-quy_trinh .col_left h5{
+        font-size: 28px;
+        line-height: 42px;
+    }
+    .cap-product.service-outstanding{
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .block-contact-us .cap-product .headFpro h2{
+        font-size: 28px;
+    }
+    .block-quy_trinh .col_left h5 span{
+        display: inline-block;
+    }
+    .owl-item .img_project_fpro .block-text div {
+        font-size: 18px;
+        line-height: 27px;
+    }
+    .owl-item .img_project_fpro .block-text{
+        padding-top: 310px;
+    }
+    .owl-item.center .img_project_fpro .block-text{
+        height: 140px;
+        top: 290px;
+    }
+    .my-project-fpro{
+        padding-bottom: 40px;
+    }
+    .my-services>div h4{
+        font-size: 28px;
+    }
+
+    /* hi fpt */
+    .about-hi .row-img div a img:first-child{
+        display: none;
+    }
+    .about-hi .row-img div a img:last-child{
+        display: block;
+        width: 100%;
+    }
+    .about-hi .hifpt-bg {
+        background-position: 100px top ;
+    }
+    .block-quy_trinh{
+        margin-left: unset;
+        margin-right: unset;
+    }
+    #sync2.fpro-slide-thumb.hi-slide.hi-slide-1{
+        height: 450px;
+    }
+    .fpro-slide.owl-carousel.hi-img-dv .owl-item img {
+        height: 502px;
+    }
+    #sync2.fpro-slide-thumb.hi-slide.hi-slide-1 .item div{
+        padding-left: 92px;
+    }
+    .label-fpro--in-slide.label-hi._with_line{
+        text-align: left;
+    }
+    .label-fpro--in-slide.label-hi._with_line::before {
+        height: 58px;
+        top: 5px;
+    }
+    .row-form-dk-hi{
+        margin-left: unset;
+        margin-right: unset;
+    }
+    .form-dk-hi>a{
+        padding-top: 20px;
+        padding-bottom: 32px;
+    }
+    .contact-hi{
+        min-height: 434px;
+    }
+    .contact-hi .row-text {
+        padding: 270px 4px 20px;
+    }
+    .contact-hi .row-text li:nth-of-type(1), 
+    .contact-hi .row-text li:nth-of-type(2), 
+    .contact-hi .row-text li:nth-of-type(3){
+        font-size: 16px;
+        line-height: 22px;
+    }
+    .hi-logo-doitac div{
+        width: 50%;
+    }
+    .fmc-nippro .img-medium,
+    .fmc-nippro .img-large {
+        max-width: 95%;
+    }
+    .fmc-nippro .list-ul li {
+        margin-bottom: 10px;
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .fmc-nippro .font-larger {
+        font-size: 21px;
+        line-height: 33px;
+    }
+    .fmc-nippro-shop .block-price p, .fmc-nippro-shop .block-price span {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .fmc-nippro .title {
+        font-size: 26px;
+        line-height: 40px;
+    }
+    .fmc-nippro .title span {
+        font-size: 30px;
+    }
+    /* end 540 */
+}
+@media screen and (max-width: 479px) {
+    /* slide */
+    .slider.fpro_slider, .slider.fpro_slider ul.bxslider img {
+        height: 420px;
+    }
+    .slide-pages {
+        bottom: -76px;
+    }
+    /* // slide */
+    .carousel.slide-fpro {
+        height: 215px;
+    }
+    .block-service-fpro {
+        background-position: 80% center;
+    }
+    #owl_fpro_banner.owl-carousel{
+        height: 238px;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .img-responsive.img-download-app {
+        max-width: 500px;
+    }
+}

@@ -1,0 +1,43 @@
+/* style logo */
+.nav-brand>.logo{
+    position: relative;
+}
+.nav-brand>.logo:after{
+    content: '';
+    position: absolute;
+    background: url('../../img/noel-tet2022/tet/head-img-tet22.png') no-repeat top left;
+    background-size: 90px auto;
+    top: 0px;
+    left: 52px;
+    width: 100px;
+    height: 66px;
+}
+
+@media(max-width:1366px) {
+}
+@media(max-width:1200px) {
+}
+@media(max-width:1024px) {
+    .nav-brand>.logo:after{
+        top: 0px;
+        left: 52px;
+    }
+}
+@media(max-width:768px) {
+    .nav-brand>.logo:after{
+        top: 0px;
+        left: 52px;
+    }
+}
+@media(max-width:540px) {
+}   
+@media(max-width:479px) {
+}
+@media(max-width:375px) {
+    
+}
+@media(max-width:320px) {
+    
+}
+
+/* Tet 2022 - 17/1/2022 */

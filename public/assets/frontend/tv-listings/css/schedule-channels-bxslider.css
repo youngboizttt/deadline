@@ -1,0 +1,75 @@
+.gallery-thumbs-container{
+  margin-bottom: 15px;
+}
+.thumb{
+  border: 3px solid #d0d0d0;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  /*background: #fff;*/
+  cursor: move;
+  height: 75px;
+  width: 155px;
+  text-align: center;
+  background-image: linear-gradient(to right top, #c2c2c2, #c9c9c9, #d0d0d0, #d7d7d7, #dedede);
+}
+.thumb.pager-active {
+  border: 3px solid #e38044;
+}
+.thumb img{
+  height: 75px;
+  margin: 0 auto;
+}
+.bx-controls .bx-controls-direction .bx-prev, .bx-controls .bx-controls-direction .bx-next{
+  margin-top: 0;
+  top: calc(50% - 20px);
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  width: 25px;
+  height: 40px;
+}
+.bx-controls .bx-controls-direction .bx-prev{
+  background: rgba(99,99,99,.1) url(../../img/icon/arr-left-orange.png) center no-repeat;
+  left: -35px
+}
+.bx-controls .bx-controls-direction .bx-prev:hover, .bx-controls .bx-controls-direction .bx-prev:focus{
+  background-position: center !important;
+  background-color: rgba(55,55,55,.2);
+}
+.bx-controls .bx-controls-direction .bx-next{
+  background: rgba(99,99,99,.1) url(../../img/icon/arr-right-orange.png) center no-repeat;
+  right: -35px
+}
+.bx-controls .bx-controls-direction .bx-next:hover, .bx-controls .bx-controls-direction .bx-next:focus{
+  background-position: center !important;
+  background-color: rgba(55,55,55,.2);
+}
+
+@media(max-width:1024px) {
+  .bx-controls .bx-controls-direction .bx-prev{
+    background: rgba(99,99,99,.2) url(../../img/icon/arr-left-orange.png) center no-repeat;
+    left: 0px
+  }
+  .bx-controls .bx-controls-direction .bx-next{
+    background: rgba(99,99,99,.2) url(../../img/icon/arr-right-orange.png) center no-repeat;
+    right: 0px
+  }
+}
+@media(max-width:500px) {
+  .thumb{
+    border: 2px solid #d0d0d0;
+    cursor: move;
+    height: 70px;
+    width: 146px;
+  }
+  .thumb.pager-active {
+    border: 2px solid #e38044;
+  }
+  .gallery-thumbs-list{
+    margin-left: 4px !important
+  }
+  .thumb img{
+    height: 66px;
+  }
+}

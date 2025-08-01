@@ -1,0 +1,216 @@
+/*-----------------------------------*/
+
+.tab-channels.active{
+  background: #fff !important;
+  -webkit-border-bottom-right-radius: 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomright: 4px;
+  -moz-border-radius-bottomleft: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.tab-channels h3, .modal-body.schedule-detail-pop h3{
+  background: #234d9d;
+  color: #fff;
+  font-size: 18px;
+  padding: 15px 35px;
+  margin: 0px;
+}
+
+.tab-channels div {
+  padding: 0 15px;
+  display: flex;
+}
+.tab-channels div:nth-of-type(1),
+.modal-body.schedule-detail-pop div:nth-of-type(1){
+  margin-top: 20px;
+}
+.tab-channels div b, .modal-body.schedule-detail-pop div b {
+  width: 100px;
+  display: inline-block;
+  float: left;
+}
+.tab-channels div p, .modal-body.schedule-detail-pop div p {
+  float: left;
+  width: calc(100% - 100px);
+}
+.tab-channels div.now, .modal-body.schedule-detail-pop div.now {
+  color: #6897f0;
+  font-family: 'Roboto-Bold';
+}
+/*-----------------------------------order style not tab------------------------------*/
+
+/*doanvh add*/
+.modal-broadcast{
+  padding: 8px 15px 0 5px;
+}
+/*add search*/
+.div-search-schedule{
+  margin-top: 9px !important;
+  margin:0;
+}
+#custom-search-input {
+  padding: 0;
+  float: right;
+  width: 180px;
+}
+#custom-search-input .search-query.txt-search-schedule {
+  margin-bottom: 0;
+  height: 24px;
+}
+
+#custom-search-input button.btn.search-schedule {
+  border: 0;
+  background: none;
+  /** belows styles are working good */
+  padding: 1px 3px;
+  position: absolute;
+  right: 5px;
+  /* IE7-8 doesn't have border-radius, so don't indent the padding */
+  margin-bottom: 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  color:#555;
+  font-size: 18px;
+}
+.search-query:focus + button {
+  z-index: 3;
+}
+/* //add search*/
+/*---------------------------------- //order style not tab----------------------------*/
+/*modal*/
+/*modal-dialog*/
+@media(min-width:768px) {
+  .modal-broadcast .modal-dialog{
+    width: 70% !important
+  }
+}
+
+.modal-backdrop
+{
+  opacity:.9 !important;
+  /*background: #fff*/
+}
+.btn-primary.btn-grid, .btn-primary.btn-grid:focus{
+  background: none;
+  color: #121;
+  border: none;
+  outline: none;
+}
+.btn-primary.btn-grid i:before{
+  font-size: 28px;
+}
+.btn-primary.btn-grid i span{
+  padding-left: 16px;
+  font: 700 16px 'Roboto-Bold';
+  margin-top: 3px;
+  position: absolute;
+}
+
+.modal-body.list-schedule-logo, .modal-body.schedule-detail-pop{
+  max-height: 80vh;
+  overflow-y: scroll;
+}
+.list-schedule{
+  display: inline-block;
+  margin: 0px auto;
+  padding: 0;
+}
+.list-schedule li{
+  float: left;
+  width: 130px;
+  height: 70px;
+  margin: 10px;
+  text-align: center;
+  display: table;
+}
+.list-schedule li a{
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  display: table-cell;
+  vertical-align: middle;
+}
+.list-schedule li a img{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* //modal-dialog*/
+
+@media (max-width: 768px){
+  #scrool-style::-webkit-scrollbar
+  {
+    width: 0px;
+    background-color: #F5F5F5;
+  }
+  .modal-body.list-schedule-log{
+    height: 80vh;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 500px){
+  .tab-channels div b, .modal-body.schedule-detail-pop div b {
+    width: 60px;
+    display: inline-block;
+    float: left;
+  }
+  .tab-channels div p, .modal-body.schedule-detail-pop div p {
+    float: left;
+    width: calc(100% - 60px);
+}
+
+
+  .ui-tabs .ui-tabs-panel{
+    padding: 15px 10px;
+  }
+  .channels-detail h3, .modal-body.schedule-detail-pop h3{
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    margin: 0px;
+  }
+  .schedule-border.iframe{
+    padding: 15px 0px
+  }
+  .list-schedule li{
+    width: calc(50% - 20px);
+  }
+  .list-schedule li a img{
+    width: 130px;
+  }
+  .div-search-schedule{
+    margin-top: 8px !important;
+  }
+  a.link-schedule{
+    padding: .7em .9em;
+  }
+  /*end 500*/
+}
+
+@media (max-width: 360px){
+  .list-schedule li a img{
+    width: 120px;
+  }
+}
+@media (max-width: 320px){
+  a.link-schedule{
+    padding: .5em .8em;
+  }
+  .list-schedule li a img{
+    width: 102px;
+  }
+}
+
+/*  */
+
+.modal-broadcast {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+
+.channel-logo {
+    width: 100px;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>document title</title>
+    <style>
+        body {
+            background: url('./images/bg-banner.jpg') center repeat;
+            background-size: cover;
+            background-position: 100px 200px;
+            margin: 0;
+            padding: 0;
+            line-height: 1;
+        }
+
+        .border-rotate {
+            display: flex;
+            position: relative;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            z-index: 1;
+            width: 800px;
+            height: 500px;
+            border-radius: 20px;
+            margin: 80px auto;
+        }
+
+        /* .discovery-video-content .video-container {
+            border-radius: 22px;
+        }
+
+        .discovery-video-content .video-container {
+            width: 74.7vw;
+            max-width: 59.75rem;
+            height: 63.2vh;
+            max-height: 32.875rem;
+        } */
+
+        .border-rotate::before {
+            display: block;
+            z-index: -1;
+            position: absolute;
+            width: 93.75rem;
+            height: 93.75rem;
+            content: "";
+            /* background: linear-gradient(60.15deg, #f3722100 30%, #f3722133 40%, #ffffff33 42%, #fffffff0 50%, #ffffff33 58%, #21c2f333 60%, #f3722100 70%); */
+            /* background: linear-gradient(60.15deg, #00ff2f00 10%, #05f3da33 40%, #ffffff33 42%, #00e4fff0 50%, #ffffff33 75%, #21c2f333 60%, #2182f300 70%); */
+            background: linear-gradient(90deg, #01CB41 20%, #01CB41 10%, #01CB41 10%, #01CB41 5%, #279FFF 50%);
+            -webkit-animation: rotate 13s linear infinite;
+            animation: rotate 13s linear infinite;
+            transition: all 0.3s ease-out 0.06s;
+
+
+            /* display: none; */
+
+
+        }
+
+        .border-rotate:hover::before {
+            -webkit-animation: rotate 8s linear infinite;
+            animation: rotate 8s linear infinite;
+        }
+
+
+        @keyframes rotate {
+            from {
+                -webkit-transform: rotate(0);
+                transform: rotate(0)
+            }
+
+            to {
+                -webkit-transform: rotate(360deg);
+                transform: rotate(360deg)
+            }
+        }
+
+
+        .border-rotate .inner {
+            z-index: 1;
+            position: relative;
+            width: calc(100% - 6px);
+            height: calc(100% - 6px);
+            margin: 3px;
+            background: #000;
+            border-radius: 18px;
+            overflow: hidden;
+
+        }
+
+        .border-rotate .inner {}
+
+        .discovery-video-content .video-container .inner {
+            /* position: relative;
+            width: 100%;
+            height: 99%;
+            margin: 2px;
+            border-radius: 20px;
+            overflow: hidden; */
+        }
+
+        .contain-video {
+            background: #000;
+            width: 96%;
+            height: 96%;
+            display: block;
+            margin: 2%;
+        }
+
+        .img-full {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        /* ------------------ */
+        .card {
+            position: relative;
+            border-radius: 20px;
+            /* Bo góc */
+            padding: 3px;
+            /* Để hiện viền gradient */
+            background: linear-gradient(45deg, #01CB41, #279FFF);
+            /* Border gradient */
+            overflow: hidden;
+            box-shadow: 0 0 14px #01CB41, 0 0 20px #279FFF;
+            /* Shadow phát sáng */
+            height: 400px;
+            width: 500px;
+        }
+
+        .card .card-inner {
+            border-radius: 16px;
+            /* Inner cũng bo góc khớp */
+            overflow: hidden;
+            background: #111;
+            /* Nền đen cho nội dung */
+            height: 400px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- https://fptsoftware.com/fpt-chelseafc -->
+    <div class="video-container border-rotate external-video">
+        <div class="inner">
+            <img class="img-full" src="./images/LDP_Press 3_Desktop.webp" alt="">
+            <!-- <div class="contain-video">xxx</div> -->
+
+
+
+        </div>
+    </div>
+
+    <div class="card" style="margin: 40px;">
+        <div class="card-inner">
+            <img src="./images/LDP_Press 3_Desktop.webp" alt="..." style="width: 100%; height: auto;">
+        </div>
+    </div>
+
+</body>
+
+</html>

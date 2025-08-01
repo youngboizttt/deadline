@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FPT Telecom - Công ty Cổ phần Viễn thông FPT</title>
+    <meta name="description"
+        content="Website chính thức cung cấp đầy đủ, chính xác thông tin về Internet FPT, Truyền hình FPT, FPT Play, FPT Play Box, FPT Camera, Foxpay, Fshare, Hi FPT - Trang chủ">
+    <meta name="keywords"
+        content="Internet FPT, Truyền hình FPT, FPT Camera, FPT Play Box,  FPT Play, Thanh toán điện tử Foxpay, FPT Telecom">
+    <meta charset="UTF-8">
+
+    <link href="./assets/css/normalize.min.css" rel="stylesheet">
+    <link href="./assets/plugin/otp/style-otp.css" rel="stylesheet">
+
+    <!-- <link href="./assets/plugin/countdown-otp/style.css" rel="stylesheet"> -->
+    <style>
+        
+    </style>
+</head>
+
+<body class="landing-page">
+    <div class="row-fullwidth">
+        <div class="home-middle">
+            <div class="middle-content">
+                <H3>DOAN</H3>
+                <form id="form-otp" class="otp-form" name="otp-form">
+                    <div class="row-num form-otp">
+                            <div class="form-resend-waiting">
+                                <!--  -->
+
+                                <div>
+                                    <div id="circlePercent" class="circlePercent" style="display: none;">
+                                        <div class="counter" data-text="" data-type="countdown" data-minute="0"
+                                            data-second="30"></div>
+                                        <div class="progress"></div>
+                                        <div class="progressEnd"></div>
+                                    </div>
+                                    <!--  -->
+                                    <div class="form-group text_thong_bao" style="display: none;">
+                                        <span id="message-otp" class="text-err text-center">Vui lòng đợi 30s để hệ thống
+                                            gửi mã OTP mới.</span>
+                                    </div>
+                                </div>
+
+
+
+                            </div>
+                            <div class="otp-input-fields form-otp">
+                                <input id="otp1" class="otp-field otp__digit" inputmode="numeric" autofocus type="text"
+                                    name="opt-field[]" maxlength="1">
+                                <input id="otp2" class="otp-field otp__digit" inputmode="numeric" type="text"
+                                    name="opt-field[]" maxlength="1">
+                                <input id="otp3" class="otp-field otp__digit" inputmode="numeric" type="text"
+                                    name="opt-field[]" maxlength="1">
+                                <input id="otp4" class="otp-field otp__digit" inputmode="numeric" type="text"
+                                    name="opt-field[]" maxlength="1">
+                                <input id="otp5" class="otp-field otp__digit" inputmode="numeric" type="text"
+                                    name="opt-field[]" maxlength="1">
+                                <input id="otp6" class="otp-field otp__digit" inputmode="numeric" type="text"
+                                    name="opt-field[]" maxlength="1">
+
+                                <!-- merge OTP value -->
+                                <input class="otp-value" value="" type="hidden_" id="otp" name="otp" disabled>
+
+                            </div>
+                            <span class="text-err text-center code_hieu_luc" style="display: none;">Mã hết hiệu lực. Vui
+                                lòng yêu cầu gửi lại mã mới</span>
+                    </div>
+                    <div class="row-button">
+                        <button id="getBackOTP" disabled onclick="return reSendOtp()">Gửi lại mã OTP</button>
+                        <button type="submit" class="accept">Xác nhận</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./assets/js/jquery-2.2.3.min.js" type="text/javascript"></script>
+    <!-- <script src="./assets/js/scripts.js" type="text/javascript"></script> -->
+
+    <script src="./assets/plugin/otp/script-otp.js" type="text/javascript"></script>
+
+
+
+</body>
+
+</html>

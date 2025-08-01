@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isotope Sorting Ascending / Descending</title>
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'> -->
+  <link rel="stylesheet" href="https://fpt.vn/ultrafast/bootstrap3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container-fluid_">
+	<div class="grid-uploads container">	
+		<div class="block-btn-filter clearfix">
+			<div class="row-btn-filter">
+				<div class="btn-group_ filters-button-group">
+					<div type="button" class="radios" data-filter="*">
+						<input type="radio" value='1' name='radio-price' id='allGame' class="game-input--radio" checked />
+						<div class="button-blue">
+							<svg class="icon icon--left" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="white" fill-opacity="0.1"/>
+							</svg> 
+							<svg class="icon icon--left _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="#3838FF" fill-opacity="1"/>
+								</svg>         
+								<label for='allGame'>Tất cả Game</label>
+							<svg class="icon icon--right" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="white" fill-opacity="0.1"/>
+							</svg>
+							<svg class="icon icon--right _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="#3838FF" fill-opacity="1"/>
+							</svg>
+						</div>					
+					</div>
+					<div type="button" class="radios" data-filter=".html">
+						<input type="radio" value='2' name='radio-price' id='Game1' class="game-input--radio" />
+						<div class="button-blue">
+							<svg class="icon icon--left" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="white" fill-opacity="0.1"/>
+							</svg> 
+							<svg class="icon icon--left _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="#3838FF" fill-opacity="1"/>
+								</svg>         
+								<label for='Game1'>Game phiêu lưu</label>	
+							<svg class="icon icon--right" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="white" fill-opacity="0.1"/>
+							</svg>
+							<svg class="icon icon--right _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="#3838FF" fill-opacity="1"/>
+							</svg>
+						</div>									
+					</div><!--.HTML--><!-- fill by claas css-->
+					<div type="button" class="radios" data-filter=".jpg">
+						<input type="radio" value='3' name='radio-price' id='Game2' class="game-input--radio" />
+						<div class="button-blue">
+							<svg class="icon icon--left" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="white" fill-opacity="0.1"/>
+							</svg> 
+							<svg class="icon icon--left _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="#3838FF" fill-opacity="1"/>
+								</svg>         
+								<label for='Game2'>Game Action</label>	
+							<svg class="icon icon--right" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="white" fill-opacity="0.1"/>
+							</svg>
+							<svg class="icon icon--right _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="#3838FF" fill-opacity="1"/>
+							</svg>
+						</div>
+					</div><!--.JPG-->
+					<div type="button" class="radios" data-filter=".mp3">
+						<input type="radio" name='radio-price' id='Game3' class="game-input--radio" />    
+						<div class="button-blue">
+							<svg class="icon icon--left" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="white" fill-opacity="0.1"/>
+							</svg> 
+							<svg class="icon icon--left _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="#3838FF" fill-opacity="1"/>
+								</svg>         
+								<label for='Game3'>Game Thần thoại</label>
+							<svg class="icon icon--right" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="white" fill-opacity="0.1"/>
+							</svg>
+							<svg class="icon icon--right _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="#3838FF" fill-opacity="1"/>
+							</svg>
+						</div>
+					</div><!--.MP3-->
+					<div type="button" class="radios" data-filter=".png">
+						<input type="radio" name='radio-price' id='Game4' class="game-input--radio"  />    
+						<div class="button-blue">
+							<svg class="icon icon--left" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="white" fill-opacity="0.1"/>
+							</svg> 
+							<svg class="icon icon--left _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M0.358599 19.0522L11.0051 0.690774C11.184 0.38228 11.5136 0.192383 11.8702 0.192383H24V28.1924H7.86733C7.57793 28.1924 7.30272 28.067 7.1128 27.8486L0.469155 20.2101C0.18855 19.8874 0.144119 19.4221 0.358599 19.0522Z" fill="#3838FF" fill-opacity="1"/>
+								</svg>         
+								<label for='Game4'>Game mới</label>
+							<svg class="icon icon--right" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="white" fill-opacity="0.1"/>
+							</svg>
+							<svg class="icon icon--right _active" xmlns="http://www.w3.org/2000/svg" width="24" height="29" viewBox="0 0 24 29" fill="none">
+								<path d="M23.6414 9.33257L12.9949 27.694C12.816 28.0025 12.4864 28.1924 12.1298 28.1924L0 28.1924L2.44784e-06 0.192381L16.1327 0.192382C16.4221 0.192382 16.6973 0.317758 16.8872 0.536125L23.5308 8.17471C23.8115 8.49734 23.8559 8.96268 23.6414 9.33257Z" fill="#3838FF" fill-opacity="1"/>
+							</svg>
+						</div>
+					</div><!--.PNG-->
+				</div><!-- /.btn-group -->
+			</div>
+			<div class="btn-group sort-button-group pull-right sort-right"> 
+				<!-- <div class="btn btn-default" data-sort-direction="asc" data-sort-value="original-order" type="button">Sort <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span></div>  -->
+				<div class="buttonShortName" data-sort-direction="asc" data-sort-value="fileby" type="button">Sắp xếp:<span aria-hidden="true" class="glyphicon_ glyphicon-chevron-up_ txtShortName txt-short-up"></span></div> 
+				<!-- <div class="btn btn-default" data-sort-direction="asc" data-sort-value="filesize" type="button">File Size  <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span></div>
+				<div class="btn btn-default" data-sort-direction="asc" data-sort-value="filedate" type="button">Date <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span></div> 
+				<div class="btn btn-default" data-sort-direction="asc" data-sort-value="filename" type="button">File Name  <span aria-hidden="true" class="glyphicon glyphicon-chevron-up"></span></div>  -->
+			</div><!-- /.btn-group -->
+
+		</div><!-- /.well -->
+	
+		<div class="uploads-row row scroll_filtr__container" id="uploads_row">
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 mp3">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/arena-of-valor.png" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Aaaa Carroll Wike</span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g3.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Ddddd  Rodger Brundige </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 html">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g4.jpg" alt="">
+					</div><!-- /.col-media-item -->
+
+					<div class="caption col-media-details">
+						<span class="file-by"> Bbbb Melaine Shurtleff </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 png">
+				<div class="thumbnail">
+
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g5.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Cccc Shawana Bowles </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g3.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Ddddd  Rodger Brundige </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 png">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/la-ka2.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> FFFF Prince Lineberry </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/la-ka2.jpg" alt="">
+					</div><!-- /.col-media-item -->
+
+					<div class="caption col-media-details">
+						<span class="file-by"> Gggg Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g4.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Kkkk Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g4.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Oooo Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/arena-of-valor.png" alt="">
+					</div><!-- /.col-media-item -->
+
+					<div class="caption col-media-details">
+						<span class="file-by"> Eeee Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g4.jpg" alt="">
+					</div><!-- /.col-media-item -->
+
+					<div class="caption col-media-details">
+						<span class="file-by"> Mmmm Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g3.jpg" alt="">
+					</div><!-- /.col-media-item -->
+
+					<div class="caption col-media-details">
+						<span class="file-by"> Hhhh Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+			<div class="col-media col-xs-6 col-sm-4 col-md-3 jpg">
+				<div class="thumbnail">
+					<div class="col-media-item col-media-icon">
+						<img src="./game/g4.jpg" alt="">
+					</div><!-- /.col-media-item -->
+					<div class="caption col-media-details">
+						<span class="file-by"> Jjjj Salena Kesterson </span>
+					</div><!-- /.caption -->
+					<div class="mask-thumb"></div>
+					<div class="arrow-top"></div>
+				</div><!-- /.thumbnail -->
+			</div><!-- /.col -->
+
+		</div><!-- /.uploads-row -->
+	</div><!-- /.grid-uploads -->
+	<div class="container">
+		<div class="row">
+			test
+		</div>
+	</div>
+</div><!-- /.container -->
+<!-- partial -->
+  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script> -->
+  <script src='https://fpt.vn/ultrafast/js/jquery.min.js'></script>
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script> -->
+<script src='https://fpt.vn/ultrafast/bootstrap3.3.6/js/bootstrap.min.js'></script>
+<script src='./js/isotope.pkgd.min.js'></script>
+<script  src="./script.js"></script>
+
+</body>
+</html>
+
+
+<!-- 
+Game thể thao > thethao
+Game chiến thuật > chienthuat
+Game đua xe > duaxe
+Game nhập vai > nhapvai
+Game nông trại > nongtrai
+Game Moba > moba
+Game Sandbox > sandbox
+Game thực tế ảo > thucteao
+Game MMO > mmo -->

@@ -1,0 +1,451 @@
+ul,
+li {
+  list-style: none;
+}
+
+/* flex layout */
+
+.tabs-container {
+  width: 100%;
+  margin: auto;
+  height: 100vh;
+}
+
+.tabs-container .component {
+  display: flex;
+  height: 100%;
+}
+
+.tabs-container .component .component-content {
+  display: inline-flex;
+  flex-flow: row wrap;
+  width: 100%;
+}
+
+.tabs-container .component .component-content .component-promo-card {
+  position: relative;
+}
+
+.tabs-container .component .component-content .component-promo-card.card-50 {
+  flex-direction: row;
+  flex-basis: 50%;
+}
+
+
+/* Accordion (section 4), demo: https://cp.io/htxxxx/pen/bGmPKVR */
+.animated-accordion {
+  padding: 0px 0;
+  height: 100%;
+}
+
+.animated-accordion .accordion-image-wrap {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0%;
+  left: 0px;
+  right: 0;
+  bottom: 0px;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  overflow: hidden;
+  background-size: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide._bg1 {
+  background: linear-gradient(106.35deg, #EDF3FF 23.77%, rgb(255, 255, 255) 103.77%);
+}
+
+.animated-accordion .accordion-image-wrap .image-slide._bg2 {
+  background: linear-gradient(106.35deg, hwb(256 90% 0%) 23.77%, rgb(255, 255, 255) 103.77%);
+}
+
+.animated-accordion .accordion-image-wrap .image-slide:nth-of-type(2) {
+  /* transform: translateY(4em) rotateZ(15deg);
+  border: 2px solid red; */
+}
+
+.animated-accordion .accordion-image-wrap .image-slide:nth-of-type(3) {}
+
+.animated-accordion .accordion-image-wrap .image-slide.active {
+  opacity: 1;
+  left: 0;
+  z-index: 999;
+  visibility: visible;
+  /* transform: rotateZ(0deg); */
+}
+
+.animated-accordion .accordion-image-wrap .image-slide img {
+  position: absolute;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide .img-1 {
+  opacity: 0.5;
+  transition: transform 0.7s .05s cubic-bezier(0, 1, .3, 1), opacity .25s .25s ease-out;
+  top: 350%;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .img-1 {
+  z-index: 10;
+  position: absolute;
+  animation: phone1_animated 0.98s;
+  animation-fill-mode: forwards;
+  width: 543px;
+  width: 56%;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .img-1 {
+  transform: rotateZ(0deg);
+  opacity: 1;
+  left: calc(50% - 10vw);
+  top: 70vh;
+  z-index: 9;
+}
+
+@keyframes phone1_animated {
+  to {
+    /* left: calc(50% - 300px); */
+    top: 26vh;
+    transform: translate(0%, 0%) rotateZ(0deg);
+  }
+}
+
+
+/* 
+
+.animated-accordion .accordion-image-wrap .image-slide .img-2 {
+  opacity: 0.15;
+  transform: translateY(16em) rotateZ(100deg);
+  transition: transform 0.7s .05s cubic-bezier(0, 1, .3, 1), opacity .25s .25s ease-out;
+  will-change: transform, opacity;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .img-2 {
+  transform: rotateZ(0deg);
+  opacity: 1;
+  left: calc(50% - 162px);
+  top: calc(50% - 290px);
+  z-index: 9;
+} */
+
+
+.animated-accordion .accordion-image-wrap .image-slide .img-2 {
+  opacity: 0.5;
+  transition: transform 0.7s .05s cubic-bezier(0, 1, .3, 1), opacity .25s .25s ease-out;
+  top: 350%;
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .img-2 {
+  z-index: 10;
+  position: absolute;
+  animation: phone2_animated 0.98s;
+  animation-fill-mode: forwards;
+  width: 543px;
+  width: 56%;
+  transform: rotateZ(0deg);
+  opacity: 1;
+  left: 85%;
+  top: 26vh;
+}
+
+@keyframes phone2_animated {
+  to {
+    left: calc(50% - 10vw);
+  }
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .icon-1 {
+  z-index: 10;
+  position: absolute;
+  animation: move_icon1 0.88s;
+  animation-fill-mode: forwards;
+  left: calc(50% + 250px);
+  left: calc(50% + 16vw);
+  top: 80%;
+
+
+  transform: rotateZ(20deg);
+  width: 28px;
+}
+
+
+
+@keyframes move_icon1 {
+  to {
+    left: calc(50% + 16vw);
+    top: calc(50% + 22vh);
+    transform: translate(0%, 0%) rotateZ(-15deg);
+  }
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .icon-2 {
+  z-index: 10;
+  position: absolute;
+  animation: move_icon2 0.98s;
+  animation-fill-mode: forwards;
+  left: calc(50% - 11.5vw);
+  top: calc(50% + 13vh);
+  width: 51px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes move_icon2 {
+  to {
+    top: calc(50% + 4vh);
+    transform: translate(0%, 0%) rotateZ(-60deg);
+  }
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .icon-3 {
+  z-index: 10;
+  position: absolute;
+  animation: move_icon3 1.1s;
+  animation-fill-mode: forwards;
+  top: calc(80% + 28px);
+  left: calc(50% - 20px);
+  width: 160px;
+  transform: rotateZ(290deg);
+}
+
+@keyframes move_icon3 {
+  to {
+    left: calc(50% + 6.5vw);
+    top: calc(50% + 27vh);
+    transform: translate(0%, 0%) rotateZ(0deg);
+  }
+}
+
+
+.animated-accordion .accordion-image-wrap .image-slide.active .icon-1_1 {
+  z-index: 10;
+  position: absolute;
+  animation: move_icon1_1 0.88s;
+  animation-fill-mode: forwards;
+  left: calc(50% + 240px);
+  top: calc(50% + 160px);
+  transform: rotateZ(20deg);
+  width: 28px;
+}
+
+
+
+@keyframes move_icon1_1 {
+  to {
+    width: 49px;
+    /* top: calc(50% + 9vh);
+    left: calc(50% + 8.5vw); */
+
+    top: calc(50% + 2vh);
+    left: calc(50% + 5.6vw);
+  }
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .icon-2_1 {
+  z-index: 10;
+  position: absolute;
+  animation: move_icon2_1 0.98s;
+  animation-fill-mode: forwards;
+  left: calc(50% - 11.5vw);
+  top: calc(50% + 4vh);
+  width: 51px;
+  transform: rotateZ(45deg);
+}
+
+@keyframes move_icon2_1 {
+  to {
+    top: 40%;
+    left: calc(50% - 17vw);
+    transform: translate(0%, 0%) rotateZ(-60deg);
+    width: 22px;
+  }
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .icon-3_1 {
+  z-index: 11;
+  position: absolute;
+  animation: move_icon3_1 1.1s;
+  animation-fill-mode: forwards;
+  top: calc(80% + 28px);
+  left: 70%;
+  width: 160px;
+  transform: rotateZ(290deg);
+}
+
+@keyframes move_icon3_1 {
+  to {
+    left: 22%;
+    top: calc(50% + 190px);
+    transform: translate(0%, 0%) rotateZ(0deg);
+
+  }
+}
+
+
+.animated-accordion .accordion-image-wrap .image-slide.active .dots-1 {
+  z-index: 9;
+  position: absolute;
+  animation: move_dots1 0.7s;
+  animation-fill-mode: forwards;
+  bottom: -500px;
+  width: 100%;
+}
+
+@keyframes move_dots1 {
+  to {
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+  }
+}
+
+.animated-accordion .accordion-image-wrap .image-slide.active .dots-2 {
+  z-index: 10;
+  position: absolute;
+  animation: move_dots2 0.7s;
+  animation-fill-mode: forwards;
+  bottom: calc(0% - 500px);
+  bottom: -100px;
+  width: 100%;
+  opacity: 0.1;
+}
+
+@keyframes move_dots2 {
+  to {
+    right: 0;
+    bottom: 0;
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+}
+
+.animated-accordion .accordion-image-wrap span {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.animated-accordion .accordion-sections {
+  text-align: left;
+  position: absolute;
+  right: 150px;
+  width: 450px;
+}
+
+.animated-accordion .accordion-sections ul {
+  margin: 0;
+  padding: 0;
+}
+
+.animated-accordion .accordion-sections li {
+  padding: 8px 27px;
+  margin: 22px 0;
+  transition: 0.6s;
+  -webkit-transition: 0.6s;
+  -moz-transition: 0.6s;
+  -ms-transition: 0.6s;
+  -o-transition: 0.6s;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  font-size: 15px;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.animated-accordion .accordion-sections li.active {
+  background: #506CFF;
+  color: #fff;
+}
+
+.animated-accordion .accordion-sections li.li2.active {
+  background: #a585ff;
+}
+.animated-accordion .accordion-sections li:hover {
+  box-shadow: 0px 19px 39px -10px #dedede;
+}
+
+.animated-accordion .accordion-sections li.active:hover {
+  background-image: none;
+}
+
+.animated-accordion .accordion-sections li .acc-title {
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--black);
+  position: relative;
+  padding: 18px 0;
+}
+
+.animated-accordion .accordion-sections li.active:hover .acc-title {
+  color: var(--black);
+}
+
+.animated-accordion .accordion-sections li .acc-title::after {
+  content: '';
+  position: absolute;
+  top: 22px;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  border: 1px solid #C8C8C8;
+  background: #fff url('./arrow.svg') center no-repeat;
+  -webkit-border-radius: 90px;
+  -moz-border-radius: 90px;
+  border-radius: 90px;
+}
+
+.animated-accordion .accordion-sections li.active .acc-title::after {
+  border: 1px solid #fff;
+  background: #fff url('./arrow-active.svg') center no-repeat;
+}
+
+.animated-accordion .accordion-sections li.li2.active .acc-title::after {
+  border: 1px solid #fff;
+  background: #fff url('./arrow-active1.svg') center no-repeat;
+}
+
+
+
+.animated-accordion .accordion-sections li h3 img {
+  margin-right: 24px;
+}
+
+.accordion-sections .acc-content {
+  padding-bottom: 8px;
+  display: block !important;
+}
+
+.accordion-sections .acc-content p {
+  font-weight: 300;
+  padding: 0 70px 12px 0;
+  line-height: 1.5rem;
+}
+
+.animated-accordion .col_right {
+  width: 43%;
+}
+
+/* // Accordion (section 4) */

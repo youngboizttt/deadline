@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /vi
+Allow: /en
+Allow: FSafe Go
+Sitemap: https://fpt.vn/fsafe-go/sitemap.xml

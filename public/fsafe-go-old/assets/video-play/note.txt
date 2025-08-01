@@ -1,0 +1,2 @@
+script này dùng cho video khi scroll tới section có video thì play
+scroll qua section khác thì dừng

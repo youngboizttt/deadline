@@ -1,0 +1,149 @@
+/* style logo */
+.nav-brand>.logo{
+    position: relative;
+}
+.nav-brand>.logo:after{
+    content: '';
+    position: absolute;
+    background: url('./img-tet/head-img-tet22.png') no-repeat top left;
+    background-size: 90px auto;
+    top: 0px;
+    left: 50px;
+    width: 100px;
+    height: 66px;
+}
+/* ______________________________________________________________ */
+.row-3links-underbanner.tet2022{
+    position: relative;
+    /* width: 100%; */
+    height: auto;
+    padding-top: 45px;
+}
+.row-3links-underbanner.tet2022>.col-left{
+    position: absolute;
+    background: url('./img-tet/lanterns-tet2022-left.png') no-repeat top left;
+    top: -32px;
+    left: -5px;
+    width: 222px;
+    height: 413px;
+    background-size: 172px;
+}
+.row-3links-underbanner.tet2022>.col-right{
+    position: absolute;
+    background: url('./img-tet/lanterns-tet2022-right.png') no-repeat top right;
+    top: -32px;
+    right: -5px;
+    width: 222px;
+    height: 413px;
+    background-size: 172px;
+}
+/* ______________________________________________________________ */
+footer.footer{
+    position: relative;
+}
+footer.footer .tet2022{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+footer.footer .tet2022>.col-left{
+    position: absolute;
+    background: url('./img-tet/tet22-foot-left.png') no-repeat bottom left;
+    bottom: 42px;
+    left: 8px;
+    width: 420px;
+    height: 85%;
+    background-size: 404px;
+}
+footer.footer .tet2022>.col-right{
+    position: absolute;
+    background: url('./img-tet/tet22-foot-right.png') no-repeat bottom right;
+    bottom: 48px;
+    right: 8px;
+    width: 420px;
+    height: 75%;
+    background-size: 330px;
+}
+@media(max-width:1366px) {
+    footer.footer .tet2022>.col-left{
+        bottom: 119px;
+        left: 8px;
+        width: 420px;
+        height: 85%;
+        background-size: 263px;
+    }
+    footer.footer .tet2022>.col-right{
+        bottom: 123px;
+        right: 8px;
+        width: 420px;
+        height: 75%;
+        background-size: 246px;
+    }
+}
+@media(max-width:1200px) {
+}
+@media(max-width:1024px) {
+    .nav-brand>.logo:after{
+        top: 0px;
+        left: 52px;
+    }
+}
+@media(max-width:768px) {
+    .nav-brand>.logo:after{
+        top: 0px;
+        left: 52px;
+    }
+    .license-text{
+        padding-bottom: 210px;
+    }
+    .row-3links-underbanner.tet2022{
+        padding-top: 0;
+        padding-bottom: 175px;
+    }
+    .row-3links-underbanner.tet2022>.col-left{
+        background-position: left bottom;
+        bottom: 0;
+        top: unset;
+        background-size: 135px;
+    }
+    .row-3links-underbanner.tet2022>.col-right{
+        background-position: right bottom;
+        bottom: 0;
+        top: unset;
+        background-size: 135px;
+    }
+    footer.footer .tet2022>.col-left{
+        bottom: 100px;
+        left: 0;
+    }
+    footer.footer .tet2022>.col-right{
+        bottom: 100px;
+        right: 0px;
+    }
+}
+@media(max-width:540px) {
+    .row-3links-underbanner.tet2022>.col-left,
+    .row-3links-underbanner.tet2022>.col-right{
+        background-size: 120px;
+    }
+    .license-text {
+        padding-bottom: 168px;
+    }
+    footer.footer .tet2022>.col-left{
+        background-size: 196px;
+    }
+    footer.footer .tet2022>.col-right{
+        background-size: 196px;
+    }
+    
+}   
+@media(max-width:479px) {
+}
+@media(max-width:375px) {
+    
+}
+@media(max-width:320px) {
+    
+}
+
+/* Tet 2022 - 17/1/2022 */

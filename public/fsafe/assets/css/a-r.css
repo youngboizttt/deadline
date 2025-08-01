@@ -1,0 +1,641 @@
+@media screen and (max-width: 1360px) {
+    .section-gk{
+        height: 300px;
+    }
+    .cover-banner_6cuocthi{
+        top: -333px;
+    }
+}
+@media screen and (max-width: 1220px) {
+    .header .container{
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .cover-banner_1,
+    .cover-banner_2,
+    .cover-banner_3,
+    .cover-banner_4cuocthi
+    {
+        height: 500px;
+    }
+    .flex-about-img-item {
+        height: 250px;
+    }
+    .how-works .col-right {
+        padding-left: 30px;
+    }
+    .how-works h3 {
+        font-size: 40px;
+        text-align: left;
+        line-height: 55px;
+    }
+    .login-app .download-store.bt li {
+        margin-right: 76px;
+    }
+    .about-fsafe._padding {
+        padding-bottom: 50px;
+    }
+    .item-luachon{
+        height: 325px;
+    }
+    .cover-banner_5cuocthi    {
+        height: 1358px;
+        padding-top: 205px;
+    }
+    .list-about.list-contest li{
+        padding-top: 10px;
+    }
+    .section-gk {
+        height: 340px;
+    }
+    .cover-banner_6cuocthi    {
+        height: 758px;
+        top: -355px;
+    }
+    .banner-tittle span img {
+        width: 500px;
+    }
+}
+/* end 1024px */
+@media screen and (max-width: 997px) {
+    .header .container,
+    section .container, 
+    footer.fsafe>div.div-foot>div.container{
+        width: 100%;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+/* end 997px */
+@media screen and (max-width: 48em) {
+    .four-column-footer img.pull-right{
+        float: unset !important;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .cover-banner_1,
+    .cover-banner_2,
+    .cover-banner_3
+    {
+        height: 350px;
+    }
+    .cover-banner_4cuocthi    {
+        height: 390px;
+    }
+    
+    .cover-banner_5cuocthi    {
+        height: 1176px;
+        padding-top: 190px;
+    }
+    .flex-about-img-item {
+        height: 212px;
+    }
+    .how-works .col-right {
+        padding-left: 15px;
+    }
+    .container>.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .flex-about-img.func .flex-about-img-item {
+        height: auto;
+    }
+    .about-fsafe .about--title,
+    .fsafe-func h3,
+    .net-package._padding h3,
+    .q_a._padding h3 {
+        font-size: 50px;
+    }
+    .fsafe-in-hifpt._padding h3 {
+        font-size: 35px;
+        padding-bottom: 8px;
+    }
+    .download-store.bt li {
+        margin-right: 15px;
+    }
+    .item-luachon{
+        height: 406px;
+    }
+    .item-luachon h4 {
+        font-size: 26px;
+        line-height: 42px;
+    }
+
+    .row-logo {
+        margin-top: 18px;
+        margin-bottom: 25px;
+    }
+    .banner-tittle span img{
+        width: 393px;
+    }
+    .row-logo img{
+        height: 45px;
+    }
+    .span-gift img{
+        width: 430px;
+        margin: 0 auto;
+    }
+    .video-modal-btn {
+        width: 540px;
+        height: 330px;
+        margin: 0 auto;
+    }
+    .banner-video{
+        height: 660px;
+    }
+    .span-gift{
+        padding-top: 20px;
+    }
+    .section-gk {
+        height: 268px;
+    }
+    .cover-banner_6cuocthi {
+        height: 705px;
+        top: -400px;
+    }
+    .cover-banner_6cuocthi .dance-cover-col{
+        padding: 0;
+    }
+    .row-video-modal .video-modal-div {
+        width: 100%;
+        height: 330px;
+    }
+    .row-news>div:last-child {
+        padding-right: 0px;
+        padding-left: 0;
+    }
+    .row-news>div:first-child {
+        padding-right: 0px;
+        padding-left: 0px;
+        padding-bottom: 30px;
+    }
+    .row-news>div:last-child>div:first-child {
+        padding-left: 0px;
+        padding-right: 10px;
+    }
+    .row-news>div:last-child>div:last-child {
+        padding-right: 0px;
+        padding-left: 10px;
+    }
+    .register-fsafe .btn.btn-register-fsafe{
+        width: 360px;
+    }
+    .block-service-fsafe {
+        min-height: 486px;
+        max-height: 486px;
+        padding: 32px 20px;
+    }
+    .block-service-fsafe h4{
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .fsafe-func._padding {
+        padding-top: 75px;
+        padding-bottom: 30px;
+    }
+    .register-fsafe-foot {
+        padding-bottom: 48px;
+    }
+    /* end 768px */
+}
+
+@media screen and (max-width: 540px) {
+    .cover-banner_1,
+    .cover-banner_2,
+    .cover-banner_3
+    {
+        height: 265px;
+    }
+    .flex-about-img-item img {
+        height: auto;
+    }
+    .about-fsafe._padding {
+        padding-bottom: 11px;
+        padding-top: 50px;
+    }
+    .q_a._padding {
+        padding-top: 20px;
+        padding-bottom: 55px;
+    }
+    .fsafe-func .h3-luachon{
+        width: 100%;
+        font-size: 25px;
+        line-height: 48px;
+    }
+    .item-luachon{
+        width: 100%;
+        height: auto;
+    }
+    .item-luachon h4{
+        line-height: 33px;
+    }
+    .cover-banner_4cuocthi{
+        background: url('https://fpt.vn/storage/upload/images/services/fsafe/banner-cuocthi-1m.png') center no-repeat;
+        height: 380px;
+    }
+    
+    .cover-banner_5cuocthi{
+        background: url('https://fpt.vn/storage/upload/images/services/fsafe/banner-cuocthi-2m.png') center no-repeat;
+        height: 1250px;
+        padding-top: 155px;
+    }
+
+    .banner-video {
+        height: 678px;
+    }
+    .div-video{
+        top: 385px;
+    }
+    .video-modal-div{
+        width: 100%;
+        height: 285px;
+    }
+    .video-modal-btn {
+        width: 100%;
+        height: 330px;
+    }
+    .frame-video {
+        width: 100%;
+        height: 262px;
+    }
+    .dance-cover._padding {
+        padding-top: 60px;
+    }
+    .section-gk {
+        height: 730px;
+        padding-top: 30px;
+    }
+    .cover-banner_6cuocthi {
+        height: 700px;
+        top: 0px;
+        background: url(https://fpt.vn/storage/upload/images/services/fsafe/banner-cuocthi-gk_m.png) no-repeat;
+        background-position: top right !important;
+        background-size: 818px !important;
+        padding-top: 530px;
+    }
+    .title-gk-m{
+        display: block;
+    }
+    .title-gk-d{
+        display: none;
+    }
+    .title-name-gk{
+        text-align: center;
+    }
+    .row-video-modal .video-modal-div {
+        width: 100%;
+        height: 260px;
+    }
+    .list-news-fsafe>div {
+        margin-bottom: 25px;
+    }
+    .list-news-fsafe>div img{
+        width: calc(50% - 15px);
+        margin-right: 10px;
+        display: inline-block;
+        min-height: 140px;
+        max-height: 140px;
+        vertical-align: top;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+    }
+    .list-news-fsafe a div{
+        font-size: 17px;
+        display: inline-block;
+        width: 50%;
+        padding-top: 0;
+        margin-bottom: 0;
+        height: 123px;
+        max-height: 123px;
+        line-height: 24px;
+        vertical-align: top;
+    }
+    .list-news-fsafe a p,
+    .list-news-fsafe a span{
+        display: none;
+    }
+    .news-large-item a img, 
+    .news-medium-item a img {
+        max-width: 100%;
+        max-height: unset;
+        border-radius: 0px;
+        -webkit-border-radius: 0px;
+        -moz-border-radius: 0px;
+    }
+    .paging > div{
+        margin: 10px 7px;
+    }
+    .row-news {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .news-detail-container {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    ._padding.news-detail {
+        padding-top: 20px;
+        padding-bottom: 45px;
+    }
+    .list-news-fsafe h3{
+        font-size: 27px;
+        width: 100%;
+    }
+    .title-news-detail {
+        font-size: 25px;
+        line-height: 32px;
+    }
+    .form-control.input_code{
+        width: calc(100% - 150px);
+        float: left;
+    }
+    .form-control.code-text{
+        width: 130px;
+    }
+    .register-fsafe .btn.btn-register-fsafe{
+        width: 70%;
+    }
+    .form-agree label{
+    }
+    .form-agree a, .form-agree a:hover{
+        display: inline-block;
+        margin-left: 0;
+    }
+    .form-agree {
+        width: 90%;
+        margin: 35px auto;
+    }
+    .block-service-fsafe {
+        margin-bottom: 30px;
+        min-height: unset;
+        max-height: unset;
+        padding-bottom: 110px;
+    }
+    .sub-title-center{
+        font-size: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .block-service-fsafe a{
+        width: calc(100% - 40px);
+        left: 20px;
+    }
+    .download-store.bt.ul-li ul{
+        margin-bottom: 42px;
+    }
+    .fsafe-func._padding.section-luachon, 
+    .about-fsafe._padding.section-luachon {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .fsafe-in-hifpt._padding {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .fsafe-in-hifpt._padding h3 {
+        font-size: 25px;
+        line-height: 40px;
+    }
+    .callphone_bt{
+        right: 11px;
+        bottom: 157px;
+    }
+    #scroll-to-top{
+        bottom: 76px;
+        right: 19px;
+    }
+    .free-fsafe {
+        padding-top: 0;
+    }
+    .register-fsafe-foot{
+        text-align: center;
+    }
+    .fsafe-in-hifpt._padding h3{
+        padding-bottom: 15px;
+    }
+    .register-fsafe-foot {
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .register-fsafe-foot>a{
+        padding: 10px 32px;
+        width: 160px;
+        font-size: 18px;
+    }
+    .about-fsafe .about--title, 
+    .fsafe-func h3, 
+    .net-package._padding h3, 
+    .q_a._padding h3{
+        font-size: 32px;
+        width: 100%;
+    }
+    .flex-about-img.func .flex-about-img-item{
+        width: 100%;
+        padding-bottom: 48px;
+        margin-bottom: 24px;
+    }
+    .flex-about-img.func .flex-about-img-item:last-child{
+        margin-bottom: 0;
+    }
+    .fsafe-func._padding {
+        padding-top: 50px;
+        padding-bottom: 15px;
+    }
+    .how-works h3 {
+        font-size: 32px;
+        line-height: 42px;
+    }
+    .net-package._padding {
+        padding-top: 50px;
+        padding-bottom: 20px;
+    }
+    .net_tv-package._padding {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .slide-img h4{
+        font-size: 31px;
+    }
+    .list-about li {
+        padding-top: 10px;
+        width: 100%;
+    }
+    .h3-luachon._dkdv{
+        font-size: 32px;
+        line-height: 40px;
+        padding-bottom: 20px;
+    }
+    /* end 540px */
+}
+
+@media screen and (max-width: 479px) {
+    .cover-banner_1,
+    .cover-banner_2,
+    .cover-banner_3
+    {
+        height: 200px;
+    }
+    .cover-banner_4cuocthi {
+        height: 380px;
+    }
+    .cover-banner_5cuocthi {
+        height: 1325px;
+        padding-top: 140px;
+    }
+    .flex-about-img-item {
+        width: 100%;
+        height: 325px;
+    }
+    .flex-about-img-item img {
+        height: auto;
+    }
+    .list-about {
+        padding-left: 0px;
+        padding-top: 15px;
+    }
+    
+    .flex-about-img.func .flex-about-img-item {
+        margin-bottom: 20px;
+        height: 470px;
+    }
+    .with_2_col>div {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .download-store.bt li {
+        margin-right: 20px;
+        width: 45%;
+    }
+    .store-list img {
+        width: 100%;
+        height: auto;
+    }
+    .list-about .item-img {
+        width: 64px;
+    }
+    .list-about .item-img img {
+        width: 48px;
+    }
+    .how-works._padding [class*="col-sm"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .net-package ._label,
+    .net_tv-package ._label {
+        padding-left: 30px;
+        padding-right: 0;
+        width: 100%;
+        font-size: 20px;
+    }
+    .net_tv-package ._label {
+        background-position: 10px center;
+    }
+    .about-fsafe .about--title,
+    .fsafe-func h3,
+    .net-package._padding h3,
+    .q_a._padding h3 {
+        font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .how-works h3{
+        font-size: 32px;
+        line-height: 40px;
+        width: 100%;
+    }
+    .frame-video {
+        height: 203px;
+    }
+    .dance-cover._padding {
+        padding-top: 30px;
+    }
+    .banner-tittle span img {
+        width: 340px;
+    }
+    
+    .dance-cover-col{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .section-gk {
+        height: 690px;
+    }
+    .cover-banner_6cuocthi{
+        top: -65px;
+    }
+    .banner-video {
+        height: 620px;
+    }
+    .row-video-modal .video-modal-div {
+        width: 100%;
+        height: 183px;
+    }
+    .list-news-fsafe>div{
+        margin-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .list-news-fsafe a div{
+        font-size: 16px;
+        height: 100px;
+        max-height: 100px;
+        line-height: 24px;
+    }
+    .list-news-fsafe>div img{
+        min-height: 110px;
+        max-height: 110px;
+    }
+    .news-large-item a img {
+        min-height: 245px;
+        max-height: 245px;
+    }
+    .news-medium-item a img {
+        min-height: 120px;
+        max-height: 120px;
+    }
+    .news-detail-container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .list-news-fsafe h3{
+        font-size: 30px;
+    }
+    .title-news-detail {
+        font-size: 23px;
+    }
+    .wrap-follow .icon {
+        margin-right: 5px !important;
+    }
+    #scroll-to-top{
+        right: 12px;
+        bottom: 112px;
+    }
+    .callphone_bt {
+        right: 3px;
+        bottom: 200px;
+    }
+    .row.list-news-fsafe {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    /* end 479px */
+}
+
+@media screen and (max-width: 360px) {
+    .download-store.bt li {
+        margin-right: 10px;
+        width: 47%;
+    }
+    .store-list img {
+        width: 100%;
+        height: auto;
+    }
+    
+    /* end 360px */
+}

@@ -1,0 +1,47 @@
+﻿@font-face {
+    font-family: 'AmpleSoft Pro';
+    src: url('fonts/AmpleSoftPro-Bold.eot');
+    src: local('AmpleSoftPro-Bold'), url('fonts/AmpleSoftPro-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/AmpleSoftPro-Bold.woff2') format('woff2'), url('fonts/AmpleSoftPro-Bold.woff') format('woff'), url('fonts/AmpleSoftPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmpleSoft Pro';
+    src: url('fonts/AmpleSoftPro-Medium.eot');
+    src: local('AmpleSoftPro-Medium'), url('fonts/AmpleSoftPro-Medium.eot?#iefix') format('embedded-opentype'), url('fonts/AmpleSoftPro-Medium.woff2') format('woff2'), url('fonts/AmpleSoftPro-Medium.woff') format('woff'), url('fonts/AmpleSoftPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmpleSoft Pro';
+    src: url('fonts/AmpleSoftPro-Light.eot');
+    src: local('AmpleSoftPro-Light'), url('fonts/AmpleSoftPro-Light.eot?#iefix') format('embedded-opentype'), url('fonts/AmpleSoftPro-Light.woff2') format('woff2'), url('fonts/AmpleSoftPro-Light.woff') format('woff'), url('fonts/AmpleSoftPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmpleSoft Pro';
+    src: url('fonts/AmpleSoftPro-Thin.eot');
+    src: local('AmpleSoftPro-Thin'), url('fonts/AmpleSoftPro-Thin.eot?#iefix') format('embedded-opentype'), url('fonts/AmpleSoftPro-Thin.woff2') format('woff2'), url('fonts/AmpleSoftPro-Thin.woff') format('woff'), url('fonts/AmpleSoftPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmpleSoft Pro';
+    src: url('fonts/AmpleSoftPro-ExtraLight.eot');
+    src: local('AmpleSoftPro-ExtraLight'), url('fonts/AmpleSoftPro-ExtraLight.eot?#iefix') format('embedded-opentype'), url('fonts/AmpleSoftPro-ExtraLight.woff2') format('woff2'), url('fonts/AmpleSoftPro-ExtraLight.woff') format('woff'), url('fonts/AmpleSoftPro-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'AmpleSoft Pro';
+    src: url('fonts/AmpleSoftPro-Regular.eot');
+    src: local('AmpleSoftPro-Regular'), url('fonts/AmpleSoftPro-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/AmpleSoftPro-Regular.woff2') format('woff2'), url('fonts/AmpleSoftPro-Regular.woff') format('woff'), url('fonts/AmpleSoftPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

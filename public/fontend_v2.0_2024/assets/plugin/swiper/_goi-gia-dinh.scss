@@ -1,0 +1,388 @@
+// button swiper
+.parents_goi_giadinh {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 0px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.05);
+        -webkit-border-radius: 90px;
+        -moz-border-radius: 90px;
+        border-radius: 90px;
+        background: rgba(255, 255, 255, .7) url('../images/owl-arrow-right.svg') no-repeat center center / 26px;
+        right: calc(50% - 770px);
+        transform: translateX(-50%);
+        // thiết kế không có nút next - prev: display: none;
+    }
+
+    .swiper-button-next::after,
+    .swiper-button-prev::after {
+        display: none;
+    }
+
+    .swiper-button-prev {
+        // transform: rotate(180deg);
+        right: unset;
+        left: calc(50% - 720px);
+        transform: translateX(-50%);
+        background: rgba(255, 255, 255, .7) url('../images/owl-arrow-left.svg') no-repeat center center / 26px;
+    }
+
+    .swiper-button-next.swiper-button-disabled,
+    .swiper-button-prev.swiper-button-disabled {
+        pointer-events: unset;
+        display: none;
+    }
+
+    .swiper-button-disabled.swiper-button-lock {
+        display: none !important;
+    }
+
+    @media screen and (max-width: 1500px) {
+        .swiper-button-next {
+            // right: calc(51vw - 770px);
+            right: -3.3vw;
+        }
+        .swiper-button-prev {
+            // left: calc(51vw - 720px);
+            left: 1.2vw;
+        }
+    }
+}
+
+// end button swiper
+
+
+
+
+.swiper {
+    &.sw_goi_giadinh {
+        max-width: 1460px;
+        height: auto;
+        min-height: 100px;
+        margin: 0 auto;
+        .swiper-wrapper {
+            // bo sung
+            display: flex;
+            align-items: stretch; /* Căng đều các slide theo chiều cao */
+            transition: all 0.2s ease-out 0.05s;
+            @media screen and (max-width: 1366px) {
+            }
+            @media screen and (max-width: 1280px) {
+            }
+            @media screen and (max-width: 1114px) {
+            }
+            @media screen and (max-width: 1024px) {
+            }
+            @media screen and (max-width: 992px) {
+            }
+            @media screen and (max-width: 820px) {
+            }
+            @media screen and (max-width: 768px) {
+            }
+            @media screen and (max-width: 540px) {
+            }
+        }
+        .swiper-slide {
+            // bo sung 
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            // end bo sung 
+            .cards {
+                // overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                // width: 100%;
+                position: relative;
+                padding: 10px 7px 20px;
+
+                // bo sung 
+                flex-grow: 1; /* Kéo dài để lấp đầy chiều cao của slide */
+                display: flex;
+                flex-direction: column;
+                // end bo sung 
+
+                @media screen and (max-width: 540px) {
+                    padding: 10px 6px 20px;
+                }
+                .card_info {
+                    position: relative;
+                    background: #fff;
+                    border: 1px solid #f5f5f5;
+                    overflow: hidden;
+                    padding: 32px 28px 106px;
+                    -webkit-border-radius: 20px;
+                    -moz-border-radius: 20px;
+                    border-radius: 20px;
+                    
+                    box-shadow: 0px 22px 18px -26px rgba(0, 0, 0, 0.15);
+                    box-shadow: 0px 2px 12px 0px rgba(16, 24, 40, 0.08);
+
+                    // bo sung 
+                    flex-grow: 1; /* Đảm bảo nội dung bên trong giãn đều */
+                    display: flex;
+                    flex-direction: column;
+                    &:hover {
+                        box-shadow: 0px 6px 26px -20px rgba(0, 0, 0, 0.55);
+                    }
+                    // end bo sung 
+                    .row-price {
+                        .package-name {
+                            font-weight: 700;
+                            font-size: 20px;
+                            line-height: 28px;
+                            @media screen and (max-width: 540px) {
+                                font-size: 16px;
+                                line-height: 22px;
+                            }
+                        }
+                        .price {
+                            font-weight: 400;
+                            font-size: 12px;
+                            line-height: 16px;
+                            color: #3D3D3D;
+                            margin-top: 24px;
+                            span {
+                                font-weight: 700;
+                                font-size: 32px;
+                                line-height: 23px;
+                                color: #4564ED;
+                                @media screen and (max-width: 540px) {
+                                    font-size: 24px;
+                                }
+                            }
+                            p {
+                                margin: 12px 0 0;
+                                @media screen and (max-width: 540px) {
+                                    margin-top: 8px;
+                                }
+                            }
+                            @media screen and (max-width: 540px) {
+                                margin-top: 12px;
+                            }
+                        }
+                    }
+                    .row-speed {
+                        padding: 20px 0 16px;
+                        margin: 16px 0 24px;
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #3D3D3D;
+                        border-top: 1px solid #E7E7E7;
+                        border-bottom: 1px solid #E7E7E7;
+                        div {
+                            margin-top: 8px;
+                            font-weight: 500;
+                            span {
+                                line-height: 44px;
+                                font-weight: 700;
+                                font-size: 32px;
+                                @media screen and (max-width: 540px) {
+                                    font-size: 28px;
+                                    line-height: 40px;
+                                }
+                            }
+                        }
+                        @media screen and (max-width: 540px) {
+                            margin: 12px 0 16px;
+                            padding: 12px 0 8px;
+                        }
+
+                    }
+                    .row-devices {
+                        .head-label {
+                            font-weight: 700;
+                            font-size: 16px;
+                            line-height: 22px;
+                        }
+                        .list-image {
+                            display: flex;
+                            margin: 8px 0 16px;
+                            padding-bottom: 8px;
+                            gap: 12px;
+                            width: 100%;
+                            overflow: auto;
+                            li {
+                                img {
+                                    width: 60px;
+                                    height: 60px;
+                                    object-fit: cover;
+                                    border: 1px solid #E7E7E7;
+                                    -webkit-border-radius: 8px;
+                                    -moz-border-radius: 8px;
+                                    border-radius: 8px;
+                                    @media screen and (max-width: 540px) {
+                                        width: 48px;
+                                        height: 48px;
+                                    }
+                                }
+                            }
+                        }
+                        .ul-list {
+                            li {
+                                position: relative;
+                                padding-left: 24px;
+                                font-weight: 400;
+                                font-size: 16px;
+                                line-height: 22px;
+                                margin-bottom: 4px;
+                                
+                                &::before {
+                                    content: '';
+                                    background: url('../images/tick-green-16x16.svg') no-repeat center left;
+                                    background-size: 16px;
+                                    width: 16px;
+                                    height: 16px;
+                                    position: absolute;
+                                    top: 3px;
+                                    left: 0;
+                                    font-weight: 600;
+                                    @media screen and (max-width: 540px) {
+                                        top: 2px;
+                                    }
+                                }
+                                b {
+                                    font-weight: 700;
+                                    color: #4564ED;
+                                }
+                                @media screen and (max-width: 540px) {
+                                    font-size: 14px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+
+                    }
+                    .row-register {
+                        // margin-top: 46px;
+                        position: absolute;
+                        width: calc(100% - 56px);
+                        bottom: 32px;
+                        left: 28px;
+                        .button {
+                            line-height: 54px;
+                            text-align: center;
+                            display: block;
+                            background: #FF730A;
+                            color: #fff;
+                            font-size: 16px;
+                            font-weight: 600;
+                            -webkit-border-radius: 8px;
+                            -moz-border-radius: 8px;
+                            border-radius: 8px;
+                            -webkit-transition: .2s ease-in-out;
+                            -moz-transition: .2s ease-in-out;
+                            -o-transition: .2s ease-in-out;
+                            transition: .2s ease-in-out;
+                            
+                            &:hover {
+                                background: #ff9100;
+                            }
+                            @media screen and (max-width: 540px) {
+                                line-height: 40px;
+                            }
+                        }
+
+                    }
+                    @media screen and (max-width: 540px) {
+                        padding: 24px 20px 90px;
+                        // -webkit-border-radius: 8px;
+                        // -moz-border-radius: 8px;
+                        // border-radius: 8px;
+                    }
+
+                }
+
+            }
+        }
+
+        // custom dành cho bài viết liên quan
+        &.sw-article {
+            .swiper-slide .cards {}
+
+        }
+    }
+}
+
+
+////////////////////////
+
+
+.js_customer_reviews_center {
+    justify-content: center;
+    padding-left: 12px;
+}
+
+@media screen and (max-width: 1439px) {
+    .swiper.sw_goi_giadinh {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 1366px) {
+    
+}
+
+@media screen and (max-width: 1024px) {
+
+    .parents_goi_giadinh .swiper-button-next,
+    .parents_goi_giadinh .swiper-button-prev {
+        display: none;
+    }
+
+    .js_customer_reviews_center {
+        padding-left: 8px;
+    }
+
+    
+}
+@media screen and (max-width: 992px) {
+    
+}
+@media screen and (max-width: 884px) {
+
+    .swiper.sw_goi_giadinh .swiper-slide {
+        width: 42vw;
+    }
+
+}
+@media screen and (max-width: 834px) {
+
+    .swiper.sw_goi_giadinh .swiper-slide {
+        width: 45vw;
+    }
+
+}
+@media screen and (max-width: 820px) {
+    .swiper.sw_goi_giadinh .swiper-slide {
+        width: 46vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .parents_goi_giadinh .swiper-button-next,
+    .parents_goi_giadinh .swiper-button-prev {
+        display: none;
+    }
+
+    .swiper.sw_goi_giadinh .swiper-slide {
+        width: 47vw;
+    }
+}
+
+
+
+@media screen and (max-width: 540px) {
+
+    .swiper.sw_goi_giadinh .swiper-slide {
+        width: 75vw;
+    }
+
+    .swiper.sw_goi_giadinh .swiper-slide .cards {}
+}

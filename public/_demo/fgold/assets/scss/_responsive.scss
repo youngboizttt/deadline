@@ -1,0 +1,222 @@
+/* CÁC MÀN DESKTOP ĐÃ FIX
+màn mac air (1280 x 800)
+màn HD (1600 x 900)
+màn full HD (màn MAC M1 1920 x 1080)
+
+*/
+@media screen and (min-width: 1600px) {
+	.sec9-right > div .img-block span {
+		$w-img-s9 : 27%;
+		width: $w-img-s9; //140
+		height: calc($w-img-s9 + (1/5*$w-img-s9)); //140
+		// background: greenyellow;
+	}
+}
+@media screen and (min-height: 860px) { 
+	.sec1 {
+		.home-card {
+			bottom: -44%;
+		}
+	} 
+}
+@media screen and (min-height: 1080px) { 
+	.sec1 .home-card {
+        bottom: -36%;
+    }
+	#sec2 .ico--2 {
+		top: 67vh;
+		right: 13vw;
+	}
+	#sec4 .ico--2 {
+		top: 40%;
+		right: 19%;
+	}
+	#sec5 .ico--2 {
+		top: 18%;
+		right: 23%;
+	}
+}
+@media screen and (min-height: 1200px) { 
+	.sec1 .home-card {
+        bottom: -32%;
+    }
+	#sec2 .ico--2 {
+        top: 66vh;
+        right: 14vw;
+    }
+	#sec3 .ico--2 {
+		top: 27%;
+		right: -1%;
+	}
+	#sec4 .ico--2 {
+        top: 41%;
+        right: 19%;
+    }
+	#sec5 .ico--2 {
+		top: 23%;
+		right: 23%;
+	}
+	#sec6 .ico--1 {
+		left: 28%;
+		top: 60%;
+	}
+}
+
+@media screen and (max-width: 1600px) {
+	#sec3 {
+		.ico--2 {
+			right: -10%;
+		}
+	}
+}
+@media screen and (max-width: 1600px) and (max-height: 900px) {
+	#sec4 .ico--1 {
+		left: 25%;
+		top: 57%;
+	}
+	#sec4 .ico--1 img{
+		width: 47px;
+	}
+	#sec4 .ico--2 img {
+		width: 190px;
+	}
+	#sec5 .ico--1 {
+		left: 28%;
+	}
+	#sec5 .ico--1 img {
+		width: 47px;
+	}
+	#sec5 .ico--2 {
+		right: 20%;
+	}
+	#sec5 .ico--2 img {
+		width: 250px;
+	}
+	#sec6 .ico--1 {
+		left: 24%;
+		top: 63%;
+	}
+	#sec6 .ico--1 img {
+		width: 47px;
+	}
+	#sec6 .ico--2 {
+		top: 43%;
+		right: 20%;
+	}
+	#sec6 .ico--2 img {
+		width: 180px;
+	}
+
+	#sec7 .ico--1 {
+		left: 14%;
+		top: 17%;
+	}
+	#sec7 .ico--1 img {
+		width: 232px;
+	}
+	#sec7 .ico--2 {
+		top: 63%;
+		right: 25%;
+	}
+	#sec7 .ico--2 img {
+		width: 95px;
+	}
+}
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+	.sec1 .home-card{
+		bottom: -60%;
+	}
+	.ico.ico--2 img{
+		width: 160px;
+	}
+	.ico.ico--1 img {
+		width: 24px;
+	}
+
+	#sec2 .ico--1 {
+		left: -3%;
+		top: 22%;
+	}
+	#sec2 .ico--2 {
+		top: 69vh;
+		right: 5vw;
+	}
+	#sec2 .ico--2 img {
+		width: 80%;
+	}
+
+	#sec3 .ico--2 {
+
+	}
+	#sec3 .ico--2 {
+		top: 22%;
+        right: -15%;
+    }
+	#sec3 .ico--2 img {
+		width: 184px;
+	}
+	#sec3 .ico--1 {
+		left: -6%;
+		top: 20%;
+	}
+	#sec3 .ico--1 img {
+		width: 58px;
+	}
+	#sec4 .ico--2 img {
+		width: 184px;
+	}
+	#sec4 .ico--2 {
+		top: 39%;
+		right: 11%;
+	}
+	#sec4 .ico--1 {
+		left: 19%;
+	}
+	#sec5 .ico--1 {
+		left: 23%;
+		top: 61%;
+	}
+	#sec5 .ico--1 img {
+		width: 43px;
+	}
+	#sec5 .ico--2 {
+		top: 9%;
+		right: 14%;
+	}
+	#sec5 .ico--2 img {
+		width: 230px;
+	}
+	#sec6 .ico--1 {
+		left: 17%;
+		top: 66%;
+	}
+	#sec6 .ico--1 img {
+		width: 45px;
+	}
+	#sec6 .ico--2 {
+		top: 42%;
+		right: 13%;
+	}
+	#sec6 .ico--2 img {
+		width: 190px;
+	}
+	#sec7 .ico--1 {
+		left: 7%;
+		top: 13%;
+	}
+	#sec7 .ico--1 img {
+		width: 210px;
+	}
+	#sec7 .ico--2 {
+		top: 65%;
+		right: 18%;
+	}
+	#sec7 .ico--2 img {
+		width: 92px;
+	}
+}
+@media screen and (max-width: 1024px) {
+	.btn-dangky {
+		margin-right: 80px;
+	}
+}

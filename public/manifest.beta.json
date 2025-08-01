@@ -1,0 +1,14 @@
+{
+  "name": "FPT Telecom Portal",
+  "short_name": "FPT Telecom Portal",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f37021",
+  "description": "",
+  "icons": [{
+    "src": "/homescreen48.png",
+    "sizes": "48x48",
+    "type": "image/png"
+  }],
+  "gcm_sender_id": "103953800507"
+}

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ok it work</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+        @import url('https://use.fontawesome.com/releases/v5.15.4/css/all.css');
+        /* https://cp.io/iounini/pen/mdWVJLB?editors=1000 */
+       
+        .space {
+          height: 130vh;
+        }
+
+        .vid-section {
+          background: #ccc;
+          padding: 0px;
+        }
+        .vid-wrap {
+          width: 100%;
+          height: 600px;
+          background: white;
+          opacity: 1;
+          position: relative;
+          overflow: hidden;
+          margin-top: 150px;
+        }
+        .responsive-vid {
+          padding-top: 56.25%;
+          position: absolute;
+          top: 50%;
+          left: 0;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%);
+          width: 100%;
+        }
+        .responsive-vid iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        .video__title {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          color: #fff;
+          -webkit-transform: translate(-50%, -50%);
+                  transform: translate(-50%, -50%);
+          font-size: 36px;
+        }
+        #mute_1 {
+          position: absolute;
+          left: 24px;
+          bottom: 28px;
+          color: #ff701d;
+          border: 0;
+          background: transparent;
+          font-size: 32px;
+          cursor: pointer;
+          padding: 12px;
+          display: flex;
+          outline: 0;
+          z-index: 33;
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+
+<!-- 1. The <iframe> (and video player) will replace this <div> tag. -->
+  <div class="space"> <h3>ok it work</h3> section 1</div>
+  <div class="vid-section">
+    <div class="vid-wrap">
+      <div class="responsive-vid">
+        <div id="id_video" style="pointer-events: none"></div>
+      </div>
+    <div class="video__overlay"></div>
+    <button title="Mute / Unmute Video" id="mute_1">
+      <i class="vc_btn3-icon fas fa-volume-mute"></i>
+    </button>
+    <div class="video__title">"Вино, как и искусство — источник удовольствия."</div>
+    </div>
+  </div>
+<div class="space">section 2</div>
+
+<script src="https://fpt.vn/lux/js/jquery.min.js"></script>
+<script>
+	// 2. This code loads the IFrame Player API code asynchronously.
+	var tag = document.createElement('script');
+  console.log(tag);
+	tag.src = "https://www.youtube.com/iframe_api";
+	var firstScriptTag = document.getElementsByTagName('script')[0];
+	firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+	// 3. This function creates an <iframe> (and YouTube player)
+	//    after the API code downloads.
+	var player;
+
+	function onYouTubeIframeAPIReady() {
+		player = new YT.Player('id_video', {
+				height: '360',
+				width: '600',
+				videoId: 'tu0qtEwb9gE',
+				playerVars: {
+					autoplay: 1, // 在讀取時自動播放影片
+					controls: 0, // 在播放器顯示暫停／播放按鈕
+					modestbranding: 1, // 隱藏YouTube Logo
+					loop: 1, // 讓影片循環播放
+					// fs: 0, // 隱藏全螢幕按鈕
+					// cc_load_policty: 0, // 隱藏字幕
+					// iv_load_policy: 3, // 隱藏影片註解
+					autohide: 0, // 當播放影片時隱藏影片控制列
+					mute: 1, // 靜音
+					playsinline: 1,
+					// playlist: 'tu0qtEwb9gE,tu0qtEwb9gE',
+					playlist: 'tu0qtEwb9gE',
+				},
+			events: {
+				'onReady': onPlayerReady,
+				// 'onStateChange': onPlayerStateChange
+			},
+		});
+	}
+	// 4. The API will call this function when the video player is ready.
+	function onPlayerReady(event) {
+		// event.target.mute();
+		// event.target.setVolume(0);
+		event.target.setVolume(100);
+		event.target.playVideo();
+	}
+	// 5. The API calls this function when the player's state changes.
+	//    The function indicates that when playing a video (state=1),
+	//    the player should play for six seconds and then stop.
+	// var done = false;
+	// function onPlayerStateChange(event) {
+	// 	if (event.data == YT.PlayerState.PLAYING && !done) {
+	// 		setTimeout(stopVideo, 6000);
+	// 		done = true;
+	// 	}
+	// }
+	// function stopVideo() {
+	// 	player.stopVideo();
+	// }
+</script>
+<script>
+  jQuery(document).ready(function ($) {
+        // Play when in viewport
+        $(window).on('scroll load', function(){
+            $('.responsive-vid iframe').each( function(i){
+            player.pauseVideo();
+            var scroll_position = $(window).scrollTop();
+            var bottom_of_video = $(this).offset().top + ($(this).outerHeight() / 2);
+            var bottom_of_window3 = $(window).scrollTop() + $(window).height();
+            if( bottom_of_window3 > bottom_of_video && scroll_position < bottom_of_video ) {  
+                player.playVideo();
+                $('#player').css({'opacity':'1'});
+            } else {
+                player.pauseVideo();
+                $('#player').css({'opacity':'.6'});
+            }
+            });
+        });
+        
+        });
+  // mute
+  $("#mute_1").click(function () {
+          if (player.isMuted()) {
+            player.unMute();
+            // console.log("unMute Player");
+            $("#mute_1 i.vc_btn3-icon")
+              .removeClass("fa-volume-mute")
+              .addClass("fa-volume-up");
+          } else {
+            player.mute();
+            // console.log("Mute Player");
+            $("#mute_1 i.vc_btn3-icon")
+              .removeClass("fa-volume-up")
+              .addClass("fa-volume-mute");
+          }
+        });
+</script>
+</body>
+</html>

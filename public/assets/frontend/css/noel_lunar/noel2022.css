@@ -1,0 +1,374 @@
+/* top nav */
+.secondary-link{
+    background: #B51A22;
+}
+.secondary-link a{
+    color: rgba(255,255,255, 0.7);
+}
+/* style logo */
+.nav-brand>.logo{
+    position: relative;
+    width: 106px;
+    height: 70px;
+}
+.nav-brand>.logo img{
+    display: none;
+}
+.nav-brand>.logo:after{
+    content: '';
+    position: absolute;
+    background: url('../../img/noel/2022/xmas-top-icon.svg') top left no-repeat;
+    background-size: 93px auto;
+    top: 17px;
+    left: -4px;
+    width: 93px;
+    height: 32px;
+    z-index: 9;
+    display: none;
+}
+.nav-brand>.logo::before{
+    content: '';
+    position: absolute;
+    /* background: url('../../img/noel/2022/xmas-bottom-icon.svg') top center no-repeat; */
+    /* background: url('../../img/noel/2022/xmas-bottom-icon.png') top center no-repeat; */
+    background: url('../../img/noel/2022/xmas-bottom-icon1.png') top center no-repeat;
+    background-size: 120px auto;
+    top: 13px;
+    left: -11px;
+    width: 126px;
+    height: 42px;
+    z-index: 7;
+}
+/* footer.footer */
+footer.footer{
+    padding-top: 280px;
+    background: #B51A22 url('../../img/noel/2022/snow-background-foot.svg') center top repeat;
+    background-size: auto;
+    position: relative;
+}
+footer.footer::before{
+    content: '';
+    width: 100%;
+    height: 278px; 
+    /* background: url('../../img/noel/2022/xmas-foot.svg') center top repeat-x; */
+    background: url('../../img/noel/2022/xmas-foot.png') center top repeat-x;
+    background-size: auto;
+    position: absolute;
+    left: 0;
+    top: -2px;
+}
+footer.footer .row-fptlogo{
+    border-bottom: 0px solid transparent;
+}
+.owl-carousel.slide-logo .owl-next, .owl-carousel.slide-logo .owl-prev{
+    color: #fff;
+}
+
+.link-footer a, .accordion-link-foot-content a{
+    color: #fff;
+}
+.link-footer a:hover, .accordion-link-foot-content a:hover{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255, 0.8);
+}
+.title-footer-item{
+    color: #fff;
+    font-weight: 600;
+}
+.title-footer-item:hover a{
+    color: rgba(255,255,255, 0.8);
+}
+.accordion-link-foot a,
+.license-text p,
+.foot-hotline,
+footer.footer .row-link-foot div:first-child p{
+    color: #fff;
+}
+
+.foot-hotline:hover{
+    color: rgba(255,255,255, 0.7);
+}
+[id*="open-accordion"]:after, [id*="close-accordion"]:after{
+    width: 16px;
+    height: 17px;
+    margin-left: 8px;
+    display: inline-block;
+    background: none;
+    background-color: #fff; /* defines the background color of the image */
+    mask: url('../../../assetv2/images/arrow.svg') no-repeat center / contain;
+    -webkit-mask: url('../../../assetv2/images/arrow.svg') no-repeat center / contain;
+}
+
+#back-to-top.show::after{
+    content: '';
+    position: absolute;
+    left: 11px;
+    top: 6px;
+    width: 48px;
+    height: 48px;
+    border: 1px solid rgba(255,255,255, 0.7);
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+.logo-fpt-footer,
+.logo-fpt-footer:hover{
+    width: 118px;
+    height: 40px;
+    background: none;
+    display: block;
+    display: inline-block;
+    background-color: #fff !important; /* defines the background color of the image */
+    mask: url('../../../../assets/frontend/img/footer_logo.svg') no-repeat center / contain;
+    -webkit-mask: url('../../../../assets/frontend/img/footer_logo.svg') no-repeat center / contain;
+}
+.logo-fpt-footer img{
+    opacity: 0;
+}
+footer.footer .row-fptlogo{
+    margin-bottom: 0;
+}
+.secondary-link .row-headmenu{
+    position: relative;
+}
+
+/* custom menu */
+.nav-menu > li > a, 
+.megamenu-list > li.megamenu-list-title > a{
+    font-size: 15px;
+}
+.nav-menu > li > a{
+    padding: 25px 10px;
+}
+/* khách hàng doanh nghiệp */
+footer.footer.footer-enterprise{
+    padding-top: 275px !important;
+    color: #fff;
+}
+.footer-enterprise .four-column-footer ul>li>a,
+.wrap-follow>a{
+    color: #fff;
+}
+.four-column-footer ul>li>a:hover{
+    color: #fff;
+    border-bottom: 1px solid rgba(255,255,255, 0.8);
+}
+.enterprise-footer-block,
+.enterprise-footer-block p{
+    color: #fff !important;
+}
+.wrap-follow>a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+.enterprise-footer-block .foot-hotline,
+.enterprise-footer-block a{
+    color: rgba(255,255,255, 1);
+}
+.enterprise-footer-block .foot-hotline:hover,
+.enterprise-footer-block a:hover{
+    color: rgba(255,255,255, 0.8);
+}
+/* // khách hàng doanh nghiệp */
+
+
+/* responsive */
+@media screen and (min-width: 1920px){
+    .secondary-link .row-headmenu::after{
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 39px;
+        background: url('../../img/noel/2022/snow-head.svg') center no-repeat;
+        background-size: 100%;
+        left: -110px;
+        top: -8px;
+    }
+    .secondary-link .row-headmenu::before{
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 39px;
+        background: url('../../img/noel/2022/snow-head.svg') center no-repeat;
+        background-size: 100%;
+        right: -110px;
+        top: -8px;
+    }
+    footer.footer{
+        padding-top: 270px;
+    }
+    footer.footer::before{
+        height: 440px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 290px !important;
+    }
+}
+@media screen and (min-width: 2560px){
+    footer.footer {
+        padding-top: 290px;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 390px !important;
+    }
+}
+
+@media screen and (max-width: 1919px){
+    .secondary-link .row-headmenu::after{
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 39px;
+        background: url('../../img/noel/2022/snow-head.svg') center no-repeat;
+        background-size: 100%;
+        left: -110px;
+        top: -8px;
+    }
+    .secondary-link .row-headmenu::before{
+        content: '';
+        position: absolute;
+        width: 70px;
+        height: 39px;
+        background: url('../../img/noel/2022/snow-head.svg') center no-repeat;
+        background-size: 100%;
+        right: -110px;
+        top: -8px;
+    }
+    footer.footer{
+        background-size: 92%;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 290px !important;
+    }
+}
+
+@media screen and (max-width: 1600px){
+    .secondary-link .row-headmenu::after{
+        left: -96px;
+    }
+    .secondary-link .row-headmenu::before{
+        right: -96px;
+    }
+}
+@media(max-width:1366px) {
+    .secondary-link .row-headmenu{
+        width: calc(100% - 150px);
+    }
+    .secondary-link .row-headmenu::after{
+        left: -84px;
+    }
+    .secondary-link .row-headmenu::before{
+        right: -84px;
+    }
+    footer.footer {
+        padding-top: 240px;
+    }
+    footer.footer::before {
+        background-size: 148%;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 240px !important;
+    }
+}
+@media(max-width:1280px) {
+    footer.footer {
+        padding-top: 210px;
+    }
+    footer.footer::before{
+        height: 320px;
+        background-size: 160%;
+    }
+}
+@media(max-width:1024px) {
+    footer.footer {
+        padding-top: 166px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 186px !important;
+    }
+}
+@media(max-width:992px) {
+
+}
+@media(max-width:768px) {
+    footer.footer {
+        padding-top: 126px;
+        background-size: 160%;
+    }
+    footer.footer::before {
+        height: 300px;
+        background-size: 172%;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 126px !important;
+    }
+}
+@media(max-width:540px) {
+    .nav-brand>.logo:after{
+        left: -6px;
+    }
+    footer.footer {
+        padding-top: 290px;
+        background-size: 200%;
+    }
+    footer.footer::before{
+        /* background: url('../../img/noel/2022/xmas-foot-m1.svg') left top no-repeat; */
+        /* background: url('../../img/noel/2022/xmas-foot-m1.png') left top no-repeat; */
+        background: url('../../img/noel/2022/xmas-foot-m2.png') left top no-repeat;
+        background-size: 100%;
+        height: 496px;
+    }
+    .license-text {
+        border-top: 1px solid rgba(255,255,255, 0.5);
+        border-bottom: 0px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 330px !important;
+    }
+}   
+@media(max-width:479px) {
+    footer.footer {
+        padding-top: 260px;
+    }
+    #back-to-top.show::after{
+        left: 9px;
+        top: 4px;
+        width: 36px;
+        height: 36px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 270px !important;
+    }
+}
+@media(max-width:430px) {
+    footer.footer {
+        background-size: 250%;
+    }
+    footer.footer::before{
+        /* background-size: auto; */
+    }
+}
+@media(max-width:375px) {
+    footer.footer {
+        padding-top: 192px;
+    }
+
+    footer.footer.footer-enterprise{
+        padding-top: 250px !important;
+    }
+}
+@media(max-width:320px) {
+    footer.footer {
+        padding-top: 170px;
+    }
+    footer.footer.footer-enterprise{
+        padding-top: 210px !important;
+    }
+}
+
+/* Noel 2022 - 21/12/2022 Dvh */

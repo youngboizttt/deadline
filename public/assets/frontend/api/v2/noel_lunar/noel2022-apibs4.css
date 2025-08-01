@@ -1,0 +1,34 @@
+/* logo */
+.navbar-header .logo-head {
+    position: relative;
+}
+.navbar-header .logo-head:after {
+    content: '';
+    position: absolute;
+    background: url('../../../img/noel2022/head-img-noel.png') no-repeat top left;
+    background-size: 42px auto;
+    top: 3px;
+    left: 164px;
+    width: 60px;
+    height: 50px;
+}
+
+@media(max-width:768px) {
+    .navbar-header .logo-head:after{
+        top: -4px;
+        left: 130px;
+    }
+}
+@media(max-width:540px) {
+    .navbar-header .logo-head:after{
+        top: 3px;
+        left: 166px;
+    }
+}
+@media(max-width:479px) {
+    .navbar-header .logo-head:after{
+        top: 3px;
+        left: 136px;
+    }
+}
+/* Noel 2022 (27/12/2022) */
